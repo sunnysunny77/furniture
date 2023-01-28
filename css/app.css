@@ -172,8 +172,8 @@ nav ul li a:hover, nav ul li a:focus {
 @media only Screen and (max-width: 575px) {
   #header p {
     font-size: smaller;
-    width: 92.5vw;
-    left: 2%;
+    width: 91.5vw;
+    left: 3%;
     top: calc(28vw + 185px);
   }
 }
