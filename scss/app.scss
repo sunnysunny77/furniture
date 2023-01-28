@@ -20,9 +20,6 @@ nav {
         display: flex;
         text-align: center;
         justify-content: space-around;
-        @media only Screen and (max-width: 1199px) {
-            font-size: smaller;
-        }
         svg {
             color: $c1;
         }
@@ -30,8 +27,11 @@ nav {
             width: 33%;
         }
         li:nth-child(1) {
-            text-align: left;
             padding-left: 2%;
+            text-align: left;
+            @media only Screen and (max-width: 1199px) {
+                font-size: small;
+            }
         }
         li:nth-child(1) a {
             color: $c2;
@@ -75,14 +75,14 @@ nav {
         top: 0;
         right: 0;
         bottom: 20%;
-        left: 20vw;
+        left: 25vw;
         background-color: $c1;
         background-image: url(../images/div.png);
         background-repeat: repeat-y;
         background-position: 93% 100%;
         z-index: -1;
         @media only Screen and (max-width: 1199px) {
-            left: 60vw;
+            left: 67vw;
         }
     }
     &::before {
@@ -91,20 +91,20 @@ nav {
         top: 108px;
         right: 0;
         bottom: 0;
-        left: calc(20vw - 150px);
+        left: calc(25vw - 150px);
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
         @media only Screen and (max-width: 1199px) {
             top: 70px;
-            left: calc(60vw - 101px);
+            left: calc(67vw - 101px);
             background-size: 180px;
         }
     }
     svg {
         position: absolute;
         top: calc(17% + 300px);
-        right: 8vw;
+        right: 7vw;
         height: 100px;
         width: 100px;
         @media only Screen and (max-width: 1199px) {

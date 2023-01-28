@@ -23,11 +23,6 @@ nav ul {
   text-align: center;
   justify-content: space-around;
 }
-@media only Screen and (max-width: 1199px) {
-  nav ul {
-    font-size: smaller;
-  }
-}
 nav ul svg {
   color: #064D46;
 }
@@ -35,8 +30,13 @@ nav ul li {
   width: 33%;
 }
 nav ul li:nth-child(1) {
-  text-align: left;
   padding-left: 2%;
+  text-align: left;
+}
+@media only Screen and (max-width: 1199px) {
+  nav ul li:nth-child(1) {
+    font-size: small;
+  }
 }
 nav ul li:nth-child(1) a {
   color: #060606;
@@ -80,7 +80,7 @@ nav ul li a:hover, nav ul li a:focus {
   top: 0;
   right: 0;
   bottom: 20%;
-  left: 20vw;
+  left: 25vw;
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
@@ -89,7 +89,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 @media only Screen and (max-width: 1199px) {
   #header::after {
-    left: 60vw;
+    left: 67vw;
   }
 }
 #header::before {
@@ -98,7 +98,7 @@ nav ul li a:hover, nav ul li a:focus {
   top: 108px;
   right: 0;
   bottom: 0;
-  left: calc(20vw - 150px);
+  left: calc(25vw - 150px);
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   z-index: 0;
@@ -106,14 +106,14 @@ nav ul li a:hover, nav ul li a:focus {
 @media only Screen and (max-width: 1199px) {
   #header::before {
     top: 70px;
-    left: calc(60vw - 101px);
+    left: calc(67vw - 101px);
     background-size: 180px;
   }
 }
 #header svg {
   position: absolute;
   top: calc(17% + 300px);
-  right: 8vw;
+  right: 7vw;
   height: 100px;
   width: 100px;
 }
