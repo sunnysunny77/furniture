@@ -29,13 +29,18 @@ nav ul svg {
 nav ul li {
   width: 33%;
 }
+@media only Screen and (max-width: 1399px) {
+  nav ul li {
+    font-size: smaller;
+  }
+}
 nav ul li:nth-child(1) {
   padding-left: 2%;
   text-align: left;
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 575px) {
   nav ul li:nth-child(1) {
-    font-size: small;
+    font-size: x-small;
   }
 }
 nav ul li:nth-child(1) a {
@@ -57,7 +62,7 @@ nav ul li:nth-child(1):focus svg {
 nav ul li:nth-child(2) a {
   color: white;
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 1399px) {
   nav ul li:nth-child(2) a {
     color: #060606;
   }
@@ -87,7 +92,7 @@ nav ul li a:hover, nav ul li a:focus {
   background-position: 93% 100%;
   z-index: -1;
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 1399px) {
   #header::after {
     left: 67vw;
   }
@@ -103,43 +108,44 @@ nav ul li a:hover, nav ul li a:focus {
   background-repeat: no-repeat;
   z-index: 0;
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 1399px) {
   #header::before {
     top: 70px;
-    left: calc(67vw - 101px);
-    background-size: 180px;
+    left: calc(67vw - 85px);
+    background-size: 150px;
   }
 }
 #header svg {
   position: absolute;
-  top: calc(17% + 300px);
-  right: 7vw;
+  top: 60%;
+  right: 8%;
   height: 100px;
   width: 100px;
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 575px) {
   #header svg {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
 }
 #header img {
   width: 632px;
   height: 100%;
   margin-top: 356px;
-  margin-left: 10vw;
+  margin-left: calc(25vw - 158px);
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 1399px) {
   #header img {
     width: 66vw;
     margin-top: 215px;
+    margin-left: calc(33vw - 158px);
   }
 }
 @media only Screen and (max-width: 575px) {
   #header img {
-    width: 88vw;
+    width: 89vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 185px;
@@ -149,26 +155,30 @@ nav ul li a:hover, nav ul li a:focus {
   position: absolute;
   width: 632px;
   top: 556px;
-  left: 13vw;
+  left: calc(25vw - 118px);
   font-weight: 100;
   box-shadow: -2px 2px 8px;
   background-color: white;
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media only Screen and (max-width: 1199px) {
+@media only Screen and (max-width: 1399px) {
   #header p {
     width: 66vw;
     top: calc(20vw + 215px);
+    left: calc(33vw - 118px);
   }
 }
 @media only Screen and (max-width: 575px) {
   #header p {
     font-size: smaller;
-    width: 91vw;
-    left: 3vw;
+    width: 92.5vw;
+    left: 2%;
     top: calc(28vw + 185px);
   }
+}
+#header p .btn {
+  font-size: smaller;
 }
 
 /*# sourceMappingURL=app.css.map */

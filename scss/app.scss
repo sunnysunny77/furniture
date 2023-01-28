@@ -25,12 +25,15 @@ nav {
         }
         li {
             width: 33%;
+            @media only Screen and (max-width: 1399px) {
+                font-size: smaller;
+            }
         }
         li:nth-child(1) {
             padding-left: 2%;
             text-align: left;
-            @media only Screen and (max-width: 1199px) {
-                font-size: small;
+            @media only Screen and (max-width: 575px) {
+                font-size: x-small;
             }
         }
         li:nth-child(1) a {
@@ -51,7 +54,7 @@ nav {
         }
         li:nth-child(2) a {
             color: $c3;
-            @media only Screen and (max-width: 1199px) {
+            @media only Screen and (max-width: 1399px) {
                 color: $c2;
             }
         }
@@ -81,7 +84,7 @@ nav {
         background-repeat: repeat-y;
         background-position: 93% 100%;
         z-index: -1;
-        @media only Screen and (max-width: 1199px) {
+        @media only Screen and (max-width: 1399px) {
             left: 67vw;
         }
     }
@@ -95,36 +98,37 @@ nav {
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
-        @media only Screen and (max-width: 1199px) {
+        @media only Screen and (max-width: 1399px) {
             top: 70px;
-            left: calc(67vw - 101px);
-            background-size: 180px;
+            left: calc(67vw - 85px);
+            background-size: 150px;
         }
     }
     svg {
         position: absolute;
-        top: calc(17% + 300px);
-        right: 7vw;
+        top: 60%;
+        right: 8%;
         height: 100px;
         width: 100px;
-        @media only Screen and (max-width: 1199px) {
-            height: 60px;
-            width: 60px;
+        @media only Screen and (max-width: 575px) {
+            height: 50px;
+            width: 50px;
         }
     }
     img {
         width: 632px;
         height: 100%;
         margin-top: 356px;
-        margin-left: 10vw;
+        margin-left: calc(25vw - 158px);
         border-radius: 2px;
         border: 1px solid rgba($c3, 0.5);
-        @media only Screen and (max-width: 1199px) {
+        @media only Screen and (max-width: 1399px) {
             width: 66vw;
             margin-top: 215px;
+            margin-left: calc(33vw - 158px);
         }
         @media only Screen and (max-width: 575px) {
-            width: 88vw;
+            width: 89vw;
             margin-left: auto;
             margin-right: auto;
             margin-top: 185px;
@@ -134,21 +138,25 @@ nav {
         position: absolute;
         width: 632px;
         top: 556px;
-        left: 13vw;
+        left: calc(25vw - 118px);
         font-weight: 100;
         box-shadow: -2px 2px 8px;
         background-color: $c3;
         border-radius: 2px;
         border: 1px solid rgba($c3, 0.5);
-        @media only Screen and (max-width: 1199px) {
+        @media only Screen and (max-width: 1399px) {
             width: 66vw;
             top: calc(20vw + 215px);
+            left: calc(33vw - 118px);
         }
         @media only Screen and (max-width: 575px) {
             font-size: smaller;
-            width: 91vw;
-            left: 3vw;
+            width: 92.5vw;
+            left: 2%;
             top: calc(28vw + 185px);
+        }
+        .btn {
+            font-size: smaller;
         }
     }
 }
