@@ -2,12 +2,6 @@
   font-family: Poppins;
   src: url(./Poppins-Regular.ttf);
 }
-/* css */
-body {
-  margin: 0;
-  font-family: Poppins;
-}
-
 nav {
   position: absolute;
   top: 5px;
@@ -197,7 +191,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   width: 632px;
   top: 556px;
   left: calc(25vw - 118px);
-  font-weight: 100;
+  font-weight: 900;
   box-shadow: -2px 2px 8px;
   background-color: white;
   border-radius: 2px;
@@ -220,6 +214,12 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header p .btn {
   font-size: smaller;
+}
+
+/* css */
+body {
+  margin: 0;
+  font-family: Poppins;
 }
 
 /*# sourceMappingURL=app.css.map */
