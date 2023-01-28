@@ -1,11 +1,40 @@
 @import "variables";
 
-/* css */  
+/* css */
 
 body {
     margin: 0;
+    font-family: Poppins;
 }
 
+header {
+    height: 100vh;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 25%;
+        left: 20vw;
+        background-color: $c1;
+        z-index: -1;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 10vh;
+        right: 0;
+        bottom: 0;
+        left: calc(20vw - 231px);
+        background-image: url(../images/header.png);
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    svg {
+        float: right;
+        margin: 15vh 10vw auto auto;
+    }
+}
 @media only Screen and (max-width: 992px) {
-   
 }
