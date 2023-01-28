@@ -44,13 +44,13 @@ body {
     }
     svg {
         position: absolute;
-        top: calc(15% + 300px);
+        top: calc(17% + 300px);
         right: 8vw;
         height: 100px;
         width: 100px;
         @media only Screen and (max-width: 1199px) {
-            height: 66px;
-            width: 66px;
+            height: 60px;
+            width: 60px;
         }
     }
     img {
