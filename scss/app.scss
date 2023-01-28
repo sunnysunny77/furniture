@@ -23,6 +23,7 @@ nav {
         padding: 0;
         display: flex;
         justify-content: space-around;
+        align-items: self-end;
         flex-wrap: wrap;
         li {
             text-align: center;
@@ -112,7 +113,7 @@ nav {
         background-color: $c1;
         background-image: url(../images/div.png);
         background-repeat: repeat-y;
-        background-position: 93% 100%;
+        background-position: 93% 75%;
         z-index: -1;
         @media only Screen and (max-width: 1399px) {
             left: 67vw;
