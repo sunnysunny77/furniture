@@ -61,6 +61,8 @@ body {
     img {
         width: 33vw;
         margin: 33vh auto auto 10vw;
+        border-radius: 5px;
+        border: 1px solid rgba($c3,0.5);
         @media only Screen and (max-width: 1200px) {
             width: 66vw;
             margin-top: 25vh;
