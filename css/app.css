@@ -212,8 +212,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 @media only Screen and (max-width: 575px) {
   #header p {
     position: unset;
-    margin-left: 3.4vw;
-    width: 91.6vw;
+    margin-left: 3.5vw;
+    width: 91.5vw;
     border-radius: 0;
     border-top: none;
   }
