@@ -32,6 +32,9 @@ body {
   bottom: 25%;
   left: 20vw;
   background-color: #064D46;
+  background-image: url(../images/div.png);
+  background-repeat: repeat-y;
+  background-position: 93%;
   z-index: -1;
 }
 @media only Screen and (max-width: 1199px) {
