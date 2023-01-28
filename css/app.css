@@ -180,10 +180,11 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 @media only Screen and (max-width: 575px) {
   #header img {
-    width: 89vw;
-    margin-left: auto;
+    width: 92vw;
+    margin-left: 3vw;
     margin-right: auto;
     margin-top: 185px;
+    border-bottom: none;
   }
 }
 #header .carousel-inner {
@@ -210,10 +211,11 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 @media only Screen and (max-width: 575px) {
   #header p {
-    font-size: smaller;
-    width: 91.5vw;
-    left: 3%;
-    top: calc(28vw + 185px);
+    position: unset;
+    margin-left: 3.4vw;
+    width: 91.6vw;
+    border-radius: 0;
+    border-top: none;
   }
 }
 #header p .btn {

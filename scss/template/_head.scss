@@ -148,10 +148,11 @@ nav {
             margin-left: calc(33vw - 158px);
         }
         @media only Screen and (max-width: 575px) {
-            width: 89vw;
-            margin-left: auto;
+            width: 92vw;
+            margin-left: 3vw;
             margin-right: auto;
             margin-top: 185px;
+            border-bottom: none;
         }
     }
     .carousel-inner {
@@ -174,10 +175,11 @@ nav {
             left: calc(33vw - 118px);
         }
         @media only Screen and (max-width: 575px) {
-            font-size: smaller;
-            width: 91.5vw;
-            left: 3%;
-            top: calc(28vw + 185px);
+          position: unset;
+          margin-left: 3.4vw;
+          width: 91.6vw;
+          border-radius: 0;
+          border-top: none;
         }
         .btn {
             font-size: smaller;
