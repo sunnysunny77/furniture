@@ -10,6 +10,9 @@ body {
 header {
     height: 100vh;
     position: relative;
+    @media only Screen and (max-width: 1200px) {
+        height: 50vh;
+    }
     &::after {
         position: absolute;
         content: "";
@@ -19,6 +22,9 @@ header {
         left: 20vw;
         background-color: $c1;
         z-index: -1;
+        @media only Screen and (max-width: 1200px) {
+            left: 60vw;
+        }
     }
     &::before {
         position: absolute;
@@ -26,15 +32,22 @@ header {
         top: 10vh;
         right: 0;
         bottom: 0;
-        left: calc(20vw - 231px);
+        left: calc(20vw - 150px);
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
+        @media only Screen and (max-width: 1200px) {
+            left: calc(60vw - 101px);
+            background-size: 180px;
+        }
     }
     svg {
         float: right;
         margin: 15vh 10vw auto auto;
+        @media only Screen and (max-width: 1200px) {
+            margin: 25vh 14px auto auto;
+            height: 66px;
+            width: 66px;
+        }
     }
-}
-@media only Screen and (max-width: 992px) {
 }

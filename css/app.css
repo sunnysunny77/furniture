@@ -12,6 +12,11 @@ header {
   height: 100vh;
   position: relative;
 }
+@media only Screen and (max-width: 1200px) {
+  header {
+    height: 50vh;
+  }
+}
 header::after {
   position: absolute;
   content: "";
@@ -22,20 +27,38 @@ header::after {
   background-color: #064D46;
   z-index: -1;
 }
+@media only Screen and (max-width: 1200px) {
+  header::after {
+    left: 60vw;
+  }
+}
 header::before {
   position: absolute;
   content: "";
   top: 10vh;
   right: 0;
   bottom: 0;
-  left: calc(20vw - 231px);
+  left: calc(20vw - 150px);
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   z-index: 0;
 }
+@media only Screen and (max-width: 1200px) {
+  header::before {
+    left: calc(60vw - 101px);
+    background-size: 180px;
+  }
+}
 header svg {
   float: right;
   margin: 15vh 10vw auto auto;
+}
+@media only Screen and (max-width: 1200px) {
+  header svg {
+    margin: 25vh 14px auto auto;
+    height: 66px;
+    width: 66px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
