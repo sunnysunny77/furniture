@@ -9,12 +9,14 @@ body {
 
 #header {
     height: 100vh;
+    min-height: 900px;
     position: relative;
-    @media only Screen and (max-width: 1200px) {
-        height: 85vh;
+    @media only Screen and (max-width: 1199px) {
+        height: 775px;
+        min-height: unset;
     }
-    @media only Screen and (max-width: 768px) {
-        height: 65vh;
+    @media only Screen and (max-width: 767px) {
+        height: 600px;
     }
     &::after {
         position: absolute;
@@ -25,47 +27,48 @@ body {
         left: 20vw;
         background-color: $c1;
         z-index: -1;
-        @media only Screen and (max-width: 1200px) {
+        @media only Screen and (max-width: 1199px) {
             left: 60vw;
         }
     }
     &::before {
         position: absolute;
         content: "";
-        top: 10vh;
+        top: 108px;
         right: 0;
         bottom: 0;
         left: calc(20vw - 150px);
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
-        @media only Screen and (max-width: 1200px) {
+        @media only Screen and (max-width: 1199px) {
+            top: 70px;
             left: calc(60vw - 101px);
             background-size: 180px;
         }
     }
     svg {
         position: absolute;
-        top: 15vh;
+        top: 456px;
         right: 10vw;
-        @media only Screen and (max-width: 1200px) {
-            top: 50vh;
+        @media only Screen and (max-width: 1999px) {
+            top: 456px;
             right: 6vw;
             height: 66px;
             width: 66px;
         }
-        @media only Screen and (max-width: 768px) {
-            top: 37.5vh;
+        @media only Screen and (max-width: 767px) {
+            top: 342px;
         }
     }
     img {
-        width: 33vw;
-        margin: 33vh auto auto 10vw;
+        width: 632px;
+        margin: 356px auto auto 10vw;
         border-radius: 5px;
         border: 1px solid rgba($c3,0.5);
-        @media only Screen and (max-width: 1200px) {
+        @media only Screen and (max-width: 1199px) {
             width: 66vw;
-            margin-top: 25vh;
+            margin-top: 215px;
         }
     }    
 }
