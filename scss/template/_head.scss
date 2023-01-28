@@ -154,16 +154,20 @@ nav {
             margin-top: 185px;
         }
     }
+    .carousel-inner {
+        overflow: visible;
+    }
     p {
         position: absolute;
         width: 632px;
         top: 556px;
         left: calc(25vw - 118px);
         font-weight: 900;
-        box-shadow: -2px 2px 8px;
+        box-shadow: -2px 2px 0px;
         background-color: $c3;
         border-radius: 2px;
         border: 1px solid $c5;
+        z-index: 999;
         @media only Screen and (max-width: 1399px) {
             width: 66vw;
             top: calc(20vw + 215px);

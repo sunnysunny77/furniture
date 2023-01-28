@@ -186,16 +186,20 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
     margin-top: 185px;
   }
 }
+#header .carousel-inner {
+  overflow: visible;
+}
 #header p {
   position: absolute;
   width: 632px;
   top: 556px;
   left: calc(25vw - 118px);
   font-weight: 900;
-  box-shadow: -2px 2px 8px;
+  box-shadow: -2px 2px 0px;
   background-color: white;
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 999;
 }
 @media only Screen and (max-width: 1399px) {
   #header p {
