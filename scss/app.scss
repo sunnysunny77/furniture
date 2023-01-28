@@ -7,37 +7,62 @@ body {
     font-family: Poppins;
 }
 
-#logo {
-    position: absolute;
-    top: 20px;
-}
-
 nav {
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 0;
     left: 0;
+    z-index: 999;
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        color: $c3;
         display: flex;
+        text-align: center;
         justify-content: space-around;
         @media only Screen and (max-width: 1199px) {
-            justify-content: space-evenly;
+            font-size: smaller;
         }
-       li:nth-child(1) {
-        color: $c2;
-       
-       }
-       li:nth-child(2) {
-        color: $c3;
-        @media only Screen and (max-width: 1199px) {
+        svg {
+            color: $c1;
+        }
+        li {
+            width: 33%;
+        }
+        li:nth-child(1) {
+            text-align: left;
+            padding-left: 2%;
+        }
+        li:nth-child(1) a {
             color: $c2;
+            span {
+                color: $c4;
+            }
         }
-       }
- 
+        li:nth-child(1):hover a,
+        li:nth-child(1):focus a,
+        li:nth-child(1):hover a span,
+        li:nth-child(1):focus a span {
+            color: $c1;
+        }
+        li:nth-child(1):hover svg,
+        li:nth-child(1):focus svg{
+            color: $c4;
+        }
+        li:nth-child(2) a {
+            color: $c3;
+            @media only Screen and (max-width: 1199px) {
+                color: $c2;
+            }
+        }
+        li a {
+            color: $c3;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+                color: $c4;
+            }
+        }
     }
 }
 
