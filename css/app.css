@@ -9,32 +9,20 @@ body {
 }
 
 #header {
-  height: 100vh;
-  min-height: 900px;
+  padding-bottom: calc(10% + 300px);
   position: relative;
-}
-@media only Screen and (max-width: 1199px) {
-  #header {
-    height: 775px;
-    min-height: unset;
-  }
-}
-@media only Screen and (max-width: 767px) {
-  #header {
-    height: 600px;
-  }
 }
 #header::after {
   position: absolute;
   content: "";
   top: 0;
   right: 0;
-  bottom: 25%;
+  bottom: 20%;
   left: 20vw;
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
-  background-position: 93%;
+  background-position: 93% 100%;
   z-index: -1;
 }
 @media only Screen and (max-width: 1199px) {
@@ -62,34 +50,62 @@ body {
 }
 #header svg {
   position: absolute;
-  top: 456px;
-  right: 10vw;
+  top: calc(15% + 300px);
+  right: 8vw;
   height: 100px;
   width: 100px;
 }
 @media only Screen and (max-width: 1199px) {
   #header svg {
-    top: 456px;
-    right: 6vw;
     height: 66px;
     width: 66px;
   }
 }
-@media only Screen and (max-width: 767px) {
-  #header svg {
-    top: 342px;
-  }
-}
 #header img {
   width: 632px;
-  margin: 356px auto auto 10vw;
-  border-radius: 5px;
+  height: 100%;
+  margin-top: 356px;
+  margin-left: 10vw;
+  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 @media only Screen and (max-width: 1199px) {
   #header img {
     width: 66vw;
     margin-top: 215px;
+  }
+}
+@media only Screen and (max-width: 575px) {
+  #header img {
+    width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 185px;
+  }
+}
+#header p {
+  position: absolute;
+  width: 632px;
+  top: 556px;
+  left: 13vw;
+  font-weight: 100;
+  box-shadow: -2px 2px 8px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media only Screen and (max-width: 1199px) {
+  #header p {
+    width: 66vw;
+    top: calc(20vw + 215px);
+  }
+}
+@media only Screen and (max-width: 575px) {
+  #header p {
+    font-size: smaller;
+    width: 91vw;
+    left: 3vw;
+    top: calc(28vw + 185px);
   }
 }
 
