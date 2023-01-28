@@ -61,8 +61,10 @@ body {
   position: absolute;
   top: 456px;
   right: 10vw;
+  height: 100px;
+  width: 100px;
 }
-@media only Screen and (max-width: 1999px) {
+@media only Screen and (max-width: 1199px) {
   #header svg {
     top: 456px;
     right: 6vw;
