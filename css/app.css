@@ -15,64 +15,98 @@ nav {
   left: 0;
   z-index: 999;
 }
+@media only Screen and (max-width: 575px) {
+  nav {
+    position: unset;
+    background-color: #064D46;
+  }
+}
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  text-align: center;
   justify-content: space-around;
-}
-nav ul svg {
-  color: #064D46;
+  flex-wrap: wrap;
 }
 nav ul li {
-  width: 33%;
+  text-align: center;
+  width: 37.5%;
+  color: white;
 }
 @media only Screen and (max-width: 1399px) {
   nav ul li {
-    font-size: smaller;
+    width: 33%;
   }
-}
-nav ul li:nth-child(1) {
-  padding-left: 2%;
-  text-align: left;
 }
 @media only Screen and (max-width: 575px) {
-  nav ul li:nth-child(1) {
-    font-size: x-small;
-  }
-}
-nav ul li:nth-child(1) a {
-  color: #060606;
-}
-nav ul li:nth-child(1) a span {
-  color: #FEB221;
-}
-nav ul li:nth-child(1):hover a,
-nav ul li:nth-child(1):focus a,
-nav ul li:nth-child(1):hover a span,
-nav ul li:nth-child(1):focus a span {
-  color: #064D46;
-}
-nav ul li:nth-child(1):hover svg,
-nav ul li:nth-child(1):focus svg {
-  color: #FEB221;
-}
-nav ul li:nth-child(2) a {
-  color: white;
-}
-@media only Screen and (max-width: 1399px) {
-  nav ul li:nth-child(2) a {
-    color: #060606;
+  nav ul li {
+    width: 50%;
+    text-align: left;
+    padding: 2%;
   }
 }
 nav ul li a {
-  color: white;
   text-decoration: none;
+  color: inherit;
+}
+@media only Screen and (max-width: 575px) {
+  nav ul li a {
+    color: white;
+  }
 }
 nav ul li a:hover, nav ul li a:focus {
   color: #FEB221;
+}
+nav ul li:nth-child(1) {
+  font-size: smaller;
+  padding-left: 2%;
+}
+nav ul li:nth-child(1) svg {
+  color: #064D46;
+}
+@media only Screen and (max-width: 575px) {
+  nav ul li:nth-child(1) svg {
+    color: #FEB221;
+  }
+}
+nav ul li:nth-child(1) {
+  color: #060606;
+}
+nav ul li:nth-child(1) span {
+  color: #FEB221;
+}
+nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
+  color: unset;
+}
+@media only Screen and (max-width: 575px) {
+  nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
+    color: white;
+  }
+}
+nav ul li:nth-child(2) {
+  color: #060606;
+}
+nav ul li:nth-child(3) {
+  color: white;
+}
+@media only Screen and (max-width: 1399px) {
+  nav ul li:nth-child(3) {
+    color: #060606;
+  }
+}
+nav ul li:nth-child(1), nav ul li:nth-child(2) {
+  width: 12.5%;
+}
+@media only Screen and (max-width: 1399px) {
+  nav ul li:nth-child(1), nav ul li:nth-child(2) {
+    width: 17%;
+  }
+}
+@media only Screen and (max-width: 575px) {
+  nav ul li:nth-child(1), nav ul li:nth-child(2) {
+    width: 50%;
+  }
 }
 
 #header {

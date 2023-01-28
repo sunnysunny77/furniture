@@ -13,57 +13,81 @@ nav {
     right: 0;
     left: 0;
     z-index: 999;
+    @media only Screen and (max-width: 575px) {
+        position: unset;
+        background-color: $c1;
+    }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
-        text-align: center;
         justify-content: space-around;
-        svg {
-            color: $c1;
-        }
+        flex-wrap: wrap;
         li {
-            width: 33%;
-            @media only Screen and (max-width: 1399px) {
-                font-size: smaller;
-            }
-        }
-        li:nth-child(1) {
-            padding-left: 2%;
-            text-align: left;
-            @media only Screen and (max-width: 575px) {
-                font-size: x-small;
-            }
-        }
-        li:nth-child(1) a {
-            color: $c2;
-            span {
-                color: $c4;
-            }
-        }
-        li:nth-child(1):hover a,
-        li:nth-child(1):focus a,
-        li:nth-child(1):hover a span,
-        li:nth-child(1):focus a span {
-            color: $c1;
-        }
-        li:nth-child(1):hover svg,
-        li:nth-child(1):focus svg{
-            color: $c4;
-        }
-        li:nth-child(2) a {
+            text-align: center;
+            width: 37.5%;
             color: $c3;
             @media only Screen and (max-width: 1399px) {
+                width: 33%;
+            }
+            @media only Screen and (max-width: 575px) {
+                width: 50%;
+                text-align: left;
+                padding: 2%;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                @media only Screen and (max-width: 575px) {
+                    color: $c3;
+                }
+                &:hover,
+                &:focus {
+                    color: $c4;
+                }
+            }
+            &:nth-child(1) {
+                font-size: smaller;
+                padding-left: 2%;
+                svg {
+                    color: $c1;
+                    @media only Screen and (max-width: 575px) {
+                        color: $c4;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                color: $c2;
+                span {
+                    color: $c4;
+                }
+            }
+            &:nth-child(1) a:hover,
+            &:nth-child(1) a:focus{
+                color: unset;
+                @media only Screen and (max-width: 575px) {
+                    color: $c3;
+                }
+            }
+            &:nth-child(2) {
                 color: $c2;
             }
-        }
-        li a {
-            color: $c3;
-            text-decoration: none;
-            &:hover,
-            &:focus {
-                color: $c4;
+            &:nth-child(3) {
+                color: $c3;
+                @media only Screen and (max-width: 1399px) {
+                    color: $c2;
+                }
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 12.5%;
+                @media only Screen and (max-width: 1399px) {
+                    width: 17%;
+                }
+                @media only Screen and (max-width: 575px) {
+                    width: 50%;
+                }
             }
         }
     }
