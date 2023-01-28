@@ -8,16 +8,16 @@ body {
   font-family: Poppins;
 }
 
-header {
+#header {
   height: 100vh;
   position: relative;
 }
 @media only Screen and (max-width: 1200px) {
-  header {
+  #header {
     height: 50vh;
   }
 }
-header::after {
+#header::after {
   position: absolute;
   content: "";
   top: 0;
@@ -28,11 +28,11 @@ header::after {
   z-index: -1;
 }
 @media only Screen and (max-width: 1200px) {
-  header::after {
+  #header::after {
     left: 60vw;
   }
 }
-header::before {
+#header::before {
   position: absolute;
   content: "";
   top: 10vh;
@@ -44,17 +44,17 @@ header::before {
   z-index: 0;
 }
 @media only Screen and (max-width: 1200px) {
-  header::before {
+  #header::before {
     left: calc(60vw - 101px);
     background-size: 180px;
   }
 }
-header svg {
+#header svg {
   float: right;
   margin: 15vh 10vw auto auto;
 }
 @media only Screen and (max-width: 1200px) {
-  header svg {
+  #header svg {
     margin: 25vh 14px auto auto;
     height: 66px;
     width: 66px;
