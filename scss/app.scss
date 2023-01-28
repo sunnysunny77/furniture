@@ -7,6 +7,40 @@ body {
     font-family: Poppins;
 }
 
+#logo {
+    position: absolute;
+    top: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: $c3;
+        display: flex;
+        justify-content: space-around;
+        @media only Screen and (max-width: 1199px) {
+            justify-content: space-evenly;
+        }
+       li:nth-child(1) {
+        color: $c2;
+       
+       }
+       li:nth-child(2) {
+        color: $c3;
+        @media only Screen and (max-width: 1199px) {
+            color: $c2;
+        }
+       }
+ 
+    }
+}
+
 #header {
     padding-bottom: calc(10% + 300px);
     position: relative;
@@ -59,7 +93,7 @@ body {
         margin-top: 356px;
         margin-left: 10vw;
         border-radius: 2px;
-        border: 1px solid rgba($c3,0.5);
+        border: 1px solid rgba($c3, 0.5);
         @media only Screen and (max-width: 1199px) {
             width: 66vw;
             margin-top: 215px;
@@ -70,7 +104,7 @@ body {
             margin-right: auto;
             margin-top: 185px;
         }
-    }  
+    }
     p {
         position: absolute;
         width: 632px;
@@ -80,7 +114,7 @@ body {
         box-shadow: -2px 2px 8px;
         background-color: $c3;
         border-radius: 2px;
-        border: 1px solid rgba($c3,0.5);
+        border: 1px solid rgba($c3, 0.5);
         @media only Screen and (max-width: 1199px) {
             width: 66vw;
             top: calc(20vw + 215px);
@@ -93,4 +127,3 @@ body {
         }
     }
 }
-

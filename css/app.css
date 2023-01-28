@@ -8,6 +8,42 @@ body {
   font-family: Poppins;
 }
 
+#logo {
+  position: absolute;
+  top: 20px;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+@media only Screen and (max-width: 1199px) {
+  nav ul {
+    justify-content: space-evenly;
+  }
+}
+nav ul li:nth-child(1) {
+  color: #060606;
+}
+nav ul li:nth-child(2) {
+  color: white;
+}
+@media only Screen and (max-width: 1199px) {
+  nav ul li:nth-child(2) {
+    color: #060606;
+  }
+}
+
 #header {
   padding-bottom: calc(10% + 300px);
   position: relative;
