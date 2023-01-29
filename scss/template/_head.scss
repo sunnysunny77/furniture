@@ -56,7 +56,7 @@ nav {
                 }
             }
             &:nth-child(1) a:hover,
-            &:nth-child(1) a:focus{
+            &:nth-child(1) a:focus {
                 color: unset;
                 @media only Screen and (max-width: 575px) {
                     color: $c3;
@@ -86,14 +86,7 @@ nav {
 }
 
 #header {
-    padding-bottom: 12.5%;
     position: relative;
-    @media only Screen and (max-width: 1399px) {
-        padding-bottom: 25%;
-    }
-    @media only Screen and (max-width: 575px) {
-        padding-bottom: 50%;
-    }
     &::after {
         position: absolute;
         content: "";
@@ -127,9 +120,9 @@ nav {
         }
     }
     svg {
-        position: absolute;
-        top: calc(66% + 60px);
+        position: absolute;  
         right: 6%;
+        bottom: 6%;
         width: 7.5%;
         height: 13%;
         min-width: 60px;
@@ -155,13 +148,17 @@ nav {
             border-bottom: none;
         }
     }
-    .carousel-inner {
-        overflow: visible;
+    .carousel {
+        padding-bottom: 130px;
+
+        .carousel-inner {
+            overflow: visible;
+        }
     }
     p {
-        position: absolute;
+        position: relative;
         width: 632px;
-        top: 556px;
+        top: -3vh;
         left: calc(25vw - 118px);
         font-weight: 900;
         box-shadow: -2px 2px 0px;
@@ -171,15 +168,14 @@ nav {
         z-index: 999;
         @media only Screen and (max-width: 1399px) {
             width: 66vw;
-            top: calc(20vw + 215px);
             left: calc(33vw - 118px);
         }
         @media only Screen and (max-width: 575px) {
-          position: unset;
-          margin-left: 3.5vw;
-          width: 91.5vw;
-          border-radius: 0;
-          border-top: none;
+            position: unset;
+            margin-left: 3.5vw;
+            width: 91.5vw;
+            border-radius: 0;
+            border-top: none;
         }
         .btn {
             font-size: smaller;

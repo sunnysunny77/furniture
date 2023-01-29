@@ -105,18 +105,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 
 #header {
-  padding-bottom: 12.5%;
   position: relative;
-}
-@media only Screen and (max-width: 1399px) {
-  #header {
-    padding-bottom: 25%;
-  }
-}
-@media only Screen and (max-width: 575px) {
-  #header {
-    padding-bottom: 50%;
-  }
 }
 #header::after {
   position: absolute;
@@ -156,8 +145,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header svg {
   position: absolute;
-  top: calc(66% + 60px);
   right: 6%;
+  bottom: 6%;
   width: 7.5%;
   height: 13%;
   min-width: 60px;
@@ -187,13 +176,16 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
     border-bottom: none;
   }
 }
-#header .carousel-inner {
+#header .carousel {
+  padding-bottom: 130px;
+}
+#header .carousel .carousel-inner {
   overflow: visible;
 }
 #header p {
-  position: absolute;
+  position: relative;
   width: 632px;
-  top: 556px;
+  top: -3vh;
   left: calc(25vw - 118px);
   font-weight: 900;
   box-shadow: -2px 2px 0px;
@@ -205,7 +197,6 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 @media only Screen and (max-width: 1399px) {
   #header p {
     width: 66vw;
-    top: calc(20vw + 215px);
     left: calc(33vw - 118px);
   }
 }
