@@ -57,6 +57,9 @@ nav ul li:nth-child(1) {
   font-size: smaller;
   padding-left: 2%;
 }
+nav ul li:nth-child(1) h1 {
+  font-size: inherit;
+}
 nav ul li:nth-child(1) svg {
   color: #064D46;
 }
@@ -211,6 +214,13 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header p .btn {
   font-size: smaller;
+}
+
+main section p {
+  color: #9BA1AC;
+}
+main section img {
+  width: 50%;
 }
 
 /* css */

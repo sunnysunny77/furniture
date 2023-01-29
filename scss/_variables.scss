@@ -3,10 +3,12 @@ $c2: #060606;
 $c3: white;
 $c4: #FEB221;
 $c5 :rgba($c3, 0.5);
+$c6: #9BA1AC;
 
 @font-face {
     font-family: Poppins;
     src: url(./Poppins-Regular.ttf);
   }
 
-  @import "template/head"
+  @import "template/head";
+  @import "template/main";
