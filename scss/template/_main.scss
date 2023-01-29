@@ -1,8 +1,35 @@
-main section {
-    p {
-        color: $c6;
+main {
+    section:nth-child(1) {
+        p {
+            color: $c6;
+        }
+        img {
+            width: 45%;
+        }
     }
-    img {
-        width: 45%;
+    section:nth-child(2) {
+        position: relative; 
+        color: $c3;
+        h2 {
+            @media only Screen and (min-width: 576px) {
+               max-width: 200px;
+            }  
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 25vw;
+            bottom: 0;
+            left: 0;
+            background-color: $c1;
+            background-image: url(../images/div.png);
+            background-repeat: repeat-y;
+            background-position: 3% 75%;
+            z-index: -1;
+            @media only Screen and (max-width: 575px) {
+                right: 0;
+            }
+        }
     }
 }

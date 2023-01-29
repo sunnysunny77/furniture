@@ -216,11 +216,38 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   font-size: smaller;
 }
 
-main section p {
+main section:nth-child(1) p {
   color: #9BA1AC;
 }
-main section img {
+main section:nth-child(1) img {
   width: 45%;
+}
+main section:nth-child(2) {
+  position: relative;
+  color: white;
+}
+@media only Screen and (min-width: 576px) {
+  main section:nth-child(2) h2 {
+    max-width: 200px;
+  }
+}
+main section:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 25vw;
+  bottom: 0;
+  left: 0;
+  background-color: #064D46;
+  background-image: url(../images/div.png);
+  background-repeat: repeat-y;
+  background-position: 3% 75%;
+  z-index: -1;
+}
+@media only Screen and (max-width: 575px) {
+  main section:nth-child(2)::after {
+    right: 0;
+  }
 }
 
 /* css */
