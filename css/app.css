@@ -230,31 +230,46 @@ main section:nth-child(2) h2 {
   font-size: larger;
   font-weight: 900;
 }
-@media only Screen and (min-width: 768px) {
-  main section:nth-child(2) h2 {
-    max-width: 225px;
-  }
-}
-main section:nth-child(2) img {
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 10% auto;
+main section:nth-child(2) span {
+  display: inline-block;
   width: 75%;
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(2) img {
-    width: 27.6%;
+  main section:nth-child(2) span {
     margin-left: 5vw;
+    width: 25%;
   }
 }
 @media only Screen and (min-width: 1400px) {
-  main section:nth-child(2) img {
-    object-position: center;
-    object-fit: cover;
-    height: 450px;
+  main section:nth-child(2) span {
     width: 20%;
     margin-left: 7.5vw;
   }
+}
+main section:nth-child(2) span img {
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+@media only Screen and (min-width: 1400px) {
+  main section:nth-child(2) span img {
+    object-position: center;
+    object-fit: cover;
+    height: 450px;
+  }
+}
+main section:nth-child(2) span p {
+  background-color: white;
+  color: #060606;
+  font-weight: 900;
+  width: 66%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 2.5vh;
+  right: 3vh;
+  justify-content: center;
 }
 main section:nth-child(2)::after {
   position: absolute;
