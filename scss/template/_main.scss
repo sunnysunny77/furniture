@@ -37,6 +37,9 @@ main {
                     object-fit: cover;
                     height: 400px;
                 }
+                @media only Screen and (max-width: 767px) {
+                    border-bottom: unset;
+                }
             }
             a {
                 text-decoration: none;
@@ -67,6 +70,7 @@ main {
                     @media only Screen and (max-width: 767px) {
                         box-shadow: none;
                         right: unset;
+                        bottom: unset;
                     }
                     span {
                         transition: background-color 1s;

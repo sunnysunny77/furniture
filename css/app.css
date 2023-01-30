@@ -269,6 +269,11 @@ main section:nth-child(2) span img {
     height: 400px;
   }
 }
+@media only Screen and (max-width: 767px) {
+  main section:nth-child(2) span img {
+    border-bottom: unset;
+  }
+}
 main section:nth-child(2) span a {
   text-decoration: none;
 }
@@ -299,6 +304,7 @@ main section:nth-child(2) span a p {
   main section:nth-child(2) span a p {
     box-shadow: none;
     right: unset;
+    bottom: unset;
   }
 }
 main section:nth-child(2) span a p span {
