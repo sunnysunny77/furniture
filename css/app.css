@@ -259,8 +259,10 @@ main section:nth-child(2) span img {
   }
 }
 main section:nth-child(2) span p {
-  background-color: white;
-  color: #060606;
+  background-color: #060606;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   font-weight: 900;
   width: 66%;
   height: 5vh;

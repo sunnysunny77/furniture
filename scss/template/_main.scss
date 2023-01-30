@@ -36,8 +36,10 @@ main {
                 }
             }
             p {
-                background-color: $c3;
-                color: $c2;
+                background-color: $c2;
+                color: $c3;
+                border-radius: 2px;
+                border: 1px solid $c5;
                 font-weight: 900;
                 width: 66%;
                 height: 5vh;
