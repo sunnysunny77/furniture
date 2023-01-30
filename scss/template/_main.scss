@@ -8,13 +8,31 @@ main {
         }
     }
     section:nth-child(2) {
-        position: relative; 
+        position: relative;
         color: $c3;
         h2 {
             font-size: larger;
-            @media only Screen and (min-width: 576px) {
-               max-width: 225px;
-            }  
+            font-weight: 900;
+            @media only Screen and (min-width: 768px) {
+                max-width: 225px;
+            }
+        }
+        img {
+            border-radius: 2px;
+            border: 1px solid $c5;
+            margin: 10% auto;
+            width: 75%;
+            @media only Screen and (min-width: 768px) {
+                width: 27.6%;
+                margin-left: 5vw;
+            }
+            @media only Screen and (min-width: 1400px) {
+                object-position: center;
+                object-fit: cover;
+                height: 450px;
+                width: 20%;
+                margin-left: 7.5vw;
+            }
         }
         &::after {
             position: absolute;
@@ -28,7 +46,10 @@ main {
             background-repeat: repeat-y;
             background-position: 3% 75%;
             z-index: -1;
-            @media only Screen and (max-width: 575px) {
+            @media only Screen and (max-width: 1399px) {
+                right: 10vw;
+            }
+            @media only Screen and (max-width: 767px) {
                 right: 0;
             }
         }
