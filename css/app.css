@@ -226,9 +226,12 @@ main section:nth-child(2) {
   position: relative;
   color: white;
 }
+main section:nth-child(2) h2 {
+  font-size: larger;
+}
 @media only Screen and (min-width: 576px) {
   main section:nth-child(2) h2 {
-    max-width: 200px;
+    max-width: 225px;
   }
 }
 main section:nth-child(2)::after {
