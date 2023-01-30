@@ -51,7 +51,7 @@ nav ul li a {
   }
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: #ffc107;
+  color: #F8BA00;
 }
 nav ul li:nth-child(1) {
   font-size: smaller;
@@ -65,14 +65,14 @@ nav ul li:nth-child(1) svg {
 }
 @media only Screen and (max-width: 575px) {
   nav ul li:nth-child(1) svg {
-    color: #ffc107;
+    color: #F8BA00;
   }
 }
 nav ul li:nth-child(1) {
   color: #060606;
 }
 nav ul li:nth-child(1) span {
-  color: #ffc107;
+  color: #F8BA00;
 }
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
   color: unset;
@@ -214,18 +214,18 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header p button {
   font-size: smaller;
-  background-color: #ffc107;
+  background-color: #F8BA00;
   color: white;
   transition: background-color 1s;
   border: none;
 }
 #header p button:hover, #header p button:focus {
   background-color: #060606;
-  color: #ffc107;
+  color: #F8BA00;
 }
 
 main section:nth-child(1) p {
-  color: #9BA1AC;
+  color: #535964;
 }
 main section:nth-child(1) img {
   width: 45%;
@@ -274,7 +274,7 @@ main section:nth-child(2) span a {
 }
 main section:nth-child(2) span a:hover p, main section:nth-child(2) span a:focus p {
   background-color: #060606;
-  color: #ffc107;
+  color: #F8BA00;
 }
 main section:nth-child(2) span a:hover p span, main section:nth-child(2) span a:focus p span {
   background-color: #060606;
@@ -305,7 +305,7 @@ main section:nth-child(2) span a p span {
   background-color: white;
   margin: 0;
   width: unset;
-  color: #9BA1AC;
+  color: #535964;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
