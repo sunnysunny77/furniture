@@ -177,6 +177,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
     margin-right: auto;
     margin-top: 185px;
     border-bottom: none;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
   }
 }
 #header .carousel {
