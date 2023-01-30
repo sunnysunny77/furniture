@@ -51,7 +51,7 @@ nav ul li a {
   }
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: #FEB221;
+  color: #ffc107;
 }
 nav ul li:nth-child(1) {
   font-size: smaller;
@@ -65,14 +65,14 @@ nav ul li:nth-child(1) svg {
 }
 @media only Screen and (max-width: 575px) {
   nav ul li:nth-child(1) svg {
-    color: #FEB221;
+    color: #ffc107;
   }
 }
 nav ul li:nth-child(1) {
   color: #060606;
 }
 nav ul li:nth-child(1) span {
-  color: #FEB221;
+  color: #ffc107;
 }
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
   color: unset;
@@ -259,7 +259,7 @@ main section:nth-child(2) span img {
   }
 }
 main section:nth-child(2) span p {
-  background-color: #060606;
+  background-color: #ffc107;
   color: white;
   border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
