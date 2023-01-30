@@ -240,14 +240,14 @@ main section:nth-child(2) h2 {
 }
 main section:nth-child(2) span {
   display: inline-block;
-  width: 79%;
+  width: 97%;
   margin-bottom: 3vh;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span {
     margin-left: 5vw;
     margin-bottom: 10vh;
-    width: 26%;
+    width: 27%;
   }
 }
 @media only Screen and (min-width: 1400px) {
@@ -292,12 +292,13 @@ main section:nth-child(2) span a p {
   box-shadow: 2px 2px 2px #060606;
   bottom: 2.5vh;
   text-align: left;
-  right: 2vh;
+  right: 1.5vw;
   padding: 4%;
 }
 @media only Screen and (max-width: 767px) {
   main section:nth-child(2) span a p {
     box-shadow: none;
+    right: unset;
   }
 }
 main section:nth-child(2) span a p span {

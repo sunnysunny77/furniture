@@ -16,12 +16,12 @@ main {
         }
         span {
             display: inline-block;
-            width: 79%;
+            width: 97%;
             margin-bottom: 3vh;
             @media only Screen and (min-width: 768px) {
                 margin-left: 5vw;
                 margin-bottom: 10vh;
-                width: 26%;
+                width: 27%;
             }
             @media only Screen and (min-width: 1400px) {
                 width: 20%;
@@ -62,10 +62,11 @@ main {
                     box-shadow: 2px 2px 2px $c2;
                     bottom: 2.5vh;
                     text-align: left;
-                    right: 2vh;
+                    right: 1.5vw;
                     padding: 4%;
                     @media only Screen and (max-width: 767px) {
                         box-shadow: none;
+                        right: unset;
                     }
                     span {
                         transition: background-color 1s;
