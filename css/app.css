@@ -272,6 +272,8 @@ main section:nth-child(2) span img {
 @media only Screen and (max-width: 767px) {
   main section:nth-child(2) span img {
     border-bottom: unset;
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
   }
 }
 main section:nth-child(2) span a {
@@ -305,6 +307,8 @@ main section:nth-child(2) span a p {
     box-shadow: none;
     right: unset;
     bottom: unset;
+    border-top-right-radius: unset;
+    border-top-left-radius: unset;
   }
 }
 main section:nth-child(2) span a p span {

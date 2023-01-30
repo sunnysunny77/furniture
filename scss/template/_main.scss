@@ -39,6 +39,8 @@ main {
                 }
                 @media only Screen and (max-width: 767px) {
                     border-bottom: unset;
+                    border-bottom-right-radius: unset;
+                    border-bottom-left-radius: unset;
                 }
             }
             a {
@@ -71,6 +73,8 @@ main {
                         box-shadow: none;
                         right: unset;
                         bottom: unset;
+                        border-top-right-radius: unset;
+                        border-top-left-radius: unset;
                     }
                     span {
                         transition: background-color 1s;
