@@ -179,8 +179,17 @@ nav {
             border-radius: 0;
             border: none;
         }
-        .btn {
+        button {
             font-size: smaller;
+            background-color: $c4;
+            color: $c3;
+            transition: background-color 1s;
+            border: none;
+            &:hover ,
+            &:focus {
+                background-color: $c2;
+                color: $c4;
+            }
         }
     }
 }

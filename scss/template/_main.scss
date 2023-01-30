@@ -16,14 +16,17 @@ main {
         }
         span {
             display: inline-block;
-            width: 75%;
+            width: 79%;
+            margin-bottom: 3vh;
             @media only Screen and (min-width: 768px) {
                 margin-left: 5vw;
-                width: 25%;
+                margin-bottom: 10vh;
+                width: 26%;
             }
             @media only Screen and (min-width: 1400px) {
                 width: 20%;
-                margin-left: 7.5vw;
+                margin-left: 7.6vw;
+                margin-bottom: 15vh;
             }
             img {
                 border-radius: 2px;
@@ -32,23 +35,52 @@ main {
                 @media only Screen and (min-width: 1400px) {
                     object-position: center;
                     object-fit: cover;
-                    height: 450px;
+                    height: 400px;
                 }
             }
-            p {
-                background-color: $c4;
-                color: $c3;
-                border-radius: 2px;
-                border: 1px solid $c5;
-                font-weight: 900;
-                width: 66%;
-                height: 5vh;
-                display: flex;
-                align-items: center;
-                position: relative;
-                bottom: 2.5vh;
-                right: 3vh;
-                justify-content: center;
+            a {
+                text-decoration: none;
+                &:hover p,
+                &:focus p {
+                    background-color: $c2;
+                    color: $c4;
+                }
+                &:hover p span,
+                &:focus p span {
+                    background-color: $c2;
+                    color: $c3;
+                }
+                p {
+                    transition: background-color 1s;
+                    background-color: $c3;
+                    color: $c2;
+                    border-radius: 2px;
+                    font-weight: 900;
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    box-shadow: 2px 2px 2px $c2;
+                    bottom: 2.5vh;
+                    text-align: left;
+                    right: 2vh;
+                    padding: 4%;
+                    @media only Screen and (max-width: 767px) {
+                        box-shadow: none;
+                    }
+                    span {
+                        transition: background-color 1s;
+                        background-color: $c3;
+                        margin: 0;
+                        width: unset;
+                        color: $c6;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        svg {
+                            margin: 0 5%;
+                        }
+                    }
+                }
             }
         }
         &::after {

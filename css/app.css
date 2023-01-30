@@ -212,8 +212,16 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
     border: none;
   }
 }
-#header p .btn {
+#header p button {
   font-size: smaller;
+  background-color: #ffc107;
+  color: white;
+  transition: background-color 1s;
+  border: none;
+}
+#header p button:hover, #header p button:focus {
+  background-color: #060606;
+  color: #ffc107;
 }
 
 main section:nth-child(1) p {
@@ -232,18 +240,21 @@ main section:nth-child(2) h2 {
 }
 main section:nth-child(2) span {
   display: inline-block;
-  width: 75%;
+  width: 79%;
+  margin-bottom: 3vh;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span {
     margin-left: 5vw;
-    width: 25%;
+    margin-bottom: 10vh;
+    width: 26%;
   }
 }
 @media only Screen and (min-width: 1400px) {
   main section:nth-child(2) span {
     width: 20%;
-    margin-left: 7.5vw;
+    margin-left: 7.6vw;
+    margin-bottom: 15vh;
   }
 }
 main section:nth-child(2) span img {
@@ -255,23 +266,52 @@ main section:nth-child(2) span img {
   main section:nth-child(2) span img {
     object-position: center;
     object-fit: cover;
-    height: 450px;
+    height: 400px;
   }
 }
-main section:nth-child(2) span p {
-  background-color: #ffc107;
+main section:nth-child(2) span a {
+  text-decoration: none;
+}
+main section:nth-child(2) span a:hover p, main section:nth-child(2) span a:focus p {
+  background-color: #060606;
+  color: #ffc107;
+}
+main section:nth-child(2) span a:hover p span, main section:nth-child(2) span a:focus p span {
+  background-color: #060606;
   color: white;
+}
+main section:nth-child(2) span a p {
+  transition: background-color 1s;
+  background-color: white;
+  color: #060606;
   border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
   font-weight: 900;
-  width: 66%;
-  height: 5vh;
   display: flex;
-  align-items: center;
   position: relative;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px #060606;
   bottom: 2.5vh;
-  right: 3vh;
-  justify-content: center;
+  text-align: left;
+  right: 2vh;
+  padding: 4%;
+}
+@media only Screen and (max-width: 767px) {
+  main section:nth-child(2) span a p {
+    box-shadow: none;
+  }
+}
+main section:nth-child(2) span a p span {
+  transition: background-color 1s;
+  background-color: white;
+  margin: 0;
+  width: unset;
+  color: #9BA1AC;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+main section:nth-child(2) span a p span svg {
+  margin: 0 5%;
 }
 main section:nth-child(2)::after {
   position: absolute;
