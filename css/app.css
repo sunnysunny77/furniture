@@ -120,12 +120,17 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
-  background-position: 93% 75%;
+  background-position: 95% 75%;
   z-index: -1;
 }
 @media only Screen and (max-width: 1399px) {
   #header::after {
     left: 67vw;
+  }
+}
+@media only Screen and (max-width: 575px) {
+  #header::after {
+    left: 60vw;
   }
 }
 #header::before {
@@ -141,9 +146,15 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 @media only Screen and (max-width: 1399px) {
   #header::before {
-    top: 70px;
+    top: 90px;
     left: calc(67vw - 85px);
     background-size: 150px;
+  }
+}
+@media only Screen and (max-width: 575px) {
+  #header::before {
+    left: calc(60vw - 85px);
+    top: 50px;
   }
 }
 #header svg {
@@ -172,9 +183,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 @media only Screen and (max-width: 575px) {
   #header img {
-    width: 92vw;
-    margin-left: 3vw;
-    margin-right: auto;
+    width: 90%;
+    margin: auto 5%;
     margin-top: 185px;
     border-bottom: none;
     border-bottom-right-radius: unset;
@@ -208,8 +218,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 @media only Screen and (max-width: 575px) {
   #header p {
     position: unset;
-    margin-left: 3.5vw;
-    width: 91.5vw;
+    margin: auto 5%;
+    width: 90%;
     border-radius: 0;
     border: none;
   }
@@ -336,7 +346,7 @@ main section:nth-child(2)::after {
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
-  background-position: 3% 75%;
+  background-position: 2.5% 75%;
   z-index: -1;
 }
 @media only Screen and (max-width: 1399px) {

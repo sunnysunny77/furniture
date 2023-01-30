@@ -100,10 +100,13 @@ nav {
         background-color: $c1;
         background-image: url(../images/div.png);
         background-repeat: repeat-y;
-        background-position: 93% 75%;
+        background-position: 95% 75%;
         z-index: -1;
         @media only Screen and (max-width: 1399px) {
             left: 67vw;
+        }
+        @media only Screen and (max-width: 575px) {
+            left: 60vw;
         }
     }
     &::before {
@@ -117,9 +120,13 @@ nav {
         background-repeat: no-repeat;
         z-index: 0;
         @media only Screen and (max-width: 1399px) {
-            top: 70px;
+            top: 90px;
             left: calc(67vw - 85px);
             background-size: 150px;
+        }
+        @media only Screen and (max-width: 575px) {
+            left: calc(60vw - 85px);
+            top: 50px;
         }
     }
     svg {
@@ -144,9 +151,8 @@ nav {
             margin-left: calc(33vw - 158px);
         }
         @media only Screen and (max-width: 575px) {
-            width: 92vw;
-            margin-left: 3vw;
-            margin-right: auto;
+            width: 90%;
+          margin: auto 5%;
             margin-top: 185px;
             border-bottom: none;
             border-bottom-right-radius: unset;
@@ -176,8 +182,8 @@ nav {
         }
         @media only Screen and (max-width: 575px) {
             position: unset;
-            margin-left: 3.5vw;
-            width: 91.5vw;
+            margin: auto 5%;
+            width: 90%;
             border-radius: 0;
             border: none;
         }
