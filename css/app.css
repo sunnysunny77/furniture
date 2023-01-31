@@ -266,8 +266,11 @@ main section:nth-child(2) span {
   }
 }
 main section:nth-child(2) span img {
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
   width: 100%;
 }
 @media only Screen and (min-width: 1400px) {
@@ -277,11 +280,11 @@ main section:nth-child(2) span img {
     height: 400px;
   }
 }
-@media only Screen and (max-width: 767px) {
+@media only Screen and (min-width: 768px) {
   main section:nth-child(2) span img {
-    border-bottom: unset;
-    border-bottom-right-radius: unset;
-    border-bottom-left-radius: unset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
   }
 }
 main section:nth-child(2) span a {

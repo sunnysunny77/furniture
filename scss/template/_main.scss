@@ -29,18 +29,21 @@ main {
                 margin-bottom: 15vh;
             }
             img {
-                border-radius: 2px;
-                border: 1px solid $c5;
+                border-top-right-radius: 2px;
+                border-top-left-radius: 2px;
+                border-top: 1px solid $c5;
+                border-left: 1px solid $c5;
+                border-right: 1px solid $c5;
                 width: 100%;
                 @media only Screen and (min-width: 1400px) {
                     object-position: center;
                     object-fit: cover;
                     height: 400px;
                 }
-                @media only Screen and (max-width: 767px) {
-                    border-bottom: unset;
-                    border-bottom-right-radius: unset;
-                    border-bottom-left-radius: unset;
+                @media only Screen and (min-width: 768px) {
+                    border-bottom: 1px solid $c5;
+                    border-bottom-right-radius: 2px;
+                    border-bottom-left-radius: 2px;
                 }
             }
             a {
