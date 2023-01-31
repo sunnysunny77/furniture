@@ -59,23 +59,21 @@ main {
                     transition: background-color 1s;
                     background-color: $c3;
                     color: $c2;
-                    border-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    border-bottom-left-radius: 2px;
                     font-weight: 900;
+                    text-align: left;
+                    padding: 4%;
                     display: flex;
-                    position: relative;
                     flex-direction: column;
                     justify-content: space-between;
-                    box-shadow: 2px 2px 2px $c2;
-                    bottom: 2.5vh;
-                    text-align: left;
-                    right: 1.5vw;
-                    padding: 4%;
-                    @media only Screen and (max-width: 767px) {
-                        box-shadow: none;
-                        right: unset;
-                        bottom: unset;
-                        border-top-right-radius: unset;
-                        border-top-left-radius: unset;
+                    @media only Screen and (min-width: 768px) {
+                        box-shadow: 2px 2px 2px $c2;
+                        border-top-right-radius: 2px;
+                        border-top-left-radius: 2px;
+                        position: relative;
+                        bottom: 2.5vh;
+                        right: 1.5vw;
                     }
                     span {
                         transition: background-color 1s;
@@ -99,7 +97,7 @@ main {
             position: absolute;
             content: "";
             top: 0;
-            right: 25vw;
+            right: 0;
             bottom: 0;
             left: 0;
             background-color: $c1;
@@ -107,12 +105,13 @@ main {
             background-repeat: repeat-y;
             background-position: 2.5% 75%;
             z-index: -1;
-            @media only Screen and (max-width: 1399px) {
+            @media only Screen and (min-width: 768px) { 
                 right: 10vw;
             }
-            @media only Screen and (max-width: 767px) {
-                right: 0;
+            @media only Screen and (min-width: 1400px) {
+                right: 25vw;
             }
+           
         }
     }
 }
