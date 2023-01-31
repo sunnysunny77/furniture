@@ -64,6 +64,7 @@ main {
                     display: flex;
                     position: relative;
                     flex-direction: column;
+                    justify-content: space-between;
                     box-shadow: 2px 2px 2px $c2;
                     bottom: 2.5vh;
                     text-align: left;

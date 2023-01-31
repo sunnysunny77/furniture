@@ -308,6 +308,7 @@ main section:nth-child(2) span a p {
   display: flex;
   position: relative;
   flex-direction: column;
+  justify-content: space-between;
   box-shadow: 2px 2px 2px #060606;
   bottom: 2.5vh;
   text-align: left;
