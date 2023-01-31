@@ -200,7 +200,6 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   overflow: visible;
 }
 #header p {
-  font-weight: 900;
   box-shadow: -2px 2px 0px;
   background-color: white;
 }
@@ -241,7 +240,6 @@ main section:nth-child(2) {
 }
 main section:nth-child(2) h2 {
   font-size: larger;
-  font-weight: 900;
 }
 main section:nth-child(2) span {
   display: inline-block;
@@ -301,7 +299,6 @@ main section:nth-child(2) span a p {
   color: #060606;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
-  font-weight: 900;
   text-align: left;
   padding: 4%;
   display: flex;
