@@ -17,16 +17,16 @@ main {
         span {
             display: inline-block;
             width: 97%;
-            margin-bottom: 3vh;
+            margin-bottom: 6%;
             @media only Screen and (min-width: 768px) {
-                margin-left: 5vw;
-                margin-bottom: 10vh;
+                margin-left: 5.9%;
+                margin-bottom: 10%;
                 width: 27%;
             }
             @media only Screen and (min-width: 1400px) {
                 width: 20%;
-                margin-left: 7.6vw;
-                margin-bottom: 15vh;
+                margin-left: 8%;
+                margin-bottom: 15%;
             }
             img {
                 border-top-right-radius: 2px;
@@ -75,8 +75,8 @@ main {
                         border-top-right-radius: 2px;
                         border-top-left-radius: 2px;
                         position: relative;
-                        bottom: 2.5vh;
-                        right: 1.5vw;
+                        bottom: 35px;
+                        right: 8%;
                     }
                     span {
                         transition: background-color 1s;
@@ -109,10 +109,10 @@ main {
             background-position: 2.5% 75%;
             z-index: -1;
             @media only Screen and (min-width: 768px) { 
-                right: 10vw;
+                right: 10%;
             }
             @media only Screen and (min-width: 1400px) {
-                right: 25vw;
+                right: 25%;
             }
            
         }

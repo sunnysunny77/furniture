@@ -246,20 +246,20 @@ main section:nth-child(2) h2 {
 main section:nth-child(2) span {
   display: inline-block;
   width: 97%;
-  margin-bottom: 3vh;
+  margin-bottom: 6%;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span {
-    margin-left: 5vw;
-    margin-bottom: 10vh;
+    margin-left: 5.9%;
+    margin-bottom: 10%;
     width: 27%;
   }
 }
 @media only Screen and (min-width: 1400px) {
   main section:nth-child(2) span {
     width: 20%;
-    margin-left: 7.6vw;
-    margin-bottom: 15vh;
+    margin-left: 8%;
+    margin-bottom: 15%;
   }
 }
 main section:nth-child(2) span img {
@@ -314,8 +314,8 @@ main section:nth-child(2) span a p {
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
     position: relative;
-    bottom: 2.5vh;
-    right: 1.5vw;
+    bottom: 35px;
+    right: 8%;
   }
 }
 main section:nth-child(2) span a p span {
@@ -348,12 +348,12 @@ main section:nth-child(2)::after {
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2)::after {
-    right: 10vw;
+    right: 10%;
   }
 }
 @media only Screen and (min-width: 1400px) {
   main section:nth-child(2)::after {
-    right: 25vw;
+    right: 25%;
   }
 }
 
