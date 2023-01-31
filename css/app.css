@@ -51,9 +51,10 @@ nav ul li a {
   }
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: #D29A30;
+  color: #F7AC23;
 }
 nav ul li:nth-child(1) {
+  color: #060606;
   font-size: smaller;
   padding-left: 2%;
 }
@@ -61,18 +62,15 @@ nav ul li:nth-child(1) h1 {
   font-size: inherit;
 }
 nav ul li:nth-child(1) svg {
-  color: #064D46;
-}
-@media only Screen and (max-width: 575px) {
-  nav ul li:nth-child(1) svg {
-    color: #D29A30;
-  }
-}
-nav ul li:nth-child(1) {
-  color: #060606;
+  color: #F7AC23;
 }
 nav ul li:nth-child(1) span {
-  color: #D29A30;
+  color: #F7AC23;
+}
+@media only Screen and (min-width: 576px) {
+  nav ul li:nth-child(1) span {
+    color: #064D46;
+  }
 }
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
   color: unset;
@@ -226,14 +224,14 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header p button {
   font-size: smaller;
-  background-color: #D29A30;
+  background-color: #F7AC23;
   color: white;
   transition: background-color 1s;
   border: none;
 }
 #header p button:hover, #header p button:focus {
   background-color: #060606;
-  color: #D29A30;
+  color: #F7AC23;
 }
 
 main section:nth-child(1) p {
@@ -293,7 +291,7 @@ main section:nth-child(2) span a {
 }
 main section:nth-child(2) span a:hover p, main section:nth-child(2) span a:focus p {
   background-color: #060606;
-  color: #D29A30;
+  color: #F7AC23;
 }
 main section:nth-child(2) span a:hover p span, main section:nth-child(2) span a:focus p span {
   background-color: #060606;
@@ -367,6 +365,7 @@ main section:nth-child(2)::after {
 body {
   margin: 0;
   font-family: Poppins;
+  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

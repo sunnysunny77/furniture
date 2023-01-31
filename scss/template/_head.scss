@@ -40,22 +40,20 @@ nav {
                 }
             }
             &:nth-child(1) {
+                color: $c2;
                 font-size: smaller;
                 padding-left: 2%;
                 h1 {
                     font-size: inherit;
                 }
                 svg {
-                    color: $c1;
-                    @media only Screen and (max-width: 575px) {
-                        color: $c4;
-                    }
+                    color: $c4;
                 }
-            }
-            &:nth-child(1) {
-                color: $c2;
                 span {
                     color: $c4;
+                    @media only Screen and (min-width: 576px) {
+                        color: $c1;
+                    }
                 }
             }
             &:nth-child(1) a:hover,
@@ -152,7 +150,7 @@ nav {
         }
         @media only Screen and (max-width: 575px) {
             width: 90%;
-          margin: auto 5%;
+            margin: auto 5%;
             margin-top: 185px;
             border-bottom: none;
             border-bottom-right-radius: unset;
@@ -193,7 +191,7 @@ nav {
             color: $c3;
             transition: background-color 1s;
             border: none;
-            &:hover ,
+            &:hover,
             &:focus {
                 background-color: $c2;
                 color: $c4;
