@@ -335,6 +335,8 @@ main section:nth-child(2) span a p span {
 }
 main section:nth-child(2) span a p span svg {
   margin: 0 5%;
+  width: 15px;
+  height: 15px;
 }
 main section:nth-child(2)::after {
   position: absolute;
