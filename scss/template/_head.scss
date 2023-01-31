@@ -96,17 +96,17 @@ nav {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 60vw;
+        left: 60%;
         background-color: $c1;
         background-image: url(../images/div.png);
         background-repeat: repeat-y;
         background-position: 95% 75%;
         z-index: -1;
         @media only Screen and (min-width: 576px) {
-            left: 67vw;
+            left: 67%;
         }
         @media only Screen and (min-width: 1400px) {
-            left: 25vw;
+            left: 25%;
         }
     }
     &::before {
@@ -115,17 +115,17 @@ nav {
         top: 50px;
         right: 0;
         bottom: 0;
-        left: calc(60vw - 85px);
+        left: calc(60% - 85px);
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
         background-size: 150px;
         @media only Screen and (min-width: 576px) {
             top: 90px;
-            left: calc(67vw - 85px);
+            left: calc(67% - 85px);
         }
         @media only Screen and (min-width: 1400px) {
-            left: calc(25vw - 150px);
+            left: calc(25% - 150px);
             top: 108px;
             background-size: auto;
         }
@@ -140,8 +140,8 @@ nav {
         min-height: 60px;
     }
     img {
-        width: 90%;
-        margin: 185px 5% auto 5%;
+        width: 100%;
+        margin: auto;
         border-top-right-radius: 2px;
         border-top-left-radius: 2px;
         border-top: 1px solid $c5;
@@ -150,16 +150,20 @@ nav {
         @media only Screen and (min-width: 576px) {
             border-bottom-left-radius: 2px;
             border-bottom: 1px solid $c5;
-            width: 66vw;
-            margin: 215px auto auto calc(33vw - 158px);
-        }
-        @media only Screen and (min-width: 1400px) {
-            width: 632px;
-            margin: 356px auto auto calc(25vw - 158px);
+         
         }
     }
     .carousel {
         padding-bottom: 130px;
+        margin: 185px 5% auto 5%;
+        @media only Screen and (min-width: 576px) {
+            width: 55%;
+            margin: 215px auto auto 25%;
+        }
+        @media only Screen and (min-width: 1400px) {
+          
+            margin: 356px auto auto 10%;
+        }
         .carousel-inner {
             overflow: visible;
         }
@@ -168,21 +172,16 @@ nav {
         font-weight: 900;
         box-shadow: -2px 2px 0px;
         background-color: $c3;
-        margin: auto 5%;
-        width: 90%;
         @media only Screen and (min-width: 576px) {
             border-radius: 2px;
             border: 1px solid $c5;
-            position: relative;
+            position: absolute;
             z-index: 999;
-            width: 66vw;
-            top: -3vh;
-            left: calc(33vw - 118px);
+            top: 88%;
+            right: -6%;
+            bottom: -12%;
+            left: 6%;
             margin: 0;
-        }
-        @media only Screen and (min-width: 1400px) {
-            width: 632px;
-            left: calc(25vw - 118px);
         }
         button {
             font-size: smaller;

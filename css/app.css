@@ -115,7 +115,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 60vw;
+  left: 60%;
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
@@ -124,12 +124,12 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 @media only Screen and (min-width: 576px) {
   #header::after {
-    left: 67vw;
+    left: 67%;
   }
 }
 @media only Screen and (min-width: 1400px) {
   #header::after {
-    left: 25vw;
+    left: 25%;
   }
 }
 #header::before {
@@ -138,7 +138,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   top: 50px;
   right: 0;
   bottom: 0;
-  left: calc(60vw - 85px);
+  left: calc(60% - 85px);
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   z-index: 0;
@@ -147,12 +147,12 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 @media only Screen and (min-width: 576px) {
   #header::before {
     top: 90px;
-    left: calc(67vw - 85px);
+    left: calc(67% - 85px);
   }
 }
 @media only Screen and (min-width: 1400px) {
   #header::before {
-    left: calc(25vw - 150px);
+    left: calc(25% - 150px);
     top: 108px;
     background-size: auto;
   }
@@ -167,8 +167,8 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   min-height: 60px;
 }
 #header img {
-  width: 90%;
-  margin: 185px 5% auto 5%;
+  width: 100%;
+  margin: auto;
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -179,18 +179,22 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   #header img {
     border-bottom-left-radius: 2px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    width: 66vw;
-    margin: 215px auto auto calc(33vw - 158px);
-  }
-}
-@media only Screen and (min-width: 1400px) {
-  #header img {
-    width: 632px;
-    margin: 356px auto auto calc(25vw - 158px);
   }
 }
 #header .carousel {
   padding-bottom: 130px;
+  margin: 185px 5% auto 5%;
+}
+@media only Screen and (min-width: 576px) {
+  #header .carousel {
+    width: 55%;
+    margin: 215px auto auto 25%;
+  }
+}
+@media only Screen and (min-width: 1400px) {
+  #header .carousel {
+    margin: 356px auto auto 10%;
+  }
 }
 #header .carousel .carousel-inner {
   overflow: visible;
@@ -199,25 +203,18 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   font-weight: 900;
   box-shadow: -2px 2px 0px;
   background-color: white;
-  margin: auto 5%;
-  width: 90%;
 }
 @media only Screen and (min-width: 576px) {
   #header p {
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    position: relative;
+    position: absolute;
     z-index: 999;
-    width: 66vw;
-    top: -3vh;
-    left: calc(33vw - 118px);
+    top: 88%;
+    right: -6%;
+    bottom: -12%;
+    left: 6%;
     margin: 0;
-  }
-}
-@media only Screen and (min-width: 1400px) {
-  #header p {
-    width: 632px;
-    left: calc(25vw - 118px);
   }
 }
 #header p button {
