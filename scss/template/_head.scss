@@ -1,12 +1,12 @@
 nav {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    @media only Screen and (max-width: 575px) {
-        position: unset;
-        background-color: $c1;
+    background-color: $c1;
+    @media only Screen and (min-width: 576px) {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        background-color: unset;
     }
     ul {
         list-style-type: none;
@@ -17,22 +17,24 @@ nav {
         align-items: self-end;
         flex-wrap: wrap;
         li {
-            text-align: center;
-            width: 37.5%;
+            width: 50%;
+            text-align: left;
+            padding: 2%;
             color: $c3;
-            @media only Screen and (max-width: 1399px) {
+            @media only Screen and (min-width: 576px) {
+                text-align: center;
+                padding: 0;
                 width: 33%;
             }
-            @media only Screen and (max-width: 575px) {
-                width: 50%;
-                text-align: left;
-                padding: 2%;
+            @media only Screen and (min-width: 1400px) {
+                width: 37.5%;
             }
             a {
                 text-decoration: none;
-                color: inherit;
-                @media only Screen and (max-width: 575px) {
-                    color: $c3;
+
+                color: $c3;
+                @media only Screen and (min-width: 576px) {
+                    color: inherit;
                 }
                 &:hover,
                 &:focus {
@@ -58,28 +60,28 @@ nav {
             }
             &:nth-child(1) a:hover,
             &:nth-child(1) a:focus {
-                color: unset;
-                @media only Screen and (max-width: 575px) {
-                    color: $c3;
+                color: $c3;
+                @media only Screen and (min-width: 576px) {
+                    color: unset;
                 }
             }
             &:nth-child(2) {
                 color: $c2;
             }
             &:nth-child(3) {
-                color: $c3;
-                @media only Screen and (max-width: 1399px) {
-                    color: $c2;
+                color: $c2;
+                @media only Screen and (min-width: 1400px) {
+                    color: $c3;
                 }
             }
             &:nth-child(1),
             &:nth-child(2) {
-                width: 12.5%;
-                @media only Screen and (max-width: 1399px) {
+                width: 50%;
+                @media only Screen and (min-width: 576px) {
                     width: 17%;
                 }
-                @media only Screen and (max-width: 575px) {
-                    width: 50%;
+                @media only Screen and (min-width: 1400px) {
+                    width: 12.5%;
                 }
             }
         }
@@ -94,37 +96,38 @@ nav {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 25vw;
+        left: 60vw;
         background-color: $c1;
         background-image: url(../images/div.png);
         background-repeat: repeat-y;
         background-position: 95% 75%;
         z-index: -1;
-        @media only Screen and (max-width: 1399px) {
+        @media only Screen and (min-width: 576px) {
             left: 67vw;
         }
-        @media only Screen and (max-width: 575px) {
-            left: 60vw;
+        @media only Screen and (min-width: 1400px) {
+            left: 25vw;
         }
     }
     &::before {
         position: absolute;
         content: "";
-        top: 108px;
+        top: 50px;
         right: 0;
         bottom: 0;
-        left: calc(25vw - 150px);
+        left: calc(60vw - 85px);
         background-image: url(../images/header.png);
         background-repeat: no-repeat;
         z-index: 0;
-        @media only Screen and (max-width: 1399px) {
+        background-size: 150px;
+        @media only Screen and (min-width: 576px) {
             top: 90px;
             left: calc(67vw - 85px);
-            background-size: 150px;
         }
-        @media only Screen and (max-width: 575px) {
-            left: calc(60vw - 85px);
-            top: 50px;
+        @media only Screen and (min-width: 1400px) {
+            left: calc(25vw - 150px);
+            top: 108px;
+            background-size: auto;
         }
     }
     svg {
@@ -137,24 +140,22 @@ nav {
         min-height: 60px;
     }
     img {
-        width: 632px;
-        height: 100%;
-        margin-top: 356px;
-        margin-left: calc(25vw - 158px);
-        border-radius: 2px;
-        border: 1px solid $c5;
-        @media only Screen and (max-width: 1399px) {
+        width: 90%;
+        margin: 185px 5% auto 5%;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+        border-top: 1px solid $c5;
+        border-right: 1px solid $c5;
+        border-left: 1px solid $c5;
+        @media only Screen and (min-width: 576px) {
+            border-bottom-left-radius: 2px;
+            border-bottom: 1px solid $c5;
             width: 66vw;
-            margin-top: 215px;
-            margin-left: calc(33vw - 158px);
+            margin: 215px auto auto calc(33vw - 158px);
         }
-        @media only Screen and (max-width: 575px) {
-            width: 90%;
-            margin: auto 5%;
-            margin-top: 185px;
-            border-bottom: none;
-            border-bottom-right-radius: unset;
-            border-bottom-left-radius: unset;
+        @media only Screen and (min-width: 1400px) {
+            width: 632px;
+            margin: 356px auto auto calc(25vw - 158px);
         }
     }
     .carousel {
@@ -164,26 +165,24 @@ nav {
         }
     }
     p {
-        position: relative;
-        width: 632px;
-        top: -3vh;
-        left: calc(25vw - 118px);
         font-weight: 900;
         box-shadow: -2px 2px 0px;
         background-color: $c3;
-        border-radius: 2px;
-        border: 1px solid $c5;
-        z-index: 999;
-        @media only Screen and (max-width: 1399px) {
+        margin: auto 5%;
+        width: 90%;
+        @media only Screen and (min-width: 576px) {
+            border-radius: 2px;
+            border: 1px solid $c5;
+            position: relative;
+            z-index: 999;
             width: 66vw;
+            top: -3vh;
             left: calc(33vw - 118px);
+            margin: 0;
         }
-        @media only Screen and (max-width: 575px) {
-            position: unset;
-            margin: auto 5%;
-            width: 90%;
-            border-radius: 0;
-            border: none;
+        @media only Screen and (min-width: 1400px) {
+            width: 632px;
+            left: calc(25vw - 118px);
         }
         button {
             font-size: smaller;

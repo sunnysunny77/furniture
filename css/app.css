@@ -3,16 +3,16 @@
   src: url(./Poppins-Regular.ttf);
 }
 nav {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  left: 0;
-  z-index: 999;
+  background-color: #064D46;
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 576px) {
   nav {
-    position: unset;
-    background-color: #064D46;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: unset;
   }
 }
 nav ul {
@@ -25,29 +25,30 @@ nav ul {
   flex-wrap: wrap;
 }
 nav ul li {
-  text-align: center;
-  width: 37.5%;
+  width: 50%;
+  text-align: left;
+  padding: 2%;
   color: white;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   nav ul li {
+    text-align: center;
+    padding: 0;
     width: 33%;
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   nav ul li {
-    width: 50%;
-    text-align: left;
-    padding: 2%;
+    width: 37.5%;
   }
 }
 nav ul li a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 576px) {
   nav ul li a {
-    color: white;
+    color: inherit;
   }
 }
 nav ul li a:hover, nav ul li a:focus {
@@ -73,35 +74,35 @@ nav ul li:nth-child(1) span {
   }
 }
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
-  color: unset;
+  color: white;
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 576px) {
   nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
-    color: white;
+    color: unset;
   }
 }
 nav ul li:nth-child(2) {
   color: #060606;
 }
 nav ul li:nth-child(3) {
-  color: white;
+  color: #060606;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 1400px) {
   nav ul li:nth-child(3) {
-    color: #060606;
+    color: white;
   }
 }
 nav ul li:nth-child(1), nav ul li:nth-child(2) {
-  width: 12.5%;
+  width: 50%;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   nav ul li:nth-child(1), nav ul li:nth-child(2) {
     width: 17%;
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   nav ul li:nth-child(1), nav ul li:nth-child(2) {
-    width: 50%;
+    width: 12.5%;
   }
 }
 
@@ -114,45 +115,46 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 25vw;
+  left: 60vw;
   background-color: #064D46;
   background-image: url(../images/div.png);
   background-repeat: repeat-y;
   background-position: 95% 75%;
   z-index: -1;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   #header::after {
     left: 67vw;
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   #header::after {
-    left: 60vw;
+    left: 25vw;
   }
 }
 #header::before {
   position: absolute;
   content: "";
-  top: 108px;
+  top: 50px;
   right: 0;
   bottom: 0;
-  left: calc(25vw - 150px);
+  left: calc(60vw - 85px);
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   z-index: 0;
+  background-size: 150px;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   #header::before {
     top: 90px;
     left: calc(67vw - 85px);
-    background-size: 150px;
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   #header::before {
-    left: calc(60vw - 85px);
-    top: 50px;
+    left: calc(25vw - 150px);
+    top: 108px;
+    background-size: auto;
   }
 }
 #header svg {
@@ -165,28 +167,26 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   min-height: 60px;
 }
 #header img {
-  width: 632px;
-  height: 100%;
-  margin-top: 356px;
-  margin-left: calc(25vw - 158px);
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 90%;
+  margin: 185px 5% auto 5%;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   #header img {
+    border-bottom-left-radius: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     width: 66vw;
-    margin-top: 215px;
-    margin-left: calc(33vw - 158px);
+    margin: 215px auto auto calc(33vw - 158px);
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   #header img {
-    width: 90%;
-    margin: auto 5%;
-    margin-top: 185px;
-    border-bottom: none;
-    border-bottom-right-radius: unset;
-    border-bottom-left-radius: unset;
+    width: 632px;
+    margin: 356px auto auto calc(25vw - 158px);
   }
 }
 #header .carousel {
@@ -196,30 +196,28 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   overflow: visible;
 }
 #header p {
-  position: relative;
-  width: 632px;
-  top: -3vh;
-  left: calc(25vw - 118px);
   font-weight: 900;
   box-shadow: -2px 2px 0px;
   background-color: white;
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  z-index: 999;
+  margin: auto 5%;
+  width: 90%;
 }
-@media only Screen and (max-width: 1399px) {
+@media only Screen and (min-width: 576px) {
   #header p {
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 999;
     width: 66vw;
+    top: -3vh;
     left: calc(33vw - 118px);
+    margin: 0;
   }
 }
-@media only Screen and (max-width: 575px) {
+@media only Screen and (min-width: 1400px) {
   #header p {
-    position: unset;
-    margin: auto 5%;
-    width: 90%;
-    border-radius: 0;
-    border: none;
+    width: 632px;
+    left: calc(25vw - 118px);
   }
 }
 #header p button {
@@ -365,7 +363,6 @@ main section:nth-child(2)::after {
 body {
   margin: 0;
   font-family: Poppins;
-  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
