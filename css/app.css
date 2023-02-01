@@ -4,7 +4,7 @@
   font-display: swap;
 }
 nav {
-  background-color: #064D46;
+  background-color: #064d46;
 }
 @media only Screen and (min-width: 576px) {
   nav {
@@ -53,7 +53,7 @@ nav ul li a {
   }
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: #F7AC23;
+  color: #f7ac23;
 }
 nav ul li:nth-child(1) {
   color: #060606;
@@ -64,14 +64,14 @@ nav ul li:nth-child(1) h1 {
   font-size: inherit;
 }
 nav ul li:nth-child(1) svg {
-  color: #F7AC23;
+  color: #f7ac23;
 }
 nav ul li:nth-child(1) span {
-  color: #F7AC23;
+  color: #f7ac23;
 }
 @media only Screen and (min-width: 576px) {
   nav ul li:nth-child(1) span {
-    color: #064D46;
+    color: #064d46;
   }
 }
 nav ul li:nth-child(1) a:hover, nav ul li:nth-child(1) a:focus {
@@ -117,7 +117,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   right: 0;
   bottom: 0;
   left: 60%;
-  background-color: #064D46;
+  background-color: #064d46;
   background-image: url(../images/div.webp);
   background-repeat: repeat-y;
   background-position: 95% 75%;
@@ -220,14 +220,14 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
 }
 #header p button {
   font-size: smaller;
-  background-color: #F7AC23;
+  background-color: #f7ac23;
   color: white;
   transition: background-color 1s;
   border: none;
 }
 #header p button:hover, #header p button:focus {
   background-color: #060606;
-  color: #F7AC23;
+  color: #f7ac23;
 }
 
 main section:nth-child(1) p {
@@ -260,7 +260,6 @@ main section:nth-child(2) span {
   main section:nth-child(2) span {
     width: 20%;
     margin-left: 8%;
-    margin-bottom: 15%;
   }
 }
 main section:nth-child(2) span img {
@@ -291,7 +290,7 @@ main section:nth-child(2) span a {
 }
 main section:nth-child(2) span a:hover p, main section:nth-child(2) span a:focus p {
   background-color: #060606;
-  color: #F7AC23;
+  color: #f7ac23;
 }
 main section:nth-child(2) span a:hover p span, main section:nth-child(2) span a:focus p span {
   background-color: #060606;
@@ -341,7 +340,7 @@ main section:nth-child(2)::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #064D46;
+  background-color: #064d46;
   background-image: url(../images/div.webp);
   background-repeat: repeat-y;
   background-position: 2.5% 75%;
@@ -356,6 +355,42 @@ main section:nth-child(2)::after {
   main section:nth-child(2)::after {
     right: 25%;
   }
+}
+main section:nth-child(3) p {
+  color: #535964;
+}
+main section:nth-child(3) p span {
+  color: #f7ac23;
+}
+main section:nth-child(3) div div {
+  background-color: #064d46;
+  padding: 8% 1rem 1rem 1rem;
+}
+main section:nth-child(3) div div h3 {
+  color: white;
+  font-size: large;
+}
+main section:nth-child(3) div div p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: medium;
+}
+main section:nth-child(3) div div button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+main section:nth-child(3) div div button svg {
+  vertical-align: middle;
+  font-size: inherit;
+  padding: 0;
+}
+main section:nth-child(3) div div button:hover, main section:nth-child(3) div div button:focus {
+  color: #f7ac23;
+}
+main section:nth-child(3) div div svg {
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* css */

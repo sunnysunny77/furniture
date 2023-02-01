@@ -26,7 +26,6 @@ main {
             @media only Screen and (min-width: 1400px) {
                 width: 20%;
                 margin-left: 8%;
-                margin-bottom: 15%;
             }
             img {
                 border-top-right-radius: 2px;
@@ -113,6 +112,45 @@ main {
             }
             @media only Screen and (min-width: 1400px) {
                 right: 25%;
+            }
+        }
+    }
+    section:nth-child(3) {
+        p {
+            color: $c6;
+            span {
+                color: $c4;
+            }
+        }
+        div div {
+            background-color: $c1;
+            padding: 8% 1rem 1rem 1rem;
+            h3 {
+                color: $c3;
+                font-size: large;
+            }
+            p {
+               color: $c7;
+               font-size: medium;
+            }
+            button {
+                border: none;
+                background-color: transparent;
+                color: $c3;
+                svg {
+                    vertical-align: middle;
+                    font-size: inherit; 
+                    padding: 0;
+                }
+                &:hover,
+                &:focus {
+                    color: $c4;
+                }
+            }
+            svg {
+                color: $c3;
+                font-size: 3rem; 
+                padding-bottom: 3rem;
             }
         }
     }
