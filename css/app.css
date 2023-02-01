@@ -271,18 +271,18 @@ main section:nth-child(2) span img {
   width: 100%;
   height: 100%;
 }
-@media only Screen and (min-width: 1400px) {
-  main section:nth-child(2) span img {
-    object-position: center;
-    object-fit: cover;
-    height: 400px;
-  }
-}
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
+  }
+}
+@media only Screen and (min-width: 1400px) {
+  main section:nth-child(2) span img {
+    object-position: center;
+    object-fit: cover;
+    height: 400px;
   }
 }
 main section:nth-child(2) span a {
