@@ -108,13 +108,12 @@ main {
             background-repeat: repeat-y;
             background-position: 2.5% 75%;
             z-index: -1;
-            @media only Screen and (min-width: 768px) { 
+            @media only Screen and (min-width: 768px) {
                 right: 10%;
             }
             @media only Screen and (min-width: 1400px) {
                 right: 25%;
             }
-           
         }
     }
 }
