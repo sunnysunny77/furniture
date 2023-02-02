@@ -482,6 +482,17 @@ main section:nth-child(4) div:nth-child(3) aside {
     background-position: 95% 75%;
   }
 }
+main section:nth-child(4) div:nth-child(3) aside h3 svg {
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(4) div:nth-child(3) aside h3 svg {
+    font-size: 17px;
+  }
+}
 main section:nth-child(4) div:nth-child(3) aside p {
   color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid white;
@@ -489,7 +500,7 @@ main section:nth-child(4) div:nth-child(3) aside p {
 }
 @media only Screen and (min-width: 576px) {
   main section:nth-child(4) div:nth-child(3) aside p {
-    width: 70%;
+    width: 67.5%;
   }
 }
 @media only Screen and (min-width: 768px) {
@@ -572,6 +583,7 @@ main section:nth-child(5) div:nth-child(1) img {
 #buttonthree.animationout,
 #buttonfour.animationout {
   animation: slideout 1s;
+  animation-fill-mode: forwards;
 }
 
 /* css */

@@ -235,12 +235,21 @@ main {
                         background-position: 95% 75%;
                     }
                 }
+                h3 svg {
+                    font-size: 12px;
+                    vertical-align: top;
+                    margin-left: 12px;
+                    vertical-align: middle;
+                    @media only Screen and (min-width: 768px) {
+                        font-size: 17px;
+                    }
+                }
                 p {
                     color: $c5;
                     border-bottom: 1px solid $c3;
                     padding-bottom: 1%;
                     @media only Screen and (min-width: 576px) {
-                        width: 70%;
+                        width: 67.5%;
                     }
                     @media only Screen and (min-width: 768px) {
                         width: 100%;
@@ -324,4 +333,5 @@ main {
 #buttonthree.animationout,
 #buttonfour.animationout {
     animation: slideout 1s;
+    animation-fill-mode: forwards;
 }
