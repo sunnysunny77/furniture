@@ -217,7 +217,7 @@ main {
                 @media only Screen and (min-width: 768px) {
                     flex-direction: column;
                     position: absolute;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: unset;
                     border-radius: 5px;
                     top: 0;
