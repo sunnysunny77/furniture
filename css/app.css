@@ -484,7 +484,7 @@ main section:nth-child(4) div:nth-child(3) aside {
     background-position: 95% 75%;
   }
   main section:nth-child(4) div:nth-child(3) aside p {
-    max-width: 200px;
+    max-width: 225px;
   }
 }
 main section:nth-child(4) div:nth-child(3) aside p {
