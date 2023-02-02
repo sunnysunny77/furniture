@@ -252,9 +252,9 @@ main section:nth-child(2) span {
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span {
-    margin-left: 5.9%;
+    margin-left: 4%;
     margin-bottom: 10%;
-    width: 27%;
+    width: 28%;
   }
 }
 @media only Screen and (min-width: 1400px) {
