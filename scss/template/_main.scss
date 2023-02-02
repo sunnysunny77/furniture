@@ -202,6 +202,9 @@ main {
                         background-color: $c4;
                     }
                 }
+                img {
+                    height: 100%;
+                }
             }
             aside {
                 margin: 0;
@@ -272,6 +275,9 @@ main {
                     left: 33%;
                     background-color: $c1;
                 }
+            }
+            img {
+                height: 100%;
             }
         }
     }
