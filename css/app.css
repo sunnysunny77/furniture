@@ -442,7 +442,7 @@ main section:nth-child(4) div:nth-child(3) {
 }
 main section:nth-child(4) div:nth-child(3) aside {
   margin: 0;
-  padding: 5%;
+  padding: 2.5%;
   color: white;
   background-color: #064d46;
 }
