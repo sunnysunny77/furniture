@@ -9,7 +9,8 @@ window.onload = function () {
 
         service.addEventListener("click", function () {
 
-
+            document.getElementById("href").scrollIntoView({block: "center"});
+            
             if (isNaN(current)) {
                 current = x;
                 aside[x].classList = "animation";
