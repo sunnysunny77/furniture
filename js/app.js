@@ -9,8 +9,13 @@ window.onload = function () {
 
         service.addEventListener("click", function () {
 
-            document.getElementById("href").scrollIntoView({block: "center"});
-            
+            document.getElementById("href").scrollIntoView({ block: "center" });
+
+            setTimeout(function () {
+
+                aside[current].classList = "animationout";
+            }, 15000)
+
             if (isNaN(current)) {
                 current = x;
                 aside[x].classList = "animation";
@@ -23,6 +28,8 @@ window.onload = function () {
 
                 aside[x].classList = "animation";
             }, 1000)
+
+
         });
     })
 }
