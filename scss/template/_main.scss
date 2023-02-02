@@ -241,6 +241,9 @@ main {
                         width: 100%;
                         max-width: 375px;
                     }
+                    @media only Screen and (min-width: 1400px) {
+                        font-size: larger;
+                    }
                 }
             }
         }

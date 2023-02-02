@@ -6,7 +6,7 @@ function remove () {
         disabled[x].disabled = true; 
         setTimeout(function () {
             disabled[x].disabled = false;
-        },7500)
+        },15000)
     }
 }
 
@@ -24,7 +24,7 @@ window.onload = function () {
         buttonone.classList = "animation";
         setTimeout(function () {
             buttonone.classList = "animationout";
-        },7500)
+        },15000)
         remove();
     },null);
 
@@ -34,7 +34,7 @@ window.onload = function () {
         buttonone.classList = "animation";
         setTimeout(function () {
             buttonone.classList = "animationout";
-        },7500)
+        },15000)
         remove();
     },null);
 
@@ -44,7 +44,7 @@ window.onload = function () {
         buttonone.classList = "animation";
         setTimeout(function () {
             buttonone.classList = "animationout";
-        },7500)
+        },15000)
         remove();
     },null);
 
@@ -54,7 +54,7 @@ window.onload = function () {
         buttonone.classList = "animation";
         setTimeout(function () {
             buttonone.classList = "animationout";
-        },7500)
+        },15000)
         remove(); 
     },null);
 }

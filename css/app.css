@@ -493,6 +493,11 @@ main section:nth-child(4) div:nth-child(3) aside p {
     max-width: 375px;
   }
 }
+@media only Screen and (min-width: 1400px) {
+  main section:nth-child(4) div:nth-child(3) aside p {
+    font-size: larger;
+  }
+}
 
 @keyframes slidein {
   from {
