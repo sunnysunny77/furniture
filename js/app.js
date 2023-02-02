@@ -1,21 +1,33 @@
 let current;
+let count;
+
+const service = document.querySelectorAll('.service');
+const aside = document.querySelectorAll('.aside');
+
+setInterval(function () {
+
+    count--;
+
+    if (count == 0) aside[current].classList = "animationout";
+}, 1000);
 
 window.onload = function () {
 
-    const service = document.querySelectorAll('.service');
-    const aside = document.querySelectorAll('.aside');
+  
 
     service.forEach((el, x) => {
 
 
         el.addEventListener("click", function () {
 
+            count = 17;
+
             service[0].disabled = true;
             service[1].disabled = true;
             service[2].disabled = true;
             service[3].disabled = true;
-          
-        
+
+
             document.getElementById("href").scrollIntoView({ block: "center" });
 
             if (isNaN(current)) {
