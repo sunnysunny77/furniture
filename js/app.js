@@ -5,16 +5,23 @@ window.onload = function () {
     const service = document.querySelectorAll('.service');
     const aside = document.querySelectorAll('.aside');
 
-    service.forEach((service, x) => {
+    service.forEach((el, x) => {
 
-        service.addEventListener("click", function () {
 
-            document.getElementById("href").scrollIntoView({ block: "center" });
+        el.addEventListener("click", function () {
 
+            service[0].disabled = true;
+            service[1].disabled = true;
+            service[2].disabled = true;
+            service[3].disabled = true;
             setTimeout(function () {
-
-                aside[current].classList = "animationout";
-            }, 15000)
+                service[0].disabled = false;
+                service[1].disabled = false;
+                service[2].disabled = false;
+                service[3].disabled = false;
+            }, 1000)
+        
+            document.getElementById("href").scrollIntoView({ block: "center" });
 
             if (isNaN(current)) {
                 current = x;
