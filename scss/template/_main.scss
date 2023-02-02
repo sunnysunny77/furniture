@@ -203,11 +203,12 @@ main {
                     height: 100%;
                 }
             }
-            aside {
+            aside.aside {
                 margin: 0;
                 padding: 2.5%;
                 color: $c3;
                 background-color: $c1;
+                opacity: 1;
                 @media only Screen and (min-width: 576px) {
                     display: flex;
                     justify-content: space-between;
@@ -257,6 +258,46 @@ main {
                     }
                 }
             }
+            @keyframes slidein {
+                from {
+                    opacity: 0;
+                    top: 2.5%;
+                    right: 2.5%;
+                    bottom: 2.5%;
+                    left: 27.5%;
+                }
+                to {
+                    top: 5%;
+                    right: 5%;
+                    bottom: 5%;
+                    left: 30%;
+                    opacity: 1;
+                }
+            }
+            @keyframes slideout {
+                from {
+                    top: 5%;
+                    right: 5%;
+                    bottom: 5%;
+                    left: 30%;
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                    top: 2.5%;
+                    right: 2.5%;
+                    bottom: 2.5%;
+                    left: 27.5%;
+                }
+            }
+            .animation {
+                animation: slidein 1s;
+                animation-fill-mode: forwards;
+            }
+            .animationout {
+                animation: slideout 1s;
+                opacity: 0;
+            }
         }
     }
     section:nth-child(5) {
@@ -287,51 +328,4 @@ main {
             }
         }
     }
-}
-
-@keyframes slidein {
-    from {
-        opacity: 0;
-        top: 2.5%;
-        right: 2.5%;
-        bottom: 2.5%;
-        left: 27.5%;
-    }
-    to {
-        top: 5%;
-        right: 5%;
-        bottom: 5%;
-        left: 30%;
-        opacity: 1;
-    }
-}
-@keyframes slideout {
-    from {
-        top: 5%;
-        right: 5%;
-        bottom: 5%;
-        left: 30%;
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        top: 2.5%;
-        right: 2.5%;
-        bottom: 2.5%;
-        left: 27.5%;
-    }
-}
-#buttonone.animation,
-#buttontwo.animation,
-#buttonthree.animation,
-#buttonfour.animation {
-    animation: slidein 1s;
-    animation-fill-mode: forwards;
-}
-#buttonone.animationout,
-#buttontwo.animationout,
-#buttonthree.animationout,
-#buttonfour.animationout {
-    animation: slideout 1s;
-    animation-fill-mode: forwards;
 }

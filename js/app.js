@@ -8,7 +8,7 @@ setInterval(function () {
 
     count--;
 
-    if (count == 0) aside[current].classList = "animationout";
+    if (count == 0) aside[current].classList = "aside animationout";
 }, 1000);
 
 window.onload = function () {
@@ -30,7 +30,7 @@ window.onload = function () {
 
                 current = x;
 
-                aside[x].classList = "animation";
+                aside[x].classList = "aside animation";
 
                 setTimeout(function () {
 
@@ -44,11 +44,11 @@ window.onload = function () {
                 return
             }
 
-            aside[current].classList = "animationout";
+            aside[current].classList = "aside animationout";
 
             setTimeout(function () {
 
-                aside[x].classList = "animation";
+                aside[x].classList = "aside animation";
             }, 1000);
 
             current = x;

@@ -445,21 +445,22 @@ main section:nth-child(4) div:nth-child(3) div:nth-child(1) div:nth-child(1)::af
 main section:nth-child(4) div:nth-child(3) div:nth-child(1) img {
   height: 100%;
 }
-main section:nth-child(4) div:nth-child(3) aside {
+main section:nth-child(4) div:nth-child(3) aside.aside {
   margin: 0;
   padding: 2.5%;
   color: white;
   background-color: #064d46;
+  opacity: 1;
 }
 @media only Screen and (min-width: 576px) {
-  main section:nth-child(4) div:nth-child(3) aside {
+  main section:nth-child(4) div:nth-child(3) aside.aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(4) div:nth-child(3) aside {
+  main section:nth-child(4) div:nth-child(3) aside.aside {
     flex-direction: column;
     position: absolute;
     align-items: unset;
@@ -470,7 +471,7 @@ main section:nth-child(4) div:nth-child(3) aside {
     left: 27.5%;
     opacity: 0;
   }
-  main section:nth-child(4) div:nth-child(3) aside::after {
+  main section:nth-child(4) div:nth-child(3) aside.aside::after {
     position: absolute;
     content: "";
     top: 0;
@@ -482,62 +483,33 @@ main section:nth-child(4) div:nth-child(3) aside {
     background-position: 95% 75%;
   }
 }
-main section:nth-child(4) div:nth-child(3) aside h3 svg {
+main section:nth-child(4) div:nth-child(3) aside.aside h3 svg {
   font-size: 12px;
   vertical-align: top;
   margin-left: 12px;
   vertical-align: middle;
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(4) div:nth-child(3) aside h3 svg {
+  main section:nth-child(4) div:nth-child(3) aside.aside h3 svg {
     font-size: 17px;
   }
 }
-main section:nth-child(4) div:nth-child(3) aside p {
+main section:nth-child(4) div:nth-child(3) aside.aside p {
   color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid white;
   padding-bottom: 1%;
 }
 @media only Screen and (min-width: 576px) {
-  main section:nth-child(4) div:nth-child(3) aside p {
+  main section:nth-child(4) div:nth-child(3) aside.aside p {
     width: 67.5%;
   }
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(4) div:nth-child(3) aside p {
+  main section:nth-child(4) div:nth-child(3) aside.aside p {
     width: 100%;
     max-width: 350px;
   }
 }
-main section:nth-child(5) div:nth-child(1) {
-  background-color: #064d46;
-}
-@media only Screen and (min-width: 768px) {
-  main section:nth-child(5) div:nth-child(1) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top: 4px solid #064d46;
-    border-bottom: 4px solid #064d46;
-    border-left: 4px solid #064d46;
-  }
-}
-main section:nth-child(5) div:nth-child(1) div {
-  position: relative;
-  background-color: #f7ac23;
-}
-main section:nth-child(5) div:nth-child(1) div::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 33%;
-  background-color: #064d46;
-}
-main section:nth-child(5) div:nth-child(1) img {
-  height: 100%;
-}
-
 @keyframes slidein {
   from {
     opacity: 0;
@@ -570,20 +542,41 @@ main section:nth-child(5) div:nth-child(1) img {
     left: 27.5%;
   }
 }
-#buttonone.animation,
-#buttontwo.animation,
-#buttonthree.animation,
-#buttonfour.animation {
+main section:nth-child(4) div:nth-child(3) .animation {
   animation: slidein 1s;
   animation-fill-mode: forwards;
 }
-
-#buttonone.animationout,
-#buttontwo.animationout,
-#buttonthree.animationout,
-#buttonfour.animationout {
+main section:nth-child(4) div:nth-child(3) .animationout {
   animation: slideout 1s;
-  animation-fill-mode: forwards;
+  opacity: 0;
+}
+main section:nth-child(5) div:nth-child(1) {
+  background-color: #064d46;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(5) div:nth-child(1) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top: 4px solid #064d46;
+    border-bottom: 4px solid #064d46;
+    border-left: 4px solid #064d46;
+  }
+}
+main section:nth-child(5) div:nth-child(1) div {
+  position: relative;
+  background-color: #f7ac23;
+}
+main section:nth-child(5) div:nth-child(1) div::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 33%;
+  background-color: #064d46;
+}
+main section:nth-child(5) div:nth-child(1) img {
+  height: 100%;
 }
 
 /* css */
