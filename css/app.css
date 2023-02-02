@@ -295,7 +295,8 @@ main section:nth-child(2) span a {
   border-bottom-left-radius: 2px;
   text-align: left;
   padding: 4%;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(2) span a {
@@ -321,14 +322,11 @@ main section:nth-child(2) span a span {
   margin: 0;
   width: unset;
   color: #535964;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
 }
-main section:nth-child(2) span a span svg {
-  margin: 0 5%;
+main section:nth-child(2) span a svg {
   width: 15px;
   height: 15px;
+  align-self: flex-end;
 }
 main section:nth-child(2)::after {
   position: absolute;

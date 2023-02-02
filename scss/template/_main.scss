@@ -55,7 +55,9 @@ main {
                 border-bottom-left-radius: 2px;
                 text-align: left;
                 padding: 4%;
-                display: block;
+                display: flex;
+                flex-direction: column;
+
                 @media only Screen and (min-width: 768px) {
                     box-shadow: 2px 2px 2px $c2;
                     border-top-right-radius: 2px;
@@ -80,14 +82,11 @@ main {
                     margin: 0;
                     width: unset;
                     color: $c6;
-                    display: flex;
-                    align-items: flex-end;
-                    justify-content: space-between;
-                    svg {
-                        margin: 0 5%;
-                        width: 15px;
-                        height: 15px;
-                    }
+                }
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    align-self: flex-end;
                 }
             }
         }
