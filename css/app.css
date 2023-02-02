@@ -287,19 +287,9 @@ main section:nth-child(2) span img {
   }
 }
 main section:nth-child(2) span a {
-  text-decoration: none;
-}
-main section:nth-child(2) span a:hover p, main section:nth-child(2) span a:focus p {
-  background-color: #060606;
-  color: #f7ac23;
-}
-main section:nth-child(2) span a:hover p span, main section:nth-child(2) span a:focus p span {
-  background-color: #060606;
-  color: white;
-}
-main section:nth-child(2) span a p {
   transition: background-color 1s;
   background-color: white;
+  text-decoration: none;
   color: #060606;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -310,7 +300,7 @@ main section:nth-child(2) span a p {
   justify-content: space-between;
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(2) span a p {
+  main section:nth-child(2) span a {
     box-shadow: 2px 2px 2px #060606;
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
@@ -319,7 +309,15 @@ main section:nth-child(2) span a p {
     right: 8%;
   }
 }
-main section:nth-child(2) span a p span {
+main section:nth-child(2) span a:hover, main section:nth-child(2) span a:focus {
+  background-color: #060606;
+  color: #f7ac23;
+}
+main section:nth-child(2) span a:hover span, main section:nth-child(2) span a:focus span {
+  background-color: #060606;
+  color: white;
+}
+main section:nth-child(2) span a span {
   transition: background-color 1s;
   background-color: white;
   margin: 0;
@@ -329,7 +327,7 @@ main section:nth-child(2) span a p span {
   align-items: flex-end;
   justify-content: space-between;
 }
-main section:nth-child(2) span a p span svg {
+main section:nth-child(2) span a span svg {
   margin: 0 5%;
   width: 15px;
   height: 15px;

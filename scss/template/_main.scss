@@ -47,50 +47,48 @@ main {
                 }
             }
             a {
+                transition: background-color 1s;
+                background-color: $c3;
                 text-decoration: none;
-                &:hover p,
-                &:focus p {
+                color: $c2;
+                border-bottom-right-radius: 2px;
+                border-bottom-left-radius: 2px;
+                text-align: left;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media only Screen and (min-width: 768px) {
+                    box-shadow: 2px 2px 2px $c2;
+                    border-top-right-radius: 2px;
+                    border-top-left-radius: 2px;
+                    position: relative;
+                    bottom: 35px;
+                    right: 8%;
+                }
+                &:hover,
+                &:focus {
                     background-color: $c2;
                     color: $c4;
                 }
-                &:hover p span,
-                &:focus p span {
+                &:hover span,
+                &:focus span {
                     background-color: $c2;
                     color: $c3;
                 }
-                p {
+                span {
                     transition: background-color 1s;
                     background-color: $c3;
-                    color: $c2;
-                    border-bottom-right-radius: 2px;
-                    border-bottom-left-radius: 2px;
-                    text-align: left;
-                    padding: 4%;
+                    margin: 0;
+                    width: unset;
+                    color: $c6;
                     display: flex;
-                    flex-direction: column;
+                    align-items: flex-end;
                     justify-content: space-between;
-                    @media only Screen and (min-width: 768px) {
-                        box-shadow: 2px 2px 2px $c2;
-                        border-top-right-radius: 2px;
-                        border-top-left-radius: 2px;
-                        position: relative;
-                        bottom: 35px;
-                        right: 8%;
-                    }
-                    span {
-                        transition: background-color 1s;
-                        background-color: $c3;
-                        margin: 0;
-                        width: unset;
-                        color: $c6;
-                        display: flex;
-                        align-items: flex-end;
-                        justify-content: space-between;
-                        svg {
-                            margin: 0 5%;
-                            width: 15px;
-                            height: 15px;
-                        }
+                    svg {
+                        margin: 0 5%;
+                        width: 15px;
+                        height: 15px;
                     }
                 }
             }
