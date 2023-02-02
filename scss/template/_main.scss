@@ -126,7 +126,9 @@ main {
             p {
                 color: $c5;
                 font-size: medium;
-                min-height: 100px
+                @media only Screen and (min-width: 768px) {
+                    min-height: 120px;
+                }
             }
             button {
                 border: none;
