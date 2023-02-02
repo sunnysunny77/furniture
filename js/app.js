@@ -19,6 +19,7 @@ window.onload = function () {
                 service[1].disabled = false;
                 service[2].disabled = false;
                 service[3].disabled = false;
+                el.focus()
             }, 1000)
         
             document.getElementById("href").scrollIntoView({ block: "center" });
