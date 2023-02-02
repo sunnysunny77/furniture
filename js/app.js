@@ -1,60 +1,27 @@
-function remove () {
-    
-    const disabled = document.getElementsByClassName("disabled");
-    document.getElementById("href").scrollIntoView({block: "center"});
-    for (let x in disabled) {
-        disabled[x].disabled = true; 
-        setTimeout(function () {
-            disabled[x].disabled = false;
-        },15000)
-    }
-}
-
-function events (obj,typ,callback,opts) {
-    if (obj) {
-        obj.addEventListener(typ,callback,opts);
-    }
-}
+let current;
 
 window.onload = function () {
 
-    events(document.getElementById('paragraphone'),"click",function () {
-        
-        const buttonone = document.getElementById("buttonone");
-        buttonone.classList = "animation";
-        setTimeout(function () {
-            buttonone.classList = "animationout";
-        },15000)
-        remove();
-    },null);
+    const service = document.querySelectorAll('.service');
+    const aside = document.querySelectorAll('.aside');
 
-    events(document.getElementById('paragraphtwo'),"click",function () {
+    service.forEach((service, x) => {
 
-        const buttonone = document.getElementById("buttontwo");
-        buttonone.classList = "animation";
-        setTimeout(function () {
-            buttonone.classList = "animationout";
-        },15000)
-        remove();
-    },null);
+        service.addEventListener("click", function () {
 
-    events(document.getElementById('paragraphthree'),"click",function () {
 
-        const buttonone = document.getElementById("buttonthree");
-        buttonone.classList = "animation";
-        setTimeout(function () {
-            buttonone.classList = "animationout";
-        },15000)
-        remove();
-    },null);
+            if (isNaN(current)) {
+                current = x;
+                aside[x].classList = "animation";
+                return
+            }
 
-    events(document.getElementById('paragraphfour'),"click",function () {
+            aside[current].classList = "animationout";
+            current = x;
+            setTimeout(function () {
 
-        const buttonone = document.getElementById("buttonfour");
-        buttonone.classList = "animation";
-        setTimeout(function () {
-            buttonone.classList = "animationout";
-        },15000)
-        remove(); 
-    },null);
+                aside[x].classList = "animation";
+            }, 1000)
+        });
+    })
 }
