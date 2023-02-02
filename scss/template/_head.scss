@@ -154,14 +154,15 @@ nav {
         }
     }
     .carousel {
-        padding-bottom: 130px;
+        padding-bottom: 150px;
         margin: 185px 5% auto 5%;
         @media only Screen and (min-width: 576px) {
-            width: 55%;
-            margin: 215px auto auto 25%;
+            width: 65%;
+            margin: 215px auto auto 15%;
         }
         @media only Screen and (min-width: 1400px) {
-            margin: 356px auto auto 10%;
+            width: 55%;
+            margin: 315px auto auto 10%;
         }
         .carousel-inner {
             overflow: visible;

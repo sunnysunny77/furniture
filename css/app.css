@@ -184,18 +184,19 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   }
 }
 #header .carousel {
-  padding-bottom: 130px;
+  padding-bottom: 150px;
   margin: 185px 5% auto 5%;
 }
 @media only Screen and (min-width: 576px) {
   #header .carousel {
-    width: 55%;
-    margin: 215px auto auto 25%;
+    width: 65%;
+    margin: 215px auto auto 15%;
   }
 }
 @media only Screen and (min-width: 1400px) {
   #header .carousel {
-    margin: 356px auto auto 10%;
+    width: 55%;
+    margin: 315px auto auto 10%;
   }
 }
 #header .carousel .carousel-inner {
@@ -416,21 +417,20 @@ main section:nth-child(4) div:nth-child(3) {
   position: relative;
   border-top: 2px solid #064d46;
   border-right: 2px solid #064d46;
-  border-bottom: 2px solid #064d46;
   border-left: 2px solid #064d46;
   background-size: contain;
-  padding-top: 66%;
+  padding-top: 60%;
   background-image: url(../images/home.webp);
   background-repeat: no-repeat;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(4) div:nth-child(3) {
     background-size: cover;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top: 3px solid #064d46;
-    border-right: 3px solid #064d46;
-    border-bottom: 3px solid #064d46;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 4px solid #064d46;
+    border-right: 4px solid #064d46;
+    border-bottom: 4px solid #064d46;
     border-left: none;
     padding: 27%;
   }
