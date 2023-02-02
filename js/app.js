@@ -13,12 +13,11 @@ setInterval(function () {
 
 window.onload = function () {
 
-  
-
     service.forEach((el, x) => {
 
-
         el.addEventListener("click", function () {
+
+            document.getElementById("href").scrollIntoView({ block: "center" });
 
             count = 17;
 
@@ -26,9 +25,6 @@ window.onload = function () {
             service[1].disabled = true;
             service[2].disabled = true;
             service[3].disabled = true;
-
-
-            document.getElementById("href").scrollIntoView({ block: "center" });
 
             if (isNaN(current)) {
 
@@ -48,6 +44,15 @@ window.onload = function () {
                 return
             }
 
+            aside[current].classList = "animationout";
+
+            setTimeout(function () {
+
+                aside[x].classList = "animation";
+            }, 1000);
+
+            current = x;
+
             setTimeout(function () {
 
                 service[0].disabled = false;
@@ -56,15 +61,6 @@ window.onload = function () {
                 service[3].disabled = false;
                 el.focus()
             }, 2000);
-
-            aside[current].classList = "animationout";
-
-            current = x;
-
-            setTimeout(function () {
-
-                aside[x].classList = "animation";
-            }, 1000);
         });
     })
 }
