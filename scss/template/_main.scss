@@ -419,7 +419,12 @@ main {
             padding-top: 50%;
             border: 1px solid $c1;
             border-radius: 2px;
+            @media only Screen and (min-width: 576px) {
+                width: 80%;
+                margin: auto;
+            }
             @media only Screen and (min-width: 768px) {
+                margin: unset;
                 background-image: url(../images/client.webp);
                 height: unset;
                 position: absolute;

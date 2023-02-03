@@ -681,8 +681,15 @@ main section:nth-child(6) span:nth-child(4) {
   border: 1px solid #064d46;
   border-radius: 2px;
 }
+@media only Screen and (min-width: 576px) {
+  main section:nth-child(6) span:nth-child(4) {
+    width: 80%;
+    margin: auto;
+  }
+}
 @media only Screen and (min-width: 768px) {
   main section:nth-child(6) span:nth-child(4) {
+    margin: unset;
     background-image: url(../images/client.webp);
     height: unset;
     position: absolute;
