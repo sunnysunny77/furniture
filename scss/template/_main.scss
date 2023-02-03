@@ -413,10 +413,10 @@ main {
         span:nth-child(4) {
             background-image: url(../images/client-mobile.webp);
             background-size: cover;
-            background-position: center;
+            background-position: center bottom;
             background-repeat: no-repeat;
             width: 100%;
-            padding-top: 50%;
+            padding-top: 30%;
             border: 1px solid $c1;
             border-radius: 2px;
             @media only Screen and (min-width: 576px) {
