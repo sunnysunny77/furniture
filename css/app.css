@@ -550,6 +550,11 @@ main section:nth-child(4) div:nth-child(3) .animationout {
   animation: slideout 1s;
   opacity: 0;
 }
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(5) {
+    margin-bottom: 10rem;
+  }
+}
 main section:nth-child(5) h2 {
   position: relative;
 }
@@ -610,6 +615,109 @@ main section:nth-child(5) p svg {
   margin: 10% auto;
   color: #064d46;
   font-size: 30px;
+}
+main section:nth-child(6) {
+  position: relative;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: #064d46;
+    z-index: -2;
+  }
+  main section:nth-child(6)::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/div.webp);
+    background-repeat: repeat-y;
+    background-position: 97.5% 75%;
+    z-index: -1;
+  }
+}
+main section:nth-child(6) h2 {
+  color: #060606;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) h2 {
+    color: white;
+  }
+}
+main section:nth-child(6) p:nth-child(2) {
+  color: #535964;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) p:nth-child(2) {
+    color: white;
+  }
+}
+main section:nth-child(6) p:nth-child(2) svg {
+  float: right;
+  margin-top: 2%;
+  font-size: 25px;
+  color: #064d46;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) p:nth-child(2) svg {
+    color: white;
+    margin-top: 10%;
+  }
+}
+main section:nth-child(6) span:nth-child(3) {
+  background-image: url(../images/client.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 75%;
+  border: 1px solid #064d46;
+  border-radius: 2px;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) span:nth-child(3) {
+    height: unset;
+    position: absolute;
+    background-size: contain;
+    padding-top: unset;
+    width: 20%;
+    top: -10%;
+    left: 10%;
+    border: 1px solid white;
+  }
+}
+main section:nth-child(6) span:nth-child(3) p {
+  padding: 4%;
+  background-color: #064d46;
+  color: white;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) span:nth-child(3) p {
+    background-color: white;
+    color: #060606;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 131%;
+    box-shadow: -2px 2px 2px #060606;
+  }
+}
+main section:nth-child(6) span:nth-child(3) p span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(6) span:nth-child(3) p span {
+    color: #535964;
+  }
 }
 
 /* css */
