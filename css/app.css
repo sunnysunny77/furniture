@@ -550,8 +550,32 @@ main section:nth-child(4) div:nth-child(3) .animationout {
   animation: slideout 1s;
   opacity: 0;
 }
+main section:nth-child(5) h2 {
+  position: relative;
+}
+main section:nth-child(5) h2::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/plus.webp);
+  background-repeat: space;
+  background-size: auto;
+  top: 0;
+  right: 100%;
+  bottom: 50%;
+  left: -25%;
+}
+@media only Screen and (min-width: 768px) {
+  main section:nth-child(5) h2::after {
+    top: 50%;
+    right: unset;
+    bottom: -400%;
+    left: -33%;
+    width: 90px;
+  }
+}
 main section:nth-child(5) div:nth-child(1) {
   background-color: #064d46;
+  border-bottom: 2px solid #064d46;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(5) div:nth-child(1) {
@@ -577,6 +601,15 @@ main section:nth-child(5) div:nth-child(1) div::after {
 }
 main section:nth-child(5) div:nth-child(1) img {
   height: 100%;
+}
+main section:nth-child(5) p {
+  color: #535964;
+}
+main section:nth-child(5) p svg {
+  display: block;
+  margin: 10% auto;
+  color: #064d46;
+  font-size: 30px;
 }
 
 /* css */
