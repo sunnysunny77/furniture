@@ -388,60 +388,61 @@ main {
                 z-index: -1;
             }
         }
+        svg {
+            float: right;
+            font-size: 25px;
+            color: $c1;
+            width: 25px;
+            @media only Screen and (min-width: 768px) {
+                color: $c3; 
+                margin-right: 5%; 
+            }
+        }
         h2 {
             color: $c2;
             @media only Screen and (min-width: 768px) {
                 color: $c3;
             }
         }
-        p:nth-child(2) {
+        p:nth-child(3) {
             color: $c6;
             @media only Screen and (min-width: 768px) {
                 color: $c3;
             }
-            svg {
-                float: right;
-                margin-top: 2%;
-                font-size: 25px;
-                color: $c1;
-                @media only Screen and (min-width: 768px) {
-                    color: $c3;
-                    margin-top: 10%;
-                }
-            }
         }
-        span:nth-child(3) {
-            background-image: url(../images/client.webp);
+        span:nth-child(4) {
+            background-image: url(../images/client-mobile.webp);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
-            padding-top: 75%;
+            padding-top: 50%;
             border: 1px solid $c1;
             border-radius: 2px;
             @media only Screen and (min-width: 768px) {
+                background-image: url(../images/client.webp);
                 height: unset;
                 position: absolute;
-                background-size: contain;
                 padding-top: unset;
                 width: 20%;
                 top: -10%;
                 left: 10%;
-                border: 1px solid $c3;
+                border: 4px solid $c4;
             }
             p {
                 padding: 4%;
                 background-color: $c1;
                 color: $c3;
+                border-top: 1px solid $c3;
                 @media only Screen and (min-width: 768px) {
+                    border-top: unset;
                     background-color: $c3;
                     color: $c2;
                     position: relative;
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    margin-top: 131%;
-                    box-shadow: -2px 2px 2px $c2;
+                    margin-top: 125%;
                 }
                 span {
                     display: block;
