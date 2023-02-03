@@ -303,7 +303,6 @@ main {
     section:nth-child(5) {
         h2 {
             position: relative;
-           
             &::after {
                 position: absolute;
                 content: "";
@@ -322,7 +321,6 @@ main {
                 width: 90px;
                 }
             }
-        
         }
         div:nth-child(1) {
             background-color: $c1;
