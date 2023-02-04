@@ -634,8 +634,8 @@ main div:nth-child(6)::after {
   border-radius: 2px;
   right: 0;
   bottom: 0;
-  left: 5%;
-  background-image: linear-gradient(to left, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, rgba(6, 77, 70, 0.75), transparent);
+  left: 0;
+  background-image: linear-gradient(to left, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, rgba(6, 77, 70, 0.85), transparent);
   z-index: -1;
 }
 @media only Screen and (min-width: 992px) {

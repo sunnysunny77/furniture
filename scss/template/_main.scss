@@ -379,8 +379,8 @@ main {
             border-radius: 2px;
             right: 0;
             bottom: 0;
-            left: 5%;
-            background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, $c1, $c1, $c1, rgba($c1, 0.75), transparent);
+            left: 0;
+            background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, $c1, $c1, $c1, rgba($c1, 0.85), transparent);
             z-index: -1;
             @media only Screen and (min-width: 992px) {
                 left: 40%;
