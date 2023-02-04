@@ -309,7 +309,7 @@ main {
                 background-image: url(../images/plus.webp);
                 background-repeat: space;
                 background-size: auto;
-                top: 0; 
+                top: 0;
                 right: 100%;
                 bottom: calc(100% - 30px);
                 width: calc(33% - 1rem);
@@ -380,10 +380,11 @@ main {
             right: 0;
             bottom: 0;
             left: 0;
-            background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, $c1, $c1, rgba($c1, 0.85), transparent);
+            background-image: linear-gradient(to bottom, $c1,  rgba($c1, 0.85), transparent);
             z-index: -1;
             @media only Screen and (min-width: 992px) {
                 left: 40%;
+                background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, rgba($c1, 0.5), transparent);
             }
         }
         p {
