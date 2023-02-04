@@ -649,7 +649,7 @@ main div:nth-child(6) p {
 main div:nth-child(6) button {
   width: fit-content;
   border-radius: 2px;
-  padding: 2.5% 5%;
+  padding: 15px 30px;
   background-color: #f7ac23;
   color: white;
   transition: background-color 1s;
