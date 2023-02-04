@@ -562,7 +562,7 @@ main section:nth-child(5) h2::after {
   top: 0;
   right: 100%;
   bottom: calc(100% - 30px);
-  left: -25%;
+  left: -20%;
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(5) h2::after {
