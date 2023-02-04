@@ -483,6 +483,7 @@ main {
                 color: $c3;
                 border-top: 1px solid $c3;
                 @media only Screen and (min-width: 768px) {
+                    border-radius: 2px;
                     border-top: unset;
                     background-color: $c3;
                     color: $c2;
