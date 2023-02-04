@@ -834,7 +834,7 @@ main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
     border: 2px solid #064d46;
     width: 320px;
     position: absolute;
-    top: calc(50% - 40px);
+    top: calc(50% - 48px);
     left: 75%;
   }
 }
