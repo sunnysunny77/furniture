@@ -776,19 +776,19 @@ main section:nth-child(7) div:nth-child(4) p span {
     color: #535964;
   }
 }
-main div:nth-child(8) {
+main section:nth-child(8) {
   position: relative;
   border: 2px solid #064d46;
   border-radius: 2px;
   margin-bottom: 6rem;
 }
 @media only Screen and (min-width: 768px) {
-  main div:nth-child(8) {
+  main section:nth-child(8) {
     margin-bottom: 3rem;
     border: none;
   }
 }
-main div:nth-child(8)::after {
+main section:nth-child(8)::after {
   position: absolute;
   content: "";
   background-image: url(../images/plus.webp);
@@ -801,7 +801,7 @@ main div:nth-child(8)::after {
   z-index: 999;
 }
 @media only Screen and (min-width: 768px) {
-  main div:nth-child(8)::after {
+  main section:nth-child(8)::after {
     top: 25%;
     right: 5%;
     bottom: 25%;
@@ -809,23 +809,23 @@ main div:nth-child(8)::after {
     width: 5%;
   }
 }
-main div:nth-child(8) div:nth-child(1) {
+main section:nth-child(8) > div {
   position: relative;
   background-color: #064d46;
 }
 @media only Screen and (min-width: 992px) {
-  main div:nth-child(8) div:nth-child(1) {
+  main section:nth-child(8) > div {
     margin-left: calc(5% + 15px);
     border-radius: 2px;
   }
 }
-main div:nth-child(8) div:nth-child(1) article {
+main section:nth-child(8) > div div {
   color: rgba(255, 255, 255, 0.6);
 }
-main div:nth-child(8) div:nth-child(1) article h3 {
+main section:nth-child(8) > div div h3 {
   color: white;
 }
-main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
+main section:nth-child(8) > div p:nth-child(2) {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -833,7 +833,7 @@ main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
   background-color: white;
 }
 @media only Screen and (min-width: 768px) {
-  main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
+  main section:nth-child(8) > div p:nth-child(2) {
     border: 2px solid #064d46;
     width: 320px;
     position: absolute;
@@ -841,14 +841,14 @@ main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
     left: 75%;
   }
 }
-main div:nth-child(8) div:nth-child(1) p:nth-child(2) span {
+main section:nth-child(8) > div p:nth-child(2) span {
   color: inherit;
 }
-main div:nth-child(8) div:nth-child(1) p:nth-child(2) span span {
+main section:nth-child(8) > div p:nth-child(2) span span {
   color: #535964;
   display: block;
 }
-main div:nth-child(8) div:nth-child(1) p:nth-child(2) button {
+main section:nth-child(8) > div p:nth-child(2) button {
   border-radius: 2px;
   padding: 2.5% 5%;
   background-color: #f7ac23;
@@ -856,7 +856,7 @@ main div:nth-child(8) div:nth-child(1) p:nth-child(2) button {
   transition: background-color 1s;
   border: none;
 }
-main div:nth-child(8) div:nth-child(1) p:nth-child(2) button:hover, main div:nth-child(8) div:nth-child(1) p:nth-child(2) button:focus {
+main section:nth-child(8) > div p:nth-child(2) button:hover, main section:nth-child(8) > div p:nth-child(2) button:focus {
   background-color: #060606;
   color: #f7ac23;
 }

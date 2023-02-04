@@ -507,7 +507,7 @@ main {
             }
         }
     }
-    div:nth-child(8) {
+    section:nth-child(8) {
         position: relative;
         border: 2px solid $c1;
         border-radius: 2px;
@@ -535,14 +535,14 @@ main {
                 width: 5%;
             }
         }
-        div:nth-child(1) {
+        > div {
             position: relative;
             background-color: $c1;
             @media only Screen and (min-width: 992px) {
                 margin-left: calc(5% + 15px);
                 border-radius: 2px;
             }
-            article {
+            div {
                 color: $c5;
                 h3 {
                     color: $c3;
