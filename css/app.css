@@ -793,7 +793,7 @@ main div:nth-child(8)::after {
   background-repeat: space;
   background-size: auto;
   top: -45px;
-  right: 5%;
+  right: 2.5%;
   bottom: calc(100% + 15px);
   width: 20%;
   z-index: 999;
@@ -801,6 +801,7 @@ main div:nth-child(8)::after {
 @media only Screen and (min-width: 768px) {
   main div:nth-child(8)::after {
     top: 25%;
+    right: 5%;
     bottom: 25%;
     width: 5%;
   }
