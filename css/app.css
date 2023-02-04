@@ -861,6 +861,22 @@ main section:nth-child(8) > div p:nth-child(2) button:hover, main section:nth-ch
   color: #f7ac23;
 }
 
+footer {
+  background-color: #002521;
+  color: white;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover, footer a:focus {
+  color: #f7ac23;
+}
+footer ul {
+  list-style-type: none;
+}
+
 /* css */
 body {
   margin: 0 auto;

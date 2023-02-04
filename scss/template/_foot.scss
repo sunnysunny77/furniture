@@ -1,0 +1,17 @@
+footer {
+    background-color: $c8;
+    color: $c3;
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        &:hover,
+        &:focus {
+            color: $c4;
+        }
+    }
+    ul {
+        list-style-type: none;
+      
+    }
+}
