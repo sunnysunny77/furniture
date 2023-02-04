@@ -309,10 +309,10 @@ main {
                 background-image: url(../images/plus.webp);
                 background-repeat: space;
                 background-size: auto;
-                top: 0;
-                right: 95%;
+                top: 0; 
+                right: 100%;
                 bottom: calc(100% - 30px);
-                left: calc(-25% - 1rem);
+                width: calc(33% - 1rem);
                 @media only Screen and (min-width: 768px) {
                     top: 50%;
                     right: unset;
@@ -521,9 +521,9 @@ main {
             background-repeat: space;
             background-size: auto;
             top: -45px;
-            right: -1rem;
+            right: 0;
             bottom: calc(100% + 15px);
-           left: 75%;
+            left: 75%;
             z-index: 999;
             @media only Screen and (min-width: 768px) {
                 top: 25%;
