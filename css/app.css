@@ -611,10 +611,53 @@ main section:nth-child(5) p svg {
   color: #064d46;
   font-size: 30px;
 }
+main div:nth-child(6) {
+  position: relative;
+  color: white;
+  background-image: url(../images/sitting.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 2px;
+  z-index: 999;
+  margin: 3rem 0;
+}
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(6) {
-    margin: 10rem 5rem;
+  main div:nth-child(6) {
+    margin: 10rem 2.5rem 15rem 2.5rem;
   }
+}
+main div:nth-child(6)::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  border-radius: 2px;
+  right: 0;
+  bottom: 0;
+  left: 5%;
+  background-image: linear-gradient(to left, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, #064d46, rgba(6, 77, 70, 0.75), transparent);
+  z-index: -1;
+}
+@media only Screen and (min-width: 992px) {
+  main div:nth-child(6)::after {
+    left: 40%;
+  }
+}
+main div:nth-child(6) p {
+  color: rgba(255, 255, 255, 0.6);
+}
+main div:nth-child(6) button {
+  width: fit-content;
+  border-radius: 2px;
+  padding: 2.5% 5%;
+  background-color: #f7ac23;
+  color: white;
+  transition: background-color 1s;
+  border: none;
+}
+main div:nth-child(6) button:hover, main div:nth-child(6) button:focus {
+  background-color: #060606;
+  color: #f7ac23;
 }
 main section:nth-child(7) {
   position: relative;
@@ -671,7 +714,7 @@ main section:nth-child(7) p:nth-child(3) {
     color: white;
   }
 }
-main section:nth-child(7) span:nth-child(4) {
+main section:nth-child(7) div:nth-child(4) {
   background-image: url(../images/client-mobile.webp);
   background-size: cover;
   background-position: center bottom;
@@ -682,13 +725,13 @@ main section:nth-child(7) span:nth-child(4) {
   border-radius: 2px;
 }
 @media only Screen and (min-width: 576px) {
-  main section:nth-child(7) span:nth-child(4) {
+  main section:nth-child(7) div:nth-child(4) {
     width: 80%;
     margin: auto;
   }
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(7) span:nth-child(4) {
+  main section:nth-child(7) div:nth-child(4) {
     margin: unset;
     background-image: url(../images/client.webp);
     height: unset;
@@ -701,14 +744,14 @@ main section:nth-child(7) span:nth-child(4) {
     border: 4px solid #f7ac23;
   }
 }
-main section:nth-child(7) span:nth-child(4) p {
+main section:nth-child(7) div:nth-child(4) p {
   padding: 4%;
   background-color: #064d46;
   color: white;
   border-top: 1px solid white;
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(7) span:nth-child(4) p {
+  main section:nth-child(7) div:nth-child(4) p {
     border-top: unset;
     background-color: white;
     color: #060606;
@@ -720,12 +763,12 @@ main section:nth-child(7) span:nth-child(4) p {
     box-shadow: 2px 2px 2px #060606;
   }
 }
-main section:nth-child(7) span:nth-child(4) p span {
+main section:nth-child(7) div:nth-child(4) p span {
   display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(7) span:nth-child(4) p span {
+  main section:nth-child(7) div:nth-child(4) p span {
     color: #535964;
   }
 }

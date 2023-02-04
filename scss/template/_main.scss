@@ -359,11 +359,50 @@ main {
             }
         }
     }
-    section:nth-child(6) {
+    div:nth-child(6) {
+        position: relative;
+        color: $c3;
+        background-image: url(../images/sitting.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 2px;
+        z-index: 999;
+        margin: 3rem 0;
         @media only Screen and (min-width: 768px) {
-            margin: 10rem 5rem;
+            margin: 10rem 2.5rem 15rem 2.5rem;
         }
-      
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            border-radius: 2px;
+            right: 0;
+            bottom: 0;
+            left: 5%;
+            background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, $c1, $c1, $c1,rgba($c1, 0.75), transparent);
+            z-index: -1;
+            @media only Screen and (min-width: 992px) {
+                left: 40%;
+            }
+        }
+        p {
+            color: $c5;
+        }
+        button {
+            width: fit-content;
+            border-radius: 2px;
+            padding: 2.5% 5%;
+            background-color: $c4;
+            color: $c3;
+            transition: background-color 1s;
+            border: none;
+            &:hover,
+            &:focus {
+                background-color: $c2;
+                color: $c4;
+            }
+        }
     }
     section:nth-child(7) {
         position: relative;
@@ -397,8 +436,8 @@ main {
             color: $c1;
             width: 25px;
             @media only Screen and (min-width: 768px) {
-                color: $c3; 
-                margin-right: 5%; 
+                color: $c3;
+                margin-right: 5%;
             }
         }
         h2 {
@@ -413,7 +452,7 @@ main {
                 color: $c3;
             }
         }
-        span:nth-child(4) {
+        div:nth-child(4) {
             background-image: url(../images/client-mobile.webp);
             background-size: cover;
             background-position: center bottom;
@@ -453,7 +492,6 @@ main {
                     bottom: -40px;
                     left: 10%;
                     box-shadow: 2px 2px 2px $c2;
-                   
                 }
                 span {
                     display: block;
