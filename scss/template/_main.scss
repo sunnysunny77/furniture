@@ -301,9 +301,6 @@ main {
         }
     }
     section:nth-child(5) {
-        @media only Screen and (min-width: 768px) {
-            margin-bottom: 10rem;
-        }
         h2 {
             position: relative;
             &::after {
@@ -363,6 +360,12 @@ main {
         }
     }
     section:nth-child(6) {
+        @media only Screen and (min-width: 768px) {
+            margin: 10rem 5rem;
+        }
+      
+    }
+    section:nth-child(7) {
         position: relative;
         @media only Screen and (min-width: 768px) {
             &::after {
