@@ -312,7 +312,7 @@ main {
                 top: 0;
                 right: 100%;
                 bottom: calc(100% - 30px);
-                left: -20%;
+                left: -25%;
                 @media only Screen and (min-width: 768px) {
                     top: 50%;
                     right: unset;
@@ -527,7 +527,7 @@ main {
             z-index: 999;
             @media only Screen and (min-width: 768px) {
                 top: 25%;
-                right: 5%;
+                right: 7.5%;
                 bottom: 25%;
                 width: 5%;
             }
