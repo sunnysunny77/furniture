@@ -560,9 +560,9 @@ main section:nth-child(5) h2::after {
   background-repeat: space;
   background-size: auto;
   top: 0;
-  right: 100%;
+  right: 95%;
   bottom: calc(100% - 30px);
-  left: -25%;
+  left: calc(-25% - 1rem);
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(5) h2::after {
@@ -793,9 +793,9 @@ main div:nth-child(8)::after {
   background-repeat: space;
   background-size: auto;
   top: -45px;
-  right: 2.5%;
+  right: -1rem;
   bottom: calc(100% + 15px);
-  width: 20%;
+  left: 75%;
   z-index: 999;
 }
 @media only Screen and (min-width: 768px) {
@@ -803,6 +803,7 @@ main div:nth-child(8)::after {
     top: 25%;
     right: 5%;
     bottom: 25%;
+    left: unset;
     width: 5%;
   }
 }
