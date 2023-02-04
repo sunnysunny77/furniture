@@ -561,7 +561,7 @@ main section:nth-child(5) h2::after {
   background-size: auto;
   top: 0;
   right: 100%;
-  bottom: 50%;
+  bottom: calc(100% - 30px);
   left: -25%;
 }
 @media only Screen and (min-width: 768px) {
@@ -649,7 +649,7 @@ main div:nth-child(6) p {
 main div:nth-child(6) button {
   width: fit-content;
   border-radius: 2px;
-  padding: 10px 25px;
+  padding: 2.5% 5%;
   background-color: #f7ac23;
   color: white;
   transition: background-color 1s;
@@ -745,6 +745,7 @@ main section:nth-child(7) div:nth-child(4) {
   }
 }
 main section:nth-child(7) div:nth-child(4) p {
+  border-radius: 2px;
   padding: 4%;
   background-color: #064d46;
   color: white;
@@ -772,6 +773,89 @@ main section:nth-child(7) div:nth-child(4) p span {
   main section:nth-child(7) div:nth-child(4) p span {
     color: #535964;
   }
+}
+main div:nth-child(8) {
+  position: relative;
+  border: 2px solid #064d46;
+  border-radius: 2px;
+  margin-bottom: 6rem;
+}
+@media only Screen and (min-width: 768px) {
+  main div:nth-child(8) {
+    margin-bottom: 3rem;
+    border: none;
+  }
+}
+main div:nth-child(8)::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/plus.webp);
+  background-repeat: space;
+  background-size: auto;
+  top: -45px;
+  right: 0;
+  bottom: calc(100% + 15px);
+  width: 20%;
+  z-index: 999;
+}
+@media only Screen and (min-width: 768px) {
+  main div:nth-child(8)::after {
+    top: 25%;
+    right: 5%;
+    bottom: 25%;
+    width: 5%;
+  }
+}
+main div:nth-child(8) div:nth-child(1) {
+  position: relative;
+  background-color: #064d46;
+}
+@media only Screen and (min-width: 992px) {
+  main div:nth-child(8) div:nth-child(1) {
+    margin-left: calc(5% + 15px);
+    border-radius: 2px;
+  }
+}
+main div:nth-child(8) div:nth-child(1) article {
+  color: rgba(255, 255, 255, 0.6);
+}
+main div:nth-child(8) div:nth-child(1) article h3 {
+  color: white;
+}
+main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+}
+@media only Screen and (min-width: 768px) {
+  main div:nth-child(8) div:nth-child(1) p:nth-child(2) {
+    border: 2px solid #064d46;
+    width: 320px;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 75%;
+  }
+}
+main div:nth-child(8) div:nth-child(1) p:nth-child(2) span {
+  color: inherit;
+}
+main div:nth-child(8) div:nth-child(1) p:nth-child(2) span span {
+  color: #535964;
+  display: block;
+}
+main div:nth-child(8) div:nth-child(1) p:nth-child(2) button {
+  border-radius: 2px;
+  padding: 2.5% 5%;
+  background-color: #f7ac23;
+  color: white;
+  transition: background-color 1s;
+  border: none;
+}
+main div:nth-child(8) div:nth-child(1) p:nth-child(2) button:hover, main div:nth-child(8) div:nth-child(1) p:nth-child(2) button:focus {
+  background-color: #060606;
+  color: #f7ac23;
 }
 
 /* css */
