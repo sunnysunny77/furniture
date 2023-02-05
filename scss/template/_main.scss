@@ -313,12 +313,12 @@ main {
                 top: 0;
                 right: 100%;
                 bottom: calc(100% - 30px);
-                width: calc(33% - 1rem);
+                width: calc(34% - 1rem);
                 @media only Screen and (min-width: 768px) {
                     top: 50%;
                     right: unset;
                     bottom: -400%;
-                    left: -33%;
+                    left: -34%;
                     width: 90px;
                 }
             }
