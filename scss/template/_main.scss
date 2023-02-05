@@ -408,7 +408,9 @@ main {
     }
     section:nth-child(7) {
         position: relative;
+        margin-bottom: 6rem;
         @media only Screen and (min-width: 768px) {
+            margin-bottom: unset;
             &::after {
                 position: absolute;
                 content: "";
@@ -542,13 +544,13 @@ main {
                 margin-left: calc(5% + 15px);
                 border-radius: 2px;
             }
-            div {
+            div p {
                 color: $c5;
-                h3 {
-                    color: $c3;
-                }
             }
-            p:nth-child(2) {
+            div h3 {
+                color: $c3;
+            }
+            > p {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;

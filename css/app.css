@@ -663,8 +663,12 @@ main div:nth-child(6) button:hover, main div:nth-child(6) button:focus {
 }
 main section:nth-child(7) {
   position: relative;
+  margin-bottom: 6rem;
 }
 @media only Screen and (min-width: 768px) {
+  main section:nth-child(7) {
+    margin-bottom: unset;
+  }
   main section:nth-child(7)::after {
     position: absolute;
     content: "";
@@ -819,13 +823,13 @@ main section:nth-child(8) > div {
     border-radius: 2px;
   }
 }
-main section:nth-child(8) > div div {
+main section:nth-child(8) > div div p {
   color: rgba(255, 255, 255, 0.6);
 }
 main section:nth-child(8) > div div h3 {
   color: white;
 }
-main section:nth-child(8) > div p:nth-child(2) {
+main section:nth-child(8) > div > p {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -833,7 +837,7 @@ main section:nth-child(8) > div p:nth-child(2) {
   background-color: white;
 }
 @media only Screen and (min-width: 768px) {
-  main section:nth-child(8) > div p:nth-child(2) {
+  main section:nth-child(8) > div > p {
     border: 2px solid #064d46;
     width: 320px;
     position: absolute;
@@ -841,14 +845,14 @@ main section:nth-child(8) > div p:nth-child(2) {
     left: 75%;
   }
 }
-main section:nth-child(8) > div p:nth-child(2) span {
+main section:nth-child(8) > div > p span {
   color: inherit;
 }
-main section:nth-child(8) > div p:nth-child(2) span span {
+main section:nth-child(8) > div > p span span {
   color: #535964;
   display: block;
 }
-main section:nth-child(8) > div p:nth-child(2) button {
+main section:nth-child(8) > div > p button {
   border-radius: 2px;
   padding: 2.5% 5%;
   background-color: #f7ac23;
@@ -856,7 +860,7 @@ main section:nth-child(8) > div p:nth-child(2) button {
   transition: background-color 1s;
   border: none;
 }
-main section:nth-child(8) > div p:nth-child(2) button:hover, main section:nth-child(8) > div p:nth-child(2) button:focus {
+main section:nth-child(8) > div > p button:hover, main section:nth-child(8) > div > p button:focus {
   background-color: #060606;
   color: #f7ac23;
 }
