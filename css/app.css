@@ -817,10 +817,9 @@ main section:nth-child(8) > div {
   position: relative;
   background-color: #064d46;
 }
-@media only Screen and (min-width: 992px) {
+@media only Screen and (min-width: 1400px) {
   main section:nth-child(8) > div {
-    margin-left: calc(3rem + 30px);
-    border-radius: 2px;
+    margin-left: 7.25%;
   }
 }
 main section:nth-child(8) > div div p {
@@ -838,6 +837,7 @@ main section:nth-child(8) > div > p {
 }
 @media only Screen and (min-width: 768px) {
   main section:nth-child(8) > div > p {
+    border-radius: 2px;
     border: 2px solid #064d46;
     width: 320px;
     position: absolute;

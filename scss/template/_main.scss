@@ -540,9 +540,9 @@ main {
         > div {
             position: relative;
             background-color: $c1;
-            @media only Screen and (min-width: 992px) {
-                margin-left: calc(3rem + 30px);
-                border-radius: 2px;
+            @media only Screen and (min-width: 1400px) {
+                margin-left: 7.25%;
+             
             }
             div p {
                 color: $c5;
@@ -557,6 +557,7 @@ main {
                 justify-content: space-between;
                 background-color: $c3;
                 @media only Screen and (min-width: 768px) {
+                    border-radius: 2px;
                     border: 2px solid $c1;
                     width: 320px;
                     position: absolute;
