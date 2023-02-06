@@ -541,7 +541,7 @@ main {
             position: relative;
             background-color: $c1;
             @media only Screen and (min-width: 992px) {
-                margin-left: calc(5% + 15px);
+                margin-left: calc(3rem + 30px);
                 border-radius: 2px;
             }
             div p {

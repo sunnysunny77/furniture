@@ -819,7 +819,7 @@ main section:nth-child(8) > div {
 }
 @media only Screen and (min-width: 992px) {
   main section:nth-child(8) > div {
-    margin-left: calc(5% + 15px);
+    margin-left: calc(3rem + 30px);
     border-radius: 2px;
   }
 }
