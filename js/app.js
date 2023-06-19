@@ -1,66 +1,67 @@
 let current;
 let count;
 
-const service = document.querySelectorAll('.service');
-const aside = document.querySelectorAll('.aside');
+const service = document.querySelectorAll(".service");
+const aside = document.querySelectorAll(".aside");
 
-setInterval(function () {
+setInterval(function() {
 
-    count--;
+  count--;
 
-    if (count == 0) aside[current].classList = "aside animationout";
+  if (count === 0) {aside[current].classList.replace("animation","animationout");}
 }, 1000);
 
-window.onload = function () {
+window.addEventListener("load", function() {
 
-    service.forEach((el, x) => {
+  for (const [x, el] of service.entries()) {
 
-        el.addEventListener("click", function () {
+    el.addEventListener("click", function() {
 
-            document.getElementById("href").scrollIntoView({ block: "center" });
+      document.querySelector("#href").scrollIntoView({ block: "center" });
 
-            count = 17;
+      count = 17;
 
-            service[0].disabled = true;
-            service[1].disabled = true;
-            service[2].disabled = true;
-            service[3].disabled = true;
+      service[0].disabled = true;
+      service[1].disabled = true;
+      service[2].disabled = true;
+      service[3].disabled = true;
 
-            if (isNaN(current)) {
 
-                current = x;
+      if (current === undefined) {
 
-                aside[x].classList = "aside animation";
+        current = x;
 
-                setTimeout(function () {
+        aside[x].classList.add("animation");
+        setTimeout(function() {
 
-                    service[0].disabled = false;
-                    service[1].disabled = false;
-                    service[2].disabled = false;
-                    service[3].disabled = false;
-                    el.focus()
-                }, 1000)
+          service[0].disabled = false;
+          service[1].disabled = false;
+          service[2].disabled = false;
+          service[3].disabled = false;
+          el.focus();
+        }, 1000);
 
-                return
-            }
+        return;
+      }
 
-            aside[current].classList = "aside animationout";
+      aside[current].classList.replace("animation","animationout");
 
-            setTimeout(function () {
+      setTimeout(function() {
 
-                aside[x].classList = "aside animation";
-            }, 1000);
+        aside[x].classList.add("animation");
+        aside[x].classList.remove("animationout");
+      }, 1000);
 
-            current = x;
+      current = x;
 
-            setTimeout(function () {
+      setTimeout(function() {
 
-                service[0].disabled = false;
-                service[1].disabled = false;
-                service[2].disabled = false;
-                service[3].disabled = false;
-                el.focus()
-            }, 2000);
-        });
-    })
-}
+        service[0].disabled = false;
+        service[1].disabled = false;
+        service[2].disabled = false;
+        service[3].disabled = false;
+        el.focus();
+      }, 2000);
+    });
+  }
+});
