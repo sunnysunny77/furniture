@@ -4,6 +4,7 @@ footer {
     a {
         display: block;
         text-decoration: none;
+        transition: color 0.2s;
         color: inherit;
         &:hover,
         &:focus {

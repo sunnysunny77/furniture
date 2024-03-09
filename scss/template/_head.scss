@@ -30,6 +30,7 @@ nav {
                 width: 37.5%;
             }
             a {
+                transition: color 0.2s;
                 text-decoration: none;
                 color: $c3;
                 @media only Screen and (min-width: 576px) {
@@ -57,6 +58,7 @@ nav {
                 }
                 span {
                     color: $c4;
+                    transition: color 0.2s;
                     display: block;
                     width: fit-content;
                     @media only Screen and (min-width: 576px) {
@@ -192,7 +194,7 @@ nav {
             font-size: smaller;
             background-color: $c4;
             color: $c3;
-            transition: background-color 1s;
+            transition: background-color 0.2s;
             border: none;
             &:hover,
             &:focus {

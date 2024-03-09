@@ -47,7 +47,7 @@ main {
                 }
             }
             a {
-                transition: background-color 1s;
+                transition: background-color 0.2s;
                 background-color: $c3;
                 text-decoration: none;
                 color: $c2;
@@ -76,7 +76,7 @@ main {
                     color: $c3;
                 }
                 span {
-                    transition: background-color 1s;
+                    transition: background-color 0.2s;
                     background-color: $c3;
                     margin: 0;
                     width: unset;
@@ -397,7 +397,7 @@ main {
             padding: 2.5% 5%;
             background-color: $c4;
             color: $c3;
-            transition: background-color 1s;
+            transition: background-color 0.2s;
             border: none;
             &:hover,
             &:focus {
@@ -576,7 +576,7 @@ main {
                     padding: 2.5% 5%;
                     background-color: $c4;
                     color: $c3;
-                    transition: background-color 1s;
+                    transition: background-color 0.2s;
                     border: none;
                     &:hover,
                     &:focus {

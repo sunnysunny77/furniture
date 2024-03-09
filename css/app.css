@@ -44,6 +44,7 @@ nav ul li {
   }
 }
 nav ul li a {
+  transition: color 0.2s;
   text-decoration: none;
   color: white;
 }
@@ -72,6 +73,7 @@ nav ul li:nth-child(1) svg {
 }
 nav ul li:nth-child(1) span {
   color: #f7ac23;
+  transition: color 0.2s;
   display: block;
   width: fit-content;
 }
@@ -229,7 +231,7 @@ nav ul li:nth-child(1), nav ul li:nth-child(2) {
   font-size: smaller;
   background-color: #f7ac23;
   color: white;
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   border: none;
 }
 #header p button:hover, #header p button:focus {
@@ -293,7 +295,7 @@ main section:nth-child(2) span img {
   }
 }
 main section:nth-child(2) span a {
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   background-color: white;
   text-decoration: none;
   color: #060606;
@@ -323,7 +325,7 @@ main section:nth-child(2) span a:hover span, main section:nth-child(2) span a:fo
   color: white;
 }
 main section:nth-child(2) span a span {
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   background-color: white;
   margin: 0;
   width: unset;
@@ -660,7 +662,7 @@ main div:nth-child(6) button {
   padding: 2.5% 5%;
   background-color: #f7ac23;
   color: white;
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   border: none;
 }
 main div:nth-child(6) button:hover, main div:nth-child(6) button:focus {
@@ -863,7 +865,7 @@ main section:nth-child(8) > div > p button {
   padding: 2.5% 5%;
   background-color: #f7ac23;
   color: white;
-  transition: background-color 1s;
+  transition: background-color 0.2s;
   border: none;
 }
 main section:nth-child(8) > div > p button:hover, main section:nth-child(8) > div > p button:focus {
@@ -878,6 +880,7 @@ footer {
 footer a {
   display: block;
   text-decoration: none;
+  transition: color 0.2s;
   color: inherit;
 }
 footer a:hover, footer a:focus {
