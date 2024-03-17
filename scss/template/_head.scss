@@ -177,11 +177,17 @@ nav {
         }
     }
     p {
-        box-shadow: -2px 2px 0px;
+        border-top:  2px transparent $c3;
+        border-left: 2px solid $c2;
+        border-right: 2px transparent $c3;
+        border-bottom: 2px solid $c2;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
         background-color: $c3;
+        width: calc(100% - 1px);
+        margin-left: 1px;
         @media only Screen and (min-width: 576px) {
-            border-radius: 2px;
-            border: 1px solid $c5;
+            border-top-right-radius: 2px;
             position: absolute;
             z-index: 999;
             top: 88%;
