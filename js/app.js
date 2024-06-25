@@ -1,15 +1,28 @@
 let current;
 let count;
+let nIntervId;
 
 const service = document.querySelectorAll(".service");
 const aside = document.querySelectorAll(".aside");
 
-setInterval(function() {
+const disabled = (bool) => {
+  for (const index of service) {
+    index.disabled = bool;
+  }
+};
 
+const interval = () => {
   count--;
 
-  if (count === 0) {aside[current].classList.replace("animation","animationout");}
-}, 1000);
+  if (count === 0) {
+    clearInterval(nIntervId);  
+    aside[current].classList.replace(
+      "has-animation",
+      "has-animation-out"
+    );
+  }
+};
+
 
 window.addEventListener("load", function() {
 
@@ -17,15 +30,11 @@ window.addEventListener("load", function() {
 
     el.addEventListener("click", function() {
 
-      document.querySelector("#href").scrollIntoView({ block: "center" });
+      //document.querySelector("#href").scrollIntoView({ block: "center" });
 
-      count = 17;
-
-      service[0].disabled = true;
-      service[1].disabled = true;
-      service[2].disabled = true;
-      service[3].disabled = true;
-
+      count = 10;
+      nIntervId = setInterval(interval, 1000);
+      disabled(true);
 
       if (current === undefined) {
 
@@ -34,10 +43,7 @@ window.addEventListener("load", function() {
         aside[x].classList.add("animation");
         setTimeout(function() {
 
-          service[0].disabled = false;
-          service[1].disabled = false;
-          service[2].disabled = false;
-          service[3].disabled = false;
+          disabled(false);
           el.focus();
         }, 1000);
 
@@ -56,10 +62,7 @@ window.addEventListener("load", function() {
 
       setTimeout(function() {
 
-        service[0].disabled = false;
-        service[1].disabled = false;
-        service[2].disabled = false;
-        service[3].disabled = false;
+        disabled(false);
         el.focus();
       }, 2000);
     });
