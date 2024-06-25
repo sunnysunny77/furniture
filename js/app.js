@@ -15,10 +15,10 @@ const interval = () => {
   count--;
 
   if (count === 0) {
-    clearInterval(nIntervId);  
+    clearInterval(nIntervId);
     aside[current].classList.replace(
-      "has-animation",
-      "has-animation-out"
+      "animation",
+      "animationout"
     );
   }
 };
