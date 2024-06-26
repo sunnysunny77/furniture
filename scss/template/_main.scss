@@ -290,15 +290,13 @@ main {
                     left: 27.5%;
                 }
             }
-            @media only Screen and (min-width: 768px) {
-                .animation {
-                    animation: slidein 1s;
-                    animation-fill-mode: forwards;
-                }
-                .animationout {
-                    animation: slideout 1s;
-                }
+            .animation {
+                animation: slidein 1s;
+                animation-fill-mode: forwards;
             }
+            .animationout {
+                animation: slideout 1s;
+            }    
         }
     }
     section:nth-child(5) {
