@@ -1,12 +1,12 @@
 let current;
 let count;
-let nIntervId;
+let inter_id;
 
-const service = document.querySelectorAll(".service");
-const aside = document.querySelectorAll(".aside");
+const button_group = document.querySelectorAll(".service");
+const action_aside = document.querySelectorAll(".aside");
 
 const disabled = (bool) => {
-  for (const index of service) {
+  for (const index of button_group) {
     index.disabled = bool;
   }
 };
@@ -15,56 +15,43 @@ const interval = () => {
   count--;
 
   if (count === 0) {
-    clearInterval(nIntervId);
-    aside[current].classList.replace(
+    clearInterval(inter_id);
+    action_aside[current].classList.replace(
       "animation",
       "animationout"
     );
   }
 };
 
-
 window.addEventListener("load", function() {
-
-  for (const [x, el] of service.entries()) {
-
-    el.addEventListener("click", function() {
-
-      //document.querySelector("#href").scrollIntoView({ block: "center" });
-
+  for (const [i, index] of button_group.entries()) {
+    index.addEventListener("click", function() {
       count = 10;
-      nIntervId = setInterval(interval, 1000);
+      clearInterval(inter_id);
+      inter_id = setInterval(interval, 1000);
       disabled(true);
+      setTimeout(() => {
+        disabled(false);
+        index.focus();
+      }, 3000);
 
       if (current === undefined) {
-
-        current = x;
-
-        aside[x].classList.add("animation");
-        setTimeout(function() {
-
-          disabled(false);
-          el.focus();
-        }, 1000);
-
-        return;
+        return (action_aside[i].classList.add("animation"), current = i);
       }
 
-      aside[current].classList.replace("animation","animationout");
+      action_aside[current].classList.replace(
+        "animation",
+        "animationout"
+      );
 
-      setTimeout(function() {
+      current = i;
 
-        aside[x].classList.add("animation");
-        aside[x].classList.remove("animationout");
+      setTimeout(() => {
+        action_aside[i].classList.replace(
+          "animationout",
+          "animation"
+        ) || action_aside[i].classList.add("animation");
       }, 1000);
-
-      current = x;
-
-      setTimeout(function() {
-
-        disabled(false);
-        el.focus();
-      }, 2000);
     });
   }
 });
