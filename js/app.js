@@ -16,10 +16,7 @@ const interval = () => {
 
   if (count === 0) {
     clearInterval(inter_id);
-    action_aside[current].classList.replace(
-      "animation",
-      "animationout"
-    );
+    action_aside[current].classList.remove("animation");
   }
 };
 
@@ -39,18 +36,12 @@ window.addEventListener("load", function() {
         return (action_aside[i].classList.add("animation"), current = i);
       }
 
-      action_aside[current].classList.replace(
-        "animation",
-        "animationout"
-      );
+      action_aside[current].classList.remove("animation");
 
       current = i;
 
       setTimeout(() => {
-        action_aside[i].classList.replace(
-          "animationout",
-          "animation"
-        ) || action_aside[i].classList.add("animation");
+        action_aside[i].classList.add("animation");
       }, 1000);
     });
   }

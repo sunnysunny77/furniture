@@ -203,12 +203,28 @@ main {
                     height: 100%;
                 }
             }
-            aside.aside {
+           aside.aside {
                 margin: 0;
                 padding: 2.5%;
                 color: $c3;
                 background-color: $c1;
-                opacity: 1;
+                transition:
+                top 1s,
+                right 1s,
+                bottom 1s,
+                left 1s,
+                opacity 1s;
+                top: 2.5%;
+                right: 2.5%;
+                bottom: 2.5%;
+                left: 27.5%;
+                &.animation {
+                    top: 5%;
+                    right: 5%;
+                    bottom: 5%;
+                    left: 30%;
+                    opacity: 1;
+                }
                 @media only Screen and (min-width: 576px) {
                     display: flex;
                     justify-content: space-between;
@@ -219,10 +235,6 @@ main {
                     position: absolute;
                     align-items: unset;
                     border-radius: 5px;
-                    top: 2.5%;
-                    right: 2.5%;
-                    bottom: 2.5%;
-                    left: 27.5%;
                     opacity: 0;
                     &::after {
                         position: absolute;
@@ -258,45 +270,6 @@ main {
                     }
                 }
             }
-            @keyframes slidein {
-                from {
-                    opacity: 0;
-                    top: 2.5%;
-                    right: 2.5%;
-                    bottom: 2.5%;
-                    left: 27.5%;
-                }
-                to {
-                    top: 5%;
-                    right: 5%;
-                    bottom: 5%;
-                    left: 30%;
-                    opacity: 1;
-                }
-            }
-            @keyframes slideout {
-                from {
-                    top: 5%;
-                    right: 5%;
-                    bottom: 5%;
-                    left: 30%;
-                    opacity: 1;
-                }
-                to {
-                    opacity: 0;
-                    top: 2.5%;
-                    right: 2.5%;
-                    bottom: 2.5%;
-                    left: 27.5%;
-                }
-            }
-            .animation {
-                animation: slidein 1s;
-                animation-fill-mode: forwards;
-            }
-            .animationout {
-                animation: slideout 1s;
-            }    
         }
     }
     section:nth-child(5) {
@@ -540,7 +513,6 @@ main {
             background-color: $c1;
             @media only Screen and (min-width: 1400px) {
                 margin-left: 7.25%;
-             
             }
             div p {
                 color: $c5;

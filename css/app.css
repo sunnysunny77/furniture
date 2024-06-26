@@ -464,6 +464,17 @@ main section:nth-child(4) div:nth-child(3) aside.aside {
   padding: 2.5%;
   color: white;
   background-color: #064d46;
+  transition: top 1s, right 1s, bottom 1s, left 1s, opacity 1s;
+  top: 2.5%;
+  right: 2.5%;
+  bottom: 2.5%;
+  left: 27.5%;
+}
+main section:nth-child(4) div:nth-child(3) aside.aside.animation {
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 30%;
   opacity: 1;
 }
 @media only Screen and (min-width: 576px) {
@@ -479,10 +490,6 @@ main section:nth-child(4) div:nth-child(3) aside.aside {
     position: absolute;
     align-items: unset;
     border-radius: 5px;
-    top: 2.5%;
-    right: 2.5%;
-    bottom: 2.5%;
-    left: 27.5%;
     opacity: 0;
   }
   main section:nth-child(4) div:nth-child(3) aside.aside::after {
@@ -523,45 +530,6 @@ main section:nth-child(4) div:nth-child(3) aside.aside p {
     width: 100%;
     max-width: 350px;
   }
-}
-@keyframes slidein {
-  from {
-    opacity: 0;
-    top: 2.5%;
-    right: 2.5%;
-    bottom: 2.5%;
-    left: 27.5%;
-  }
-  to {
-    top: 5%;
-    right: 5%;
-    bottom: 5%;
-    left: 30%;
-    opacity: 1;
-  }
-}
-@keyframes slideout {
-  from {
-    top: 5%;
-    right: 5%;
-    bottom: 5%;
-    left: 30%;
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    top: 2.5%;
-    right: 2.5%;
-    bottom: 2.5%;
-    left: 27.5%;
-  }
-}
-main section:nth-child(4) div:nth-child(3) .animation {
-  animation: slidein 1s;
-  animation-fill-mode: forwards;
-}
-main section:nth-child(4) div:nth-child(3) .animationout {
-  animation: slideout 1s;
 }
 main section:nth-child(5) h2 {
   position: relative;
