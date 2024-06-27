@@ -1,9 +1,9 @@
-let current;
+let previous;
 let count;
 let inter_id;
 
-const button_group = document.querySelectorAll(".service");
-const action_aside = document.querySelectorAll(".aside");
+const button_group = document.querySelectorAll(".button-group");
+const action_aside = document.querySelectorAll(".action-aside");
 
 const disabled = (bool) => {
   for (const index of button_group) {
@@ -16,14 +16,19 @@ const interval = () => {
 
   if (count === 0) {
     clearInterval(inter_id);
-    action_aside[current].classList.remove("animation");
+    action_aside[previous].style.transition =
+      "opacity 0.75s, top 0.75s, right 0.75s, bottom 0.75s, left 0.75s";
+    action_aside[previous].classList.remove("has-animation");
+    setTimeout(() => {
+      action_aside[previous].style.transition = "none";
+    }, 750);
   }
 };
 
-window.addEventListener("load", function() {
+window.addEventListener("load", () => {
   for (const [i, index] of button_group.entries()) {
     index.addEventListener("click", function() {
-      count = 10;
+      count = 12;
       clearInterval(inter_id);
       inter_id = setInterval(interval, 1000);
       disabled(true);
@@ -31,18 +36,29 @@ window.addEventListener("load", function() {
         disabled(false);
         index.focus();
       }, 3000);
-
-      if (current === undefined) {
-        return (action_aside[i].classList.add("animation"), current = i);
+      if (previous === undefined) {
+        previous = i;
+        action_aside[i].style.transition =
+          "opacity 0.75s, top 0.75s, right 0.75s, bottom 0.75s, left 0.75s";
+        action_aside[i].classList.add("has-animation");
+        setTimeout(() => {
+          action_aside[i].style.transition = "none";
+        }, 750);
+        return;
       }
-
-      action_aside[current].classList.remove("animation");
-
-      current = i;
-
+      action_aside[previous].style.transition =
+        "opacity 0.75s, top 0.75s, right 0.75s, bottom 0.75s, left 0.75s";
+      action_aside[previous].classList.remove("has-animation");
       setTimeout(() => {
-        action_aside[i].classList.add("animation");
-      }, 1000);
+        action_aside[previous].style.transition = "none";
+        action_aside[i].style.transition =
+          "opacity 0.75s, top 0.75s, right 0.75s, bottom 0.75s, left 0.75s";
+        action_aside[i].classList.add("has-animation");
+        setTimeout(() => {
+          action_aside[i].style.transition = "none";
+          previous = i;
+        }, 750);
+      }, 750);
     });
   }
 });

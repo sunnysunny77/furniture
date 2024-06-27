@@ -173,7 +173,7 @@ main {
                 color: $c7;
             }
         }
-        div:nth-child(3) {
+        .slider_6-action-container {
             border-top: 2px solid $c1;
             @media only Screen and (min-width: 768px) {
                 position: relative;
@@ -183,70 +183,74 @@ main {
                 border-right: 4px solid $c1;
                 border-bottom: 4px solid $c1;
                 border-left: none;
+                position: relative;
             }
-            div:nth-child(1) {
+            .slider_6-strip {
+                position: relative;
                 background-color: $c1;
-                div:nth-child(1) {
-                    position: relative;
-                    background-color: $c1;
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 66%;
-                        background-color: $c4;
-                    }
-                }
-                img {
-                    height: 100%;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 66%;
+                    background-color: $c4;
                 }
             }
-           aside.aside {
+            img {
+            height: initial;
+            }
+            aside {
                 margin: 0;
                 padding: 2.5%;
                 color: $c3;
                 background-color: $c1;
-                transition:
-                top 1s,
-                right 1s,
-                bottom 1s,
-                left 1s,
-                opacity 1s;
-                top: 2.5%;
-                right: 2.5%;
-                bottom: 2.5%;
-                left: 27.5%;
-                &.animation {
-                    top: 5%;
-                    right: 5%;
-                    bottom: 5%;
-                    left: 30%;
-                    opacity: 1;
-                }
                 @media only Screen and (min-width: 576px) {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                 }
                 @media only Screen and (min-width: 768px) {
-                    flex-direction: column;
+                    font-size: clamp(10px, 1.75vw, 16px);
                     position: absolute;
-                    align-items: unset;
+                    flex-direction: column;
+                    align-items: flex-start;
                     border-radius: 5px;
                     opacity: 0;
+                    top: 4%;
+                    bottom: 4%;
+                    left: 27%;
+                    right: 2%;
+                    width: initial;
+                    &.has-animation {
+                        top: 6%;
+                        right: 3%;
+                        bottom: 6%;
+                        left: 28%;
+                        opacity: 1;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 7.5%;
+                        right: 4%;
+                        bottom: 50%;
+                        width: 2px;
+                        background-color: $c3;
+                    }
                     &::after {
                         position: absolute;
                         content: "";
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0;
-                        background-image: url(../images/div.webp);
-                        background-repeat: repeat-y;
-                        background-position: 95% 75%;
+                        top: 60%;
+                        right: 4%;
+                        bottom: 7.5%;
+                        width: 2px;
+                        background-color: $c3;
                     }
+                }
+                @media only Screen and (min-width: 1200px) {
+                    font-size: clamp(16px, 1.25vw, 22px);
                 }
                 h3 svg {
                     font-size: 12px;
@@ -265,8 +269,8 @@ main {
                         width: 67.5%;
                     }
                     @media only Screen and (min-width: 768px) {
-                        width: 100%;
-                        max-width: 350px;
+                        width: 88%;
+                        max-width: 600px;
                     }
                 }
             }
