@@ -1,0 +1,77 @@
+main section:nth-child(8) {
+    position: relative;
+    border: 2px solid $c1;
+    border-radius: 2px;
+    margin-bottom: 6rem;
+    @include min_md {
+        margin-bottom: 3rem;
+        border: none;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/plus.webp);
+        background-repeat: space;
+        background-size: auto;
+        top: -45px;
+        right: 0;
+        bottom: calc(100% + 15px);
+        left: 75%;
+        z-index: 999;
+        @include min_md {
+            top: 25%;
+            right: 5%;
+            bottom: 25%;
+            left: unset;
+            width: 5%;
+        }
+    }
+    > div {
+        position: relative;
+        background-color: $c1;
+        @include min_xxl {
+            margin-left: 7.25%;
+        }
+        div p {
+            color: $c5;
+        }
+        div h3 {
+            color: $c3;
+        }
+        > p {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: $c3;
+            @include min_md {
+                border-radius: 2px;
+                border: 2px solid $c1;
+                width: 320px;
+                position: absolute;
+                top: calc(50% - 48px);
+                left: 75%;
+            }
+            span {
+                color: inherit;
+                span {
+                    color: $c6;
+                    display: block;
+                }
+            }
+            button {
+                border-radius: 2px;
+                padding: 2.5% 5%;
+                background-color: $c4;
+                color: $c3;
+                transition: background-color 0.2s;
+                border: none;
+                &:hover,
+                &:focus {
+                    background-color: $c2;
+                    color: $c4;
+                }
+            }
+        }
+    }
+}

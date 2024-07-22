@@ -1,0 +1,212 @@
+nav {
+    background-color: $c1;
+    @include min_sm {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        background-color: unset;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: self-end;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            text-align: left;
+            padding: 2%;
+            color: $c3;
+            @include min_sm {
+                text-align: center;
+                padding: 0;
+                width: 33%;
+            }
+            @include min_xxl {
+                width: 37.5%;
+            }
+            a {
+                transition: color 0.2s;
+                text-decoration: none;
+                color: $c3;
+                @include min_sm {
+                    color: inherit;
+                }
+                &:hover,
+                &:focus {
+                    color: $c4;
+                }
+            }
+            &:nth-child(1) {
+                color: $c2;
+                font-size: smaller;
+                padding-left: 2%;
+                h1 {
+                    font-size: inherit;
+                    display: inline-block;
+                    &:hover span,
+                    &:focus span {
+                        opacity: 0.7;
+                    }
+                }
+                svg {
+                    color: $c4;
+                }
+                span {
+                    color: $c4;
+                    transition: color 0.2s;
+                    display: block;
+                    width: fit-content;
+                    @include min_sm {
+                        color: $c1;
+                    }
+                }
+            }
+            &:nth-child(1) a:hover,
+            &:nth-child(1) a:focus {
+                color: $c3;
+                @include min_sm {
+                    color: unset;
+                }
+            }
+            &:nth-child(2) {
+                color: $c2;
+            }
+            &:nth-child(3) {
+                color: $c2;
+                @include min_xxl {
+                    color: $c3;
+                }
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 50%;
+                @include min_sm {
+                    width: 17%;
+                }
+                @include min_xxl {
+                    width: 12.5%;
+                }
+            }
+        }
+    }
+}
+
+#header {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 60%;
+        background-color: $c1;
+        background-image: url(../images/div.webp);
+        background-repeat: repeat-y;
+        background-position: 95% 75%;
+        z-index: -1;
+        @include min_sm {
+            left: 67%;
+        }
+        @include min_xxl {
+            left: 25%;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: calc(60% - 85px);
+        background-image: url(../images/text.webp);
+        background-repeat: no-repeat;
+        z-index: 0;
+        background-size: 150px;
+        @include min_sm {
+            top: 90px;
+            left: calc(67% - 85px);
+        }
+        @include min_xxl {
+            left: calc(25% - 150px);
+            top: 108px;
+            background-size: auto;
+        }
+    }
+    svg {
+        position: absolute;
+        right: 6%;
+        bottom: 6%;
+        width: 7.5%;
+        height: 13%;
+        min-width: 60px;
+        min-height: 60px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+        border-top: 1px solid $c5;
+        border-right: 1px solid $c5;
+        border-left: 1px solid $c5;
+        @include min_sm {
+            border-bottom-left-radius: 2px;
+            border-bottom: 1px solid $c5;
+        }
+    }
+    .carousel {
+        padding-bottom: 150px;
+        margin: 185px 5% auto 5%;
+        @include min_sm {
+            width: 65%;
+            margin: 215px auto auto 15%;
+        }
+        @include min_xxl {
+            width: 55%;
+            margin: 315px auto auto 10%;
+        }
+        .carousel-inner {
+            overflow: visible;
+        }
+    }
+    p {
+        border-top:  2px transparent $c3;
+        border-left: 2px solid $c2;
+        border-right: 2px transparent $c3;
+        border-bottom: 2px solid $c2;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: $c3;
+        width: calc(100% - 1px);
+        margin-left: 1px;
+        @include min_sm {
+            border-top-right-radius: 2px;
+            position: absolute;
+            z-index: 999;
+            top: 88%;
+            right: -6%;
+            bottom: -12%;
+            left: 6%;
+            margin: 0;
+        }
+        button {
+            font-size: smaller;
+            background-color: $c4;
+            color: $c3;
+            transition: background-color 0.2s;
+            border: none;
+            &:hover,
+            &:focus {
+                background-color: $c2;
+                color: $c4;
+            }
+        }
+    }
+}

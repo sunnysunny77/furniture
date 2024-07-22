@@ -6,13 +6,3 @@ $c5: rgba($c3, 0.6);
 $c6: #535964;
 $c7: rgba($c6,0.5);
 $c8:#002521;
-
-@font-face {
-  font-family: Poppins;
-  src: url(./Poppins-Regular.ttf);
-  font-display: swap;
-}
-
-@import "template/head";
-@import "template/main";
-@import "template/foot";

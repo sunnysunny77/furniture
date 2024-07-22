@@ -1,0 +1,46 @@
+main div:nth-child(6) {
+    position: relative;
+    color: $c3;
+    background-image: url(../images/sitting.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 2px;
+    z-index: 999;
+    margin: 3rem 0;
+    @include min_md {
+        margin: 10rem 2.5rem 15rem 2.5rem;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        border-radius: 2px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, $c1, rgba($c1, 0.85), transparent);
+        z-index: -1;
+        @include min_lg {
+            left: 40%;
+            background-image: linear-gradient(to left, $c1, $c1, $c1, $c1, rgba($c1, 0.5), transparent);
+        }
+    }
+    p {
+        color: $c5;
+    }
+    button {
+        width: fit-content;
+        border-radius: 2px;
+        padding: 2.5% 5%;
+        background-color: $c4;
+        color: $c3;
+        transition: background-color 0.2s;
+        border: none;
+        &:hover,
+        &:focus {
+            background-color: $c2;
+            color: $c4;
+        }
+    }
+}

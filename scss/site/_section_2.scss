@@ -1,0 +1,101 @@
+main section:nth-child(2) {
+    position: relative;
+    color: $c3;
+    h2 {
+        font-size: larger;
+    }
+    span {
+        display: inline-block;
+        width: 97%;
+        margin-bottom: 6%;
+        @include min_md {
+            margin-left: 4%;
+            margin-bottom: 10%;
+            width: 28%;
+        }
+        @include min_xxl {
+            width: 20%;
+            margin-left: 8%;
+        }
+        img {
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top: 1px solid $c5;
+            border-left: 1px solid $c5;
+            border-right: 1px solid $c5;
+            width: 100%;
+            height: 100%;
+            @include min_md {
+                border-bottom: 1px solid $c5;
+                border-bottom-right-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+            @include min_xxl {
+                object-position: center;
+                object-fit: cover;
+                height: 400px;
+            }
+        }
+        a {
+            transition: background-color 0.2s;
+            background-color: $c3;
+            text-decoration: none;
+            color: $c2;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            text-align: left;
+            padding: 4%;
+            display: flex;
+            flex-direction: column;
+            @include min_md {
+                box-shadow: 2px 2px 2px $c2;
+                border-top-right-radius: 2px;
+                border-top-left-radius: 2px;
+                position: relative;
+                bottom: 35px;
+                right: 8%;
+            }
+            &:hover,
+            &:focus {
+                background-color: $c2;
+                color: $c4;
+            }
+            &:hover span,
+            &:focus span {
+                background-color: $c2;
+                color: $c3;
+            }
+            span {
+                transition: background-color 0.2s;
+                background-color: $c3;
+                margin: 0;
+                width: unset;
+                color: $c6;
+            }
+            svg {
+                width: 15px;
+                height: 15px;
+                align-self: flex-end;
+            }
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $c1;
+        background-image: url(../images/div.webp);
+        background-repeat: repeat-y;
+        background-position: 2.5% 75%;
+        z-index: -1;
+        @include min_md {
+            right: 10%;
+        }
+        @include min_xxl {
+            right: 25%;
+        }
+    }
+}

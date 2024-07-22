@@ -1,0 +1,16 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: $font;
+    max-width: 1920px;
+}
+
+#skip {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    display: block;
+}
