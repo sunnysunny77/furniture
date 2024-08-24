@@ -119,6 +119,15 @@ main section:nth-child(4) {
                     display: flex;
                     align-items: center;
                 }
+                @include min_lg {
+                    max-width: 450px;
+                }
+                @include min_xl {
+                    max-width: 425px;
+                }
+                @include min_xxl {
+                    max-width: 488px;
+                }
             }
         }
     }
