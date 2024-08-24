@@ -120,13 +120,13 @@ main section:nth-child(4) {
                     align-items: center;
                 }
                 @include min_lg {
-                    max-width: 450px;
+                    max-width: 435px;
                 }
                 @include min_xl {
-                    max-width: 425px;
+                    max-width: 415px;
                 }
                 @include min_xxl {
-                    max-width: 488px;
+                    max-width: 478px;
                 }
             }
         }
