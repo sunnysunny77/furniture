@@ -113,6 +113,7 @@ main section:nth-child(4) {
                     width: 67.5%;
                 }
                 @include min_md {
+                    max-width: 347px;
                     width: 92%;
                     height: 100%;
                     display: flex;
