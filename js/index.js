@@ -10,6 +10,7 @@ import "../node_modules/bootstrap/js/dist/carousel";
 //import "../node_modules/bootstrap/js/dist/tab";
 ///import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
+import { service_worker } from "./service_worker.js";
 import "../node_modules/@fortawesome/fontawesome-free/js/all.min.js";
 import { events } from "./utillites.js";
 import { slider_6 } from "./slider_6.js";
@@ -17,4 +18,5 @@ import { slider_6 } from "./slider_6.js";
 events(window, "load", () => {
 
   slider_6();
+  service_worker();
 });
