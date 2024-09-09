@@ -23,7 +23,7 @@ main section:nth-child(3) {
             border: none;
             background-color: transparent;
             color: $c3;
-            svg {
+            i {
                 vertical-align: middle;
                 font-size: inherit;
                 padding: 0;
@@ -31,12 +31,12 @@ main section:nth-child(3) {
             &:hover,
             &:focus {
                 color: $c4;
-                svg {
+                i {
                     color: $c4;
                 }
             }
         }
-        svg {
+        i {
             color: $c3;
             font-size: 3rem;
             padding-bottom: 3rem;
