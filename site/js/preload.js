@@ -28,8 +28,8 @@ const fonts = [
   "./font/Poppins-SemiBold.ttf",
   "./font/Poppins-Thin.ttf",
   "./font/Poppins-SemiBold.ttf",
-  "./webfonts/fa-brands-400.ttf",
-  "./webfonts/fa-solid-900.ttf",
+  "./webfonts/fa-brands-400.woff2",
+  "./webfonts/fa-solid-900.woff2",
 ];
 
 for (const index of images_root) {
