@@ -37,7 +37,6 @@ export const slider_6 = () => {
         disabled(true);
         setTimeout(() => {
             disabled(false);
-            index.focus();
         }, 3000);
         if (previous === undefined) {
             previous = i;
