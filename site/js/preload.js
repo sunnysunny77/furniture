@@ -28,7 +28,7 @@ const fonts = [
   "./font/Poppins-SemiBold.ttf",
   "./font/Poppins-Thin.ttf",
   "./font/Poppins-SemiBold.ttf",
-  "./webfonts/fa-brands-400.woff2",
+  "./webfonts/fa-regular-400.woff2",
   "./webfonts/fa-solid-900.woff2",
 ];
 
