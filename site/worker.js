@@ -1,65 +1,43 @@
-const version = "v1";
+const version = 1;
+const cacheName = `furniture-v${version}`;
 
-const addResourcesToCache = async (resources) => {
-  
-  const cache = await caches.open(version);
-  await cache.addAll(resources);
-};
+const cacheAssets = [
+  "./",
+  "./index.html",
+  "./css/app.min.css",
+  "./js/app.min.js",
+];
 
 self.addEventListener("install", (event) => {
 
-  console.log(`${version} installing...`);
+  console.log("Service worker is installed");
 
-  event.waitUntil(
-    addResourcesToCache([
-      "./",
-      "./index.html",
-      "./css/app.min.css",
-      "./js/app.min.js",
-    ])
-  );
+  event.waitUntil(caches.open(cacheName).then((cache) => {
+
+    console.log("Caching assets");
+    cache.addAll(cacheAssets);
+  }).then(() => {
+
+    self.skipWaiting();
+  }));
 });
 
-async function fetchAndCacheIfOk(event) {
 
-  try {
-    const response = await fetch(event.request);
+self.addEventListener("fetch", event => {
 
-    if (response.ok) {
+  console.log("Fetching via Service worker");
+  
+  event.respondWith(caches.match(event.request).then(cachedResponse => {
 
-      const responseClone = response.clone();
-      const cache = await caches.open(version);
-      await cache.put(event.request, responseClone);
-    }
+    const networkUpdate = fetch(event.request).then(networkResponse => {
 
-    return response;
-  } catch (e) {
+      caches.open(cacheName).then(cache => cache.put(event.request, networkResponse));
+      return networkResponse.clone();
+    }).catch(() => {
 
-    return e;
-  }
-}
+      return false;
+    });
 
-async function fetchWithCache(event) {
-
-  const cache = await caches.open(version);
-  const response = await cache.match(event.request);
-
-  if (response) {
-
-    fetchAndCacheIfOk(event);
-    return response;
-  } else {
-
-    return fetchAndCacheIfOk(event);
-  }
-}
-
-function handleFetch(event) {
-
-  if (event.request.headers.get("cache-control") !== "no-cache") {
-
-    event.respondWith(fetchWithCache(event));
-  }
-}
-
-self.addEventListener("fetch", handleFetch);
+    return cachedResponse || networkUpdate;
+  }));
+});
