@@ -1,41 +1,65 @@
+const version = "v1";
 
-const version = 1;
-const cacheName = `furniture-v${version}`;
-
-const cacheAssets = [
-  "./",
-  "./index.php",
-  "./css/app.min.css",
-  "./js/app.min.js",
-];
+const addResourcesToCache = async (resources) => {
+  
+  const cache = await caches.open(version);
+  await cache.addAll(resources);
+};
 
 self.addEventListener("install", (event) => {
-  console.log("Service worker is installed");
+
+  console.log(`${version} installing...`);
 
   event.waitUntil(
-    caches
-      .open(cacheName)
-      .then((cache) => {
-        console.log("Caching assets");
-        cache.addAll(cacheAssets);
-      })
-      .then(() => self.skipWaiting())
+    addResourcesToCache([
+      "./",
+      "./index.html",
+      "./css/app.min.css",
+      "./js/app.min.js",
+    ])
   );
 });
 
+async function fetchAndCacheIfOk(event) {
 
-self.addEventListener("fetch", (event) => {
-  console.log("Fetching via Service worker");
+  try {
+    const response = await fetch(event.request);
 
-  event.respondWith(caches.open(cacheName).then((cache) => {
-    return cache.match(event.request).then((cachedResponse) => {
-      const fetchedResponse = fetch(event.request).then((networkResponse) => {
-        cache.put(event.request, networkResponse.clone());
+    if (response.ok) {
 
-        return networkResponse;
-      });
+      const responseClone = response.clone();
+      const cache = await caches.open(version);
+      await cache.put(event.request, responseClone);
+    }
 
-      return cachedResponse || fetchedResponse;
-    });
-  }));
-});
+    return response;
+  } catch (e) {
+
+    return e;
+  }
+}
+
+async function fetchWithCache(event) {
+
+  const cache = await caches.open(version);
+  const response = await cache.match(event.request);
+
+  if (response) {
+
+    fetchAndCacheIfOk(event);
+    return response;
+  } else {
+
+    return fetchAndCacheIfOk(event);
+  }
+}
+
+function handleFetch(event) {
+
+  if (event.request.headers.get("cache-control") !== "no-cache") {
+
+    event.respondWith(fetchWithCache(event));
+  }
+}
+
+self.addEventListener("fetch", handleFetch);
