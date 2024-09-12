@@ -13,9 +13,11 @@ import "../node_modules/bootstrap/js/dist/carousel";
 import { service_worker } from "./service_worker.js";
 import { events } from "./utillites.js";
 import { slider_6 } from "./slider_6.js";
+import { fallback } from "./fallback.js";
 
 events(window, "load", () => {
 
+  fallback();
   slider_6();
   service_worker();
 });
