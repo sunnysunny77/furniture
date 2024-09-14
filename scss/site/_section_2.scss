@@ -79,18 +79,22 @@
             }
         }
     }
-    &::after {
+    .after {
         position: absolute;
-        content: "";
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         background-color: $c1;
-        background-image: url(../images/div.webp);
-        background-repeat: repeat-y;
-        background-position: 2.5% 75%;
         z-index: -1;
+        img {
+            position: absolute;
+            object-fit: fill;
+            top: 0;
+            left: 2%;
+            width: 4px;
+            height: 100%;
+        }
         @include min_md {
             right: 10%;
         }

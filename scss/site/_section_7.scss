@@ -11,19 +11,29 @@
             bottom: 0;
             left: 20%;
             background-color: $c1;
-            z-index: -2;
+            z-index: -2;     
         }
-        &::before {
+    }
+    .before {
+        display: none;
+        @include min_md {
+            display: block;
             position: absolute;
-            content: "";
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            background-image: url(../images/div.webp);
-            background-repeat: repeat-y;
-            background-position: 97.5% 75%;
             z-index: -1;
+            overflow: hidden;
+            img {
+                position: absolute;
+                object-fit: cover;
+                top: -15%;
+                right: 2.5%;
+                width: 4px;
+                object-position: bottom;
+                bottom: 0;
+            }
         }
     }
     i {
