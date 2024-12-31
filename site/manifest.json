@@ -2,8 +2,8 @@
     "name": "Furniture",
     "short_name": "Furniture",
     "start_url": "/",
-    "background_color": "#064d46",
-    "theme_color": "#064d46",
+    "background_color": "#064842",
+    "theme_color": "#064842",
     "display": "standalone",
     "icons": [       
         {
