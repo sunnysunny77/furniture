@@ -52,13 +52,13 @@
             color: $c3;
         }
     }
-    p:nth-child(3) {
+    p {
         color: $c6;
         @include min_md {
             color: $c3;
         }
     }
-    div:nth-child(4) {
+    .floater {
         background-image: url(../images/client-mobile.webp);
         background-size: cover;
         background-position: center bottom;

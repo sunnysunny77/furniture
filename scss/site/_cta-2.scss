@@ -38,12 +38,13 @@
         div h3 {
             color: $c3;
         }
-        > p {
+        .floater {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             justify-content: space-between;
             background-color: $c3;
+            color: inherit;
             @include min_md {
                 border-radius: 2px;
                 border: 2px solid $c1;

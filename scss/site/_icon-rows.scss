@@ -20,7 +20,7 @@
             }
         }
     }
-    div:nth-child(1) {
+    .icon-inner {
         background-color: $c1;
         border-bottom: 2px solid $c1;
         @include min_md {
@@ -30,7 +30,7 @@
             border-bottom: 4px solid $c1;
             border-left: 4px solid $c1;
         }
-        div {
+        .icon-col {
             position: relative;
             background-color: $c4;
             &::after {
