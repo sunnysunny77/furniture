@@ -8,6 +8,20 @@
     div div {
         background-color: $c1;
         padding: 8% 1rem 1rem 1rem;
+        &:hover,
+        &:focus {
+            button {
+                color: $c4;
+                i {
+                    color: $c4;
+                    transform: translateX(25%);
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
         h3 {
             color: $c3;
             font-size: large;
@@ -24,20 +38,12 @@
             background-color: transparent;
             color: $c3;
             transition: color 0.2s;
-            i { 
+            i {
                 vertical-align: middle;
                 font-size: inherit;
                 padding: 0;
                 transition: transform 0.2s;
                 transform: translateX(0);
-            }
-            &:hover,
-            &:focus {
-                color: $c4;
-                i {
-                    color: $c4;
-                    transform: translateX(25%);
-                }
             }
         }
         i {
