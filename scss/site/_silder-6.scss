@@ -50,7 +50,7 @@
             margin: 0;
             padding: 2.5%;
             color: $c3;
-            background-color: $c10;
+            background-color: transparent;
             @include min_sm {
                 display: flex;
                 justify-content: space-between;
@@ -67,11 +67,17 @@
                 bottom: 6%;
                 left: 28%;
                 width: initial;
-                opacity: 0;
-                will-change: opacity;
+                will-change: background-color;
+                > * {
+                    transition: opacity 0.5s ease;
+                    opacity: 0;
+                    will-change: opacity;
+                }
                 &.has-animation {
-                   opacity: 1;
-            
+                    background-color: $c1;
+                    > * {
+                        opacity: 1;
+                    }
                 }
                 &::before {
                     position: absolute;
