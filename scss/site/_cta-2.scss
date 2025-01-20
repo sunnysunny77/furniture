@@ -54,7 +54,7 @@
                 left: 75%;
             }
             span {
-                color: inherit;
+                color: $c2;
                 span {
                     color: $c6;
                     display: block;
@@ -69,7 +69,7 @@
                 border: none;
                 &:hover,
                 &:focus {
-                    background-color: $c2;
+                    background-color: $c7;
                     color: $c4;
                 }
             }

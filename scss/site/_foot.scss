@@ -1,11 +1,12 @@
 footer {
-    background-color: $c8;
+    background-color: $c2;
     color: $c3;
     a {
         display: block;
         text-decoration: none;
         transition: color 0.2s;
         color: inherit;
+        margin: 0 0 5px 0;
         &:hover,
         &:focus {
             color: $c4;
@@ -13,6 +14,5 @@ footer {
     }
     ul {
         list-style-type: none;
-      
     }
 }

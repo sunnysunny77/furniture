@@ -11,7 +11,7 @@
         color: $c1;
         transition: color 0.2s;
         &:disabled {
-            color: $c1
+            color: $c1;
         }
         &:hover,
         &:focus {
@@ -76,7 +76,7 @@
                 }
                 &.has-animation {
                     background-color: $c1;
-                    > * ,
+                    > *,
                     &::before,
                     &::after {
                         opacity: 1;
@@ -110,18 +110,22 @@
             @include min_xl {
                 font-size: clamp(16px, 1.25vw, 22px);
             }
-            h3 i {
-                font-size: 12px;
-                vertical-align: top;
-                margin-left: 12px;
-                vertical-align: middle;
-                @include min_md {
-                    font-size: 17px;
+            h3 {
+                color: $c3;
+                i {
+                    color: inherit;
+                    font-size: 12px;
+                    vertical-align: top;
+                    margin-left: 12px;
+                    vertical-align: middle;
+                    @include min_md {
+                        font-size: 17px;
+                    }
                 }
             }
             p {
-                color: $c9;
-                border-bottom: 1px solid $c3;
+                color: $c5;
+                border-bottom: 1.5px solid $c3;
                 padding-bottom: 1%;
                 @include min_sm {
                     width: 67.5%;
@@ -131,7 +135,6 @@
                     display: flex;
                     align-items: center;
                 }
-             
             }
         }
     }

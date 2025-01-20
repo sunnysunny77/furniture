@@ -3,6 +3,7 @@
     color: $c3;
     h2 {
         font-size: larger;
+        color: $c3;
     }
     span {
         display: inline-block;
@@ -57,12 +58,12 @@
             }
             &:hover,
             &:focus {
-                background-color: $c2;
+                background-color: $c7;
                 color: $c4;
             }
             &:hover span,
             &:focus span {
-                background-color: $c2;
+                background-color: $c7;
                 color: $c3;
             }
             span {

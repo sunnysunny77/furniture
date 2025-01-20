@@ -48,9 +48,9 @@ nav {
                 h1 {
                     font-size: inherit;
                     display: inline-block;
-                    &:hover span,
-                    &:focus span {
-                        opacity: 0.7;
+                    color: $c3;
+                    @include min_sm {
+                        color: $c2;
                     }
                 }
                 i {
@@ -58,7 +58,6 @@ nav {
                 }
                 span {
                     color: $c4;
-                    transition: color 0.2s;
                     display: block;
                     width: fit-content;
                     @include min_sm {
@@ -222,7 +221,7 @@ nav {
             border: none;
             &:hover,
             &:focus {
-                background-color: $c2;
+                background-color: $c7;
                 color: $c4;
             }
         }
