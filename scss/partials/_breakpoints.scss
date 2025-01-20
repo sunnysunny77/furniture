@@ -10,6 +10,12 @@
     }
 }
 
+@mixin max_md {
+    @media only Screen and (max-width: 767px) {
+        @content;
+    }
+}
+
 @mixin min_xxl {
     @media only Screen and (min-width: 1400px) {
         @content;

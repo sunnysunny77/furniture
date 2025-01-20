@@ -10,25 +10,19 @@
         border: none;
         color: $c1;
         transition: color 0.2s;
-        &:disabled {
-            color: $c1;
-        }
-        &:hover,
-        &:focus {
+        &:hover {
             color: $c4;
         }
     }
     .slider_6-action-container {
         border-top: 2px solid $c1;
         @include min_md {
-            position: relative;
             border-top-right-radius: 4px;
             border-bottom-right-radius: 4px;
             border-top: 4px solid $c1;
             border-right: 4px solid $c1;
             border-bottom: 4px solid $c1;
             border-left: none;
-            position: relative;
         }
         .slider_6-strip {
             position: relative;
@@ -46,94 +40,77 @@
         img {
             height: initial;
         }
-        aside {
-            margin: 0;
-            padding: 2.5%;
+        h3 {
             color: $c3;
-            background-color: $c1;
-            @include min_sm {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            i {
+                color: inherit;
+                vertical-align: top;
+                margin-left: 12px;
+                vertical-align: middle;
             }
-            @include min_md {
-                background-color: transparent;
-                font-size: clamp(10px, 1.75vw, 16px);
-                position: absolute;
-                flex-direction: column;
-                align-items: flex-start;
-                border-radius: 5px;
-                top: 6%;
-                right: 3%;
-                bottom: 6%;
-                left: 28%;
-                width: initial;
-                will-change: background-color;
-                > * {
-                    transition: opacity 0.5s ease;
-                    opacity: 0;
-                    will-change: opacity;
-                }
-                &.has-animation {
-                    background-color: $c1;
-                    > *,
-                    &::before,
-                    &::after {
-                        opacity: 1;
-                    }
-                }
-                &::before {
-                    position: absolute;
-                    content: " ";
-                    width: 2px;
-                    height: 40%;
-                    top: 10%;
-                    right: 4%;
-                    background-color: $c3;
-                    transition: opacity 0.5s ease;
-                    opacity: 0;
-                    will-change: opacity;
-                }
-                &::after {
-                    position: absolute;
-                    content: " ";
-                    width: 2px;
-                    height: 25%;
-                    right: 4%;
-                    bottom: 10%;
-                    background-color: $c3;
-                    transition: opacity 0.5s ease;
-                    opacity: 0;
-                    will-change: opacity;
-                }
-            }
-            @include min_xl {
-                font-size: clamp(16px, 1.25vw, 22px);
-            }
-            h3 {
-                color: $c3;
-                i {
-                    color: inherit;
-                    font-size: 12px;
-                    vertical-align: top;
-                    margin-left: 12px;
-                    vertical-align: middle;
-                    @include min_md {
-                        font-size: 17px;
-                    }
-                }
-            }
-            p {
-                color: $c5;
-                border-bottom: 1.5px solid $c3;
-                padding-bottom: 1%;
+        }
+        p {
+            color: $c5;
+        }
+        @include max_md {
+            .non-action-aside {
+                background-color: $c1;
+                padding: 2.5%;
                 @include min_sm {
-                    width: 67.5%;
-                }
-                @include min_md {
-                    height: 100%;
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
+                }
+                p {
+                    border-bottom: 1.5px solid $c3;
+                    padding-bottom: 1%;
+                    @include min_sm {
+                        width: 67.5%;
+                    }
+                }
+                i {
+                    font-size: 12px;
+                }
+            }
+        }
+        @include min_md {
+            .slider_6-action-aside {
+                transform: translateX(100%);
+                .slider_6-inner {
+                    background-color: $c1;
+                    position: relative;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-radius: 5px;
+                    height: 100%;
+                    width: calc(100% - 48px);
+                    color: $c3;
+                    h3,
+                    i {
+                        font-size: clamp(18px, 2vw, 25px);
+                    }
+                    p {
+                        font-size: clamp(12px, 1.25vw, 20px);
+                        width: 75%;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: " ";
+                        width: 2px;
+                        height: 40%;
+                        top: 10%;
+                        right: 4%;
+                        background-color: $c3;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: " ";
+                        width: 2px;
+                        height: 25%;
+                        right: 4%;
+                        bottom: 10%;
+                        background-color: $c3;
+                    }
                 }
             }
         }
