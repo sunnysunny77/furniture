@@ -76,7 +76,9 @@
                 }
                 &.has-animation {
                     background-color: $c1;
-                    > * {
+                    > * ,
+                    &::before,
+                    &::after {
                         opacity: 1;
                     }
                 }
@@ -88,6 +90,9 @@
                     top: 10%;
                     right: 4%;
                     background-color: $c3;
+                    transition: opacity 0.5s ease;
+                    opacity: 0;
+                    will-change: opacity;
                 }
                 &::after {
                     position: absolute;
@@ -97,6 +102,9 @@
                     right: 4%;
                     bottom: 10%;
                     background-color: $c3;
+                    transition: opacity 0.5s ease;
+                    opacity: 0;
+                    will-change: opacity;
                 }
             }
             @include min_xl {
