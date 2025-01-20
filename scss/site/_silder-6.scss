@@ -50,13 +50,14 @@
             margin: 0;
             padding: 2.5%;
             color: $c3;
-            background-color: transparent;
+            background-color: $c1;
             @include min_sm {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
             @include min_md {
+                background-color: transparent;
                 font-size: clamp(10px, 1.75vw, 16px);
                 position: absolute;
                 flex-direction: column;
