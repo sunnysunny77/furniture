@@ -27,6 +27,18 @@ export const slider_6 = () => {
     };
   };
 
+  const init_sm = () => {
+
+    for (const index of action_aside) {
+
+      Object.assign(index.style,{ 
+          
+        transition: "none", 
+        transform: "translateX(0%)",
+      });
+    };
+  };
+
   const transform_item = () => {
 
     for (const index of action_aside) {
@@ -118,5 +130,18 @@ export const slider_6 = () => {
     disabled(event);
   
     transform_item();
+  });
+
+  events(window, "resize", () => {
+
+    clearInterval(inter_id);
+
+    if (window.innerWidth < 768) {
+
+      init_sm();
+    } else {
+
+      init();
+    }
   });
 };
