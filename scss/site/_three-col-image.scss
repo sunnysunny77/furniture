@@ -5,6 +5,41 @@
         font-size: larger;
         color: $c3;
     }
+    .base {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $c1;
+        z-index: -1;
+        @include min_md {
+            right: 10%;
+        }
+        @include min_xxl {
+            right: 25%;
+        }
+    }
+    .top img,
+    .bottom img {
+        position: absolute;
+        left: 3%;
+        width: 1px;
+        @include min_sm {
+            left: 5%;
+        }
+        @include min_md {
+            left: 2%;
+        }
+    }
+    .top img {
+        top: 0;
+        height: 45%;
+    }
+    .bottom img {
+        bottom: 0;
+        height: 28%;
+    }
     span {
         display: inline-block;
         width: 97%;
@@ -78,29 +113,6 @@
                 height: 15px;
                 align-self: flex-end;
             }
-        }
-    }
-    .after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $c1;
-        z-index: -1;
-        img {
-            position: absolute;
-            object-fit: fill;
-            top: 0;
-            left: 2%;
-            width: 4px;
-            height: 100%;
-        }
-        @include min_md {
-            right: 10%;
-        }
-        @include min_xxl {
-            right: 25%;
         }
     }
 }

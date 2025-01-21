@@ -60,6 +60,8 @@
     @include min_md {
         transform: translateX(100%);
         background-color: transparent;
+        transition: transform 0.5s;
+        will-change: transform;
     }
 }
 
@@ -74,8 +76,8 @@
         &::before {
             position: absolute;
             content: " ";
-            width: 2px;
-            height: 40%;
+            width: 1px;
+            height: 45%;
             top: 10%;
             right: 4%;
             background-color: $c3;
@@ -83,8 +85,8 @@
         &::after {
             position: absolute;
             content: " ";
-            width: 2px;
-            height: 25%;
+            width: 1px;
+            height: 28%;
             right: 4%;
             bottom: 10%;
             background-color: $c3;

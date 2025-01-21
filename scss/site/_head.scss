@@ -97,26 +97,13 @@ nav {
 
 #header {
     position: relative;
-    .after {
+    .base {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 60%;
         background-color: $c1;
-        z-index: -1;
-        overflow: hidden;
-        img {
-            position: absolute;
-            object-fit: fill;
-            top: 0;
-            right: 4%;
-            width: 4px;
-            height: 100%;
-            @include min_xxl {
-                right: 4%;
-            }
-        }
         @include min_sm {
             left: 67%;
         }
@@ -124,7 +111,24 @@ nav {
             left: 25%;
         }
     }
-    .before {
+    .top img,
+    .bottom img {
+        position: absolute;
+        right: 2%;
+        width: 1px;
+        @include min_xxl {
+            right: 4%;
+        }
+    }
+    .top img {
+        top: 0;
+        height: 55%;
+    }
+    .bottom img {
+        bottom: 0;
+        height: 28%;
+    }
+    .text {
         position: absolute;
         top: 50px;
         right: 0;
@@ -157,10 +161,10 @@ nav {
         height: 13%;
         min-width: 60px;
         min-height: 60px;
-        @include min_sm { 
+        @include min_sm {
             right: 6%;
         }
-        @include min_xxl { 
+        @include min_xxl {
             right: 8%;
         }
     }
@@ -194,7 +198,7 @@ nav {
         }
     }
     p {
-        border-top:  2px transparent $c3;
+        border-top: 2px transparent $c3;
         border-left: 2px solid $c2;
         border-right: 2px transparent $c3;
         border-bottom: 2px solid $c2;
