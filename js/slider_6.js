@@ -44,7 +44,6 @@ export const slider_6 = () => {
     }
   };
 
-
   events(service, "input", (event) => {
 
     inter_count = 9;
