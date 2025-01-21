@@ -19,6 +19,8 @@ export const slider_6 = () => {
 
   const init = () => {
 
+    service.value = -1;
+
     for (const index of action_aside) {
 
       index.style.transform = "";
