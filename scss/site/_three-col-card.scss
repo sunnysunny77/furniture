@@ -12,7 +12,7 @@
         cursor: pointer;
         &:hover,
         &:focus {
-            button {
+            .read-more {
                 color: $c4;
                 i {
                     color: $c4;
@@ -31,7 +31,7 @@
                 min-height: 120px;
             }
         }
-        button {
+        .read-more {
             border: none;
             background-color: transparent;
             color: $c3;
