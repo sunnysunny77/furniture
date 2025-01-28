@@ -10,6 +10,7 @@ import "../node_modules/bootstrap/js/dist/carousel";
 //import "../node_modules/bootstrap/js/dist/tab";
 ///import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
+
 import { service_worker } from "./service_worker.js";
 import { events } from "./utillites.js";
 import { slider_6 } from "./slider_6.js";
