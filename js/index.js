@@ -8,7 +8,7 @@ import "../node_modules/bootstrap/js/dist/carousel";
 //import "../node_modules/bootstrap/js/dist/popover";
 //import "../node_modules/bootstrap/js/dist/scrollspy";
 //import "../node_modules/bootstrap/js/dist/tab";
-///import "../node_modules/bootstrap/js/dist/toast";
+//import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
 
 import { service_worker } from "./service_worker.js";
