@@ -30,3 +30,23 @@ h6 {
     height: 0px;
     overflow: hidden;
 }
+
+
+// scrollbar
+
+.os-theme-body {
+    --os-size: 4px;
+    @include min_md {
+        --os-size: 7px;
+    }
+}
+
+.os-theme-body .os-scrollbar-handle {
+    background: $c4;
+    border-radius: 0px;
+    height: 85px;
+}
+
+.os-theme-body .os-scrollbar-track {
+    background: transparent;
+}
